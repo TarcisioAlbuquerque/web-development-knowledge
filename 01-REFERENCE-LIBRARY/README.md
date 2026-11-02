@@ -2,10 +2,16 @@
 
 Cada referência deve ter uma ficha com URL, segmento, data/status da análise, arquitetura, direção visual, UX, motion, conversão, padrões transferíveis e ressalvas.
 
-## Referências em análise
+## Referências registradas
 - [Rosimeire — site de prévia](ROSIMEIRE.md) — segmento e análise visual pendentes.
-- [J&J Advogados Associados](JJ-ADVOGADOS-ASSOCIADOS.md) — advocacia; interesse especial na ideia de entrada/primeira impressão.
-- [Nexo AGC](NEXO-AGC.md) — agência de desenvolvimento web; referência estratégica para a oferta de sites institucionais e landing pages da AURA.
+- [J&J Advogados Associados](JJ-ADVOGADOS-ASSOCIADOS.md) — advocacia; ideia de entrada/primeira impressão.
+- [Nexo AGC](NEXO-AGC.md) — agência de desenvolvimento web; referência estratégica para a oferta de sites institucionais e landing pages.
+- [DesEngs](DESENGS.md) — diretório de descoberta de recursos para Design Engineers; não é uma skill por si só.
+- [Land-book](LAND-BOOK.md) — galeria de inspiração para websites e landing pages.
+- [Refero Styles](REFERO-STYLES.md) — biblioteca de sistemas visuais em DESIGN.md para orientar agentes.
+- [Refero](REFERO.md) — pesquisa de interfaces reais, padrões de UI/UX e fluxos.
+- [SAMURAI Tech](SAMURAI-TECNOLOGIA.md) — estratégia comercial, diagnóstico, demonstrações conceituais e apresentação de soluções digitais.
+- [Paulo Victor — Portfolio](PORTFOLIO-PV.md) — abertura/intro indicada pelo usuário; inspeção visual ainda pendente.
 
 ## Regra
 Não classificar um site por suposição. Se não for possível inspecioná-lo, registrar como pendente até receber evidência suficiente.
