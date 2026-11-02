@@ -29,3 +29,17 @@ Tente acessar o endereço original usando os recursos de navegação disponívei
 - informe a pendência claramente no relatório final;
 - peça ao usuário, quando necessário, capturas, gravação ou autorização para uma alternativa de inspeção;
 - não remova a referência da biblioteca automaticamente.
+
+## Skills: avaliar, recomendar e instalar
+Durante cada projeto, avaliar se uma skill existente oferece ganho concreto para a tarefa. Consultar primeiro a biblioteca de skills e os recursos já disponíveis no ambiente. Não instalar por padrão nem acumular skills redundantes.
+
+Quando uma skill for recomendada, informar ao usuário:
+- nome e fonte;
+- benefício concreto para o projeto atual;
+- compatibilidade com VS Code/GitHub Copilot e escopo (global ou projeto);
+- se a instalação pode ser feita pelo Marketplace/CLI ou exige cópia/configuração manual;
+- dependências externas e eventuais passos manuais.
+
+Antes de instalar, inspecionar a skill completa (SKILL.md, scripts, recursos, comandos, dependências e permissões) e explicar riscos relevantes. Solicitar confirmação do usuário antes de instalar ou executar código de terceiros. Nunca afirmar que está instalada até verificar sua presença e reconhecimento pelo agente.
+
+Se o agente puder executar a instalação com segurança e autorização, pode fazê-lo; caso contrário, fornecer instruções manuais exatas e avisar claramente que o usuário precisa realizar esse passo. Após instalar, verificar descoberta/ativação no VS Code e separar a instalação da skill da instalação de dependências externas.
