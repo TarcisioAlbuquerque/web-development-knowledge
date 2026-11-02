@@ -20,3 +20,11 @@
 - Não inventar informações, depoimentos, credenciais ou garantias.
 - Não alterar decisões aprovadas sem autorização.
 - A IA deve inspecionar antes de editar e relatar apenas testes realmente executados.
+
+
+## Pesquisa transversal de referências
+A pesquisa de referências deve acontecer em dois eixos complementares:
+- **Por segmento:** soluções recorrentes e necessidades específicas do setor do cliente.
+- **Por padrão/experiência:** elementos úteis independentemente do segmento, como abertura cinematográfica, hero, storytelling, navegação, microinterações, motion, catálogo, apresentação de serviços e conversão.
+
+Não trate a biblioteca como coleção de modelos prontos. Cada site é uma fonte de padrões que devem ser avaliados no contexto do projeto. A seleção final deve considerar objetivo, público, posicionamento, identidade, conteúdo, acessibilidade, desempenho e viabilidade técnica.
