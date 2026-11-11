@@ -12,10 +12,10 @@ Cada referência deve ter uma ficha com URL, segmento, data/status da análise, 
 - [Refero](REFERO.md) — pesquisa de interfaces reais, padrões de UI/UX e fluxos.
 - [SAMURAI Tech](SAMURAI-TECNOLOGIA.md) — estratégia comercial, diagnóstico, demonstrações conceituais e apresentação de soluções digitais.
 - [Paulo Victor — Portfolio](PORTFOLIO-PV.md) — abertura/intro indicada pelo usuário; inspeção visual ainda pendente.
+- [Técnicas de interação e referências visuais](INTERACTION-AND-VISUAL-TECHNIQUES.md) — scroll-linked, GSAP ScrollTrigger, parallax, sticky, horizontal scroll, glassmorphism e recursos aguardando identificação.
 
 ## Regra
 Não classificar um site por suposição. Se não for possível inspecioná-lo, registrar como pendente até receber evidência suficiente.
-
 
 ## Como consultar a biblioteca durante projetos
 A consulta é transversal: pesquisar tanto referências do mesmo segmento quanto referências de outros segmentos que tenham padrões relevantes para a necessidade atual. Exemplo: uma abertura/intro de um escritório de advocacia pode inspirar um site de nutrição, se a experiência combinar com a estratégia e a identidade da profissional.
