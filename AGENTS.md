@@ -1,6 +1,6 @@
 # Instruções para agentes
 
-- Leia primeiro `README.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md` e os documentos relevantes da metodologia.
+- Leia primeiro `README.md` e os documentos relevantes da metodologia.
 - Consulte referências por segmento, mas não copie identidade, texto, fotos, depoimentos ou código.
 - Separe metodologia universal de decisões particulares do projeto.
 - Inspecione arquivos antes de editar; preserve decisões aprovadas.
@@ -9,20 +9,40 @@
 - Peça confirmação antes de ações destrutivas, publicação ou mudanças de escopo.
 - Trabalhe incrementalmente e reporte alterações, testes e pendências.
 
+
 ## Consulta obrigatória da biblioteca de referências
-Antes de planejar ou construir qualquer site, consulte a biblioteca de forma transversal, não apenas as referências do mesmo nicho. Procure padrões relevantes: abertura/intro, hero, narrativa, composição, navegação, motion, interações, serviços, catálogo, conversão, responsividade e acessibilidade.
+Antes de planejar ou construir qualquer site, consulte a biblioteca inteira de forma transversal, não apenas as referências do mesmo nicho. Procure padrões relevantes por função e qualidade: abertura/intro, hero, narrativa, composição, navegação, motion, interações, apresentação de serviços, catálogo, conversão, responsividade e acessibilidade.
 
 Para cada referência potencialmente útil:
-1. Leia a ficha.
-2. Tente abrir e inspecionar o site original.
-3. Avalie adequação ao briefing, público, marca, objetivo e orçamento, mesmo se for de outro segmento.
-4. Adapte princípios à identidade do cliente; não copie marca, textos, imagens, código ou elementos proprietários.
-5. Registre padrões aproveitados, adaptados ou descartados, com justificativa breve.
+1. Leia a ficha no repositório.
+2. Tente abrir e inspecionar o site original para validar o padrão e entender seu contexto.
+3. Avalie se o padrão serve ao briefing, público, marca, objetivo e orçamento do projeto atual, mesmo quando a referência for de outro segmento.
+4. Adapte o princípio à identidade do cliente; nunca copie marca, textos, imagens, código ou elementos proprietários.
+5. Registre quais referências foram consultadas e quais padrões foram selecionados, adaptados ou descartados, com justificativa breve.
 
-Se a página original não puder ser acessada, não diga que foi analisada. Registre a limitação e peça capturas/gravação quando necessário. Não remova referências automaticamente.
+Não limite a pesquisa ao nicho. Uma abertura de um escritório de advocacia, por exemplo, pode inspirar a introdução de um site de nutrição se a experiência fizer sentido para a marca e o objetivo.
+
+### Acesso e transparência
+Tente acessar o endereço original usando os recursos de navegação disponíveis. Se o acesso automatizado falhar, for bloqueado ou não permitir visualizar a experiência necessária:
+- não diga que o site foi analisado;
+- registre o nome/URL e o motivo observado, se conhecido;
+- informe a pendência claramente no relatório final;
+- peça ao usuário, quando necessário, capturas, gravação ou autorização para uma alternativa de inspeção;
+- não remova a referência da biblioteca automaticamente.
 
 ## Skills: avaliar, recomendar e instalar
-Avalie se uma skill oferece ganho concreto. Inspecione SKILL.md, scripts, recursos, comandos, dependências e permissões. Informe nome/fonte, benefício, compatibilidade com VS Code/Copilot, escopo (global/projeto), método de instalação e passos manuais. Peça autorização antes de instalar ou executar código de terceiros. Verifique descoberta/ativação; nunca alegue instalação sem confirmação. Separe skill de dependências externas.
+Durante cada projeto, avaliar se uma skill existente oferece ganho concreto para a tarefa. Consultar primeiro a biblioteca de skills e os recursos já disponíveis no ambiente. Não instalar por padrão nem acumular skills redundantes.
+
+Quando uma skill for recomendada, informar ao usuário:
+- nome e fonte;
+- benefício concreto para o projeto atual;
+- compatibilidade com VS Code/GitHub Copilot e escopo (global ou projeto);
+- se a instalação pode ser feita pelo Marketplace/CLI ou exige cópia/configuração manual;
+- dependências externas e eventuais passos manuais.
+
+Antes de instalar, inspecionar a skill completa (SKILL.md, scripts, recursos, comandos, dependências e permissões) e explicar riscos relevantes. Solicitar confirmação do usuário antes de instalar ou executar código de terceiros. Nunca afirmar que está instalada até verificar sua presença e reconhecimento pelo agente.
+
+Se o agente puder executar a instalação com segurança e autorização, pode fazê-lo; caso contrário, fornecer instruções manuais exatas e avisar claramente que o usuário precisa realizar esse passo. Após instalar, verificar descoberta/ativação no VS Code e separar a instalação da skill da instalação de dependências externas.
 
 ## Contexto multiagente e governança
 - GitHub é a fonte oficial. Não presuma que outro modelo tenha memória das conversas anteriores.
@@ -31,7 +51,7 @@ Avalie se uma skill oferece ganho concreto. Inspecione SKILL.md, scripts, recurs
 - Não use modelos pagos ou APIs pagas como pré-requisito. Priorize ferramentas gratuitas disponíveis e verifique limites atuais.
 - Um modelo pode executar várias funções, mas responsabilidade e critérios de aceite permanecem explícitos.
 - Todo especialista entrega resultado, decisões, arquivos/fontes consultados, pendências e próximo passo.
-- Registre decisões duradouras apenas após aprovação do usuário; propostas não são decisões aprovadas.
+- Registre decisões duradouras apenas após aprovação do usuário; propostas e hipóteses não são decisões aprovadas.
 - Não altere visibilidade, permissões, secrets ou configurações administrativas.
 - Prefira mudanças pequenas, branch e revisão; não faça force push.
 - Não armazene segredos ou dados sensíveis desnecessários.
