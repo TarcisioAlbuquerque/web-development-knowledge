@@ -1,28 +1,49 @@
 # Web Development Knowledge
 
-Base central de conhecimento para criar sites e experiências digitais profissionais em diferentes segmentos, clientes e tecnologias.
+Base central de conhecimento para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais profissionais para diferentes clientes, segmentos e tecnologias.
 
-## Como usar
-1. Consulte a metodologia antes de iniciar um projeto.
-2. Pesquise referências do segmento e extraia padrões transferíveis.
-3. Avalie skills e ferramentas antes de instalar ou executar.
-4. Use os prompts como ponto de partida, sempre adaptados ao briefing.
-5. Mantenha decisões específicas de cada cliente na pasta do respectivo projeto.
+## Princípio central
+Este repositório é a fonte oficial do conhecimento aprovado. Conversas com ChatGPT, Gemini, Claude e GitHub Copilot são ambientes de execução; decisões, metodologias, referências e padrões duradouros devem ser documentados aqui. A metodologia é universal e reutilizável; AURA é uma aplicação, não o único destino.
+
+## Como começar
+1. Leia `AGENTS.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md` e `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`.
+2. Identifique se a tarefa é Web Production, Client & Business Operations ou ambas.
+3. Consulte o workflow, o especialista e o prompt relevantes.
+4. Envie a cada IA apenas o pacote de contexto necessário.
+5. Consulte referências por nicho e por padrão/experiência, inclusive entre segmentos.
+6. Registre decisões aprovadas, entregas e handoffs.
+7. Preserve material existente. Peça autorização para mudanças de escopo, ações destrutivas ou publicação.
 
 ## Estrutura
-- `00-METHODOLOGY/` — processo universal e padrões de qualidade.
-- `01-REFERENCE-LIBRARY/` — sites reais analisados por segmento.
-- `02-DESIGN-LIBRARY/` — padrões visuais, motion e interação.
-- `03-AGENT-SKILLS/` — skills, ferramentas e critérios de avaliação.
-- `04-PROMPTS/` — prompts reutilizáveis para agentes.
-- `05-PROJECTS/` — projetos e decisões específicas.
+- `00-CONTEXT-SYSTEM/` — contexto, índice, decisões, governança e handoff.
+- `00-METHODOLOGY/` — metodologia universal e workflows.
+- `01-REFERENCE-LIBRARY/` — sites, motion, interações, ferramentas, guias e playbooks.
+- `02-DESIGN-LIBRARY/` — padrões visuais e de experiência.
+- `03-AGENT-SKILLS/` — especialistas, ferramentas, skills e avaliação de modelos.
+- `04-PROMPTS/` — prompts mestres, especializados e workflows.
+- `05-PROJECTS/` — contexto e entregas de cada cliente.
+- `06-DEVELOPMENT-STANDARDS/` — padrões técnicos.
+- `07-QUALITY-CONTROL/` — critérios de aceite e liberação.
+- `.github/copilot-instructions.md` — instruções do Copilot no VS Code.
+
+## Dois fluxos integrados
+**Web Production:** descoberta → briefing → estratégia → arquitetura/UX → copy → direção visual → motion → arquitetura técnica → desenvolvimento → QA → publicação.
+
+**Client & Business Operations:** seleção de nicho → pesquisa e qualificação de leads → abordagem → reunião → proposta → fechamento → onboarding → coleta de conteúdo → gestão → entrega → pós-venda.
+
+Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente Mestre seleciona especialistas conforme o escopo.
 
 ## Regras
-- A metodologia é universal; a identidade e as decisões de cada cliente são particulares.
+- Diferencie fatos fornecidos, evidências pesquisadas, hipóteses e recomendações.
 - Registre URL, segmento, data e status de verificação de cada referência.
-- Diferencie observações de hipóteses.
-- Não copie textos, imagens, marcas, depoimentos ou código de terceiros.
-- Não invente dados, credenciais, avaliações ou resultados.
+- Inspiração não autoriza copiar marca, textos, imagens, depoimentos ou código.
+- Não invente dados, credenciais, avaliações, preços ou resultados.
+- Exemplos comerciais de materiais de referência não são preços atuais.
+- Avalie ferramentas, bibliotecas e skills por necessidade, compatibilidade, licença, manutenção e segurança.
+- Priorize acessibilidade, desempenho, segurança, responsividade e manutenção.
+- Não afirme testes ou instalações não realizados.
 - Não armazene senhas, tokens ou dados pessoais desnecessários.
+- O repositório é privado; não altere visibilidade ou permissões sem autorização.
 
-Documentação principal em português brasileiro.
+## Governança
+GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
