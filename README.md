@@ -47,3 +47,5 @@ Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente 
 
 ## Governança
 GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
+
+Documentação principal em português brasileiro.
