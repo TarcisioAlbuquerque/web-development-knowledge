@@ -21,3 +21,14 @@ Não classificar um site por suposição. Se não for possível inspecioná-lo, 
 A consulta é transversal: pesquisar tanto referências do mesmo segmento quanto referências de outros segmentos que tenham padrões relevantes para a necessidade atual. Exemplo: uma abertura/intro de um escritório de advocacia pode inspirar um site de nutrição, se a experiência combinar com a estratégia e a identidade da profissional.
 
 O agente deve tentar acessar os sites originais, não depender somente das fichas. Deve distinguir claramente entre referência registrada, site efetivamente inspecionado e análise pendente por bloqueio ou falha de acesso. Relatar limitações ao final e pedir material alternativo apenas quando necessário.
+
+
+## Sistema obrigatório de Motion & Interaction
+Consulte `MOTION-AND-INTERACTION-SYSTEM/README.md` antes de qualquer novo projeto web. Ele contém:
+- catálogo universal de animações e técnicas;
+- catálogo de componentes interativos;
+- playbook de implementação;
+- case study Ana Marques;
+- template obrigatório de Motion Brief.
+
+A auditoria Ana Marques foi convertida em padrões de referência, sem copiar conteúdo/identidade. O sistema deve ser consultado transversalmente por função e não apenas por nicho.
