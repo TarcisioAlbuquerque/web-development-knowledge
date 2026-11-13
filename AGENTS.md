@@ -61,7 +61,7 @@ Se o agente puder executar a instalação com segurança e autorização, pode f
 
 Para toda landing page e novo site, consulte `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` antes de planejar layout ou implementar. O sistema contém catálogo universal de motion, componentes interativos, playbook, case study e Motion Brief Template.
 
-Não entregue páginas estáticas por omissão. Em landing pages, planeje normalmente 6–10 tratamentos distintos de motion e 3–5 padrões de interação úteis; o baseline inclui hero entrance, reveals em múltiplas seções, movimento/revelação de mídia, feedback de hover/focus/active e pelo menos uma interação contextual.
+Não entregue páginas estáticas por omissão. Em landing pages, implemente no mínimo 6 tratamentos distintos de motion e 3 padrões de interação úteis (faixa recomendada: 6–10 e 3–5); o baseline inclui hero entrance, reveals em múltiplas seções, movimento/revelação de mídia, feedback de hover/focus/active e pelo menos uma interação contextual.
 
 Motion Designer especifica; Front-end Engineer implementa; QA verifica. Efeitos listados no brief precisam existir e funcionar no navegador. Um plano, comentário TODO, placeholder ou botão sem ação não conta como implementação.
 
