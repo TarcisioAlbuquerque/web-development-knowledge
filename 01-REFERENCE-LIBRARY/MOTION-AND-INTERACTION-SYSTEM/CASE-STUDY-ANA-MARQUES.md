@@ -8,18 +8,18 @@
 
 ## 1. Padrões de Motion relatados no relatório
 
-| ID local | Efeito relatado | Seção | Gatilho relatado | Observação |
+| ID local | Efeito relatado | Seção | Timestamp no relatório | Gatilho relatado | Observação |
 |---|---|---|---|---|
-| ANA-M01 | Header Fade-in + Slide Down | Header | Load | Entrada breve do cabeçalho |
-| ANA-M02 | Hero Text Mask Reveal + Stagger | Hero | Load | Linhas do H1 reveladas em sequência |
-| ANA-M03 | Hero Image Scale-in + Fade | Hero | Load | Entrada suave da fotografia |
-| ANA-M04 | Animated Organic SVG Line | Divisores entre seções | Scroll/trecho da página | O relatório descreve traços orgânicos fluidos; gatilho e sincronização precisam de validação adicional |
-| ANA-M05 | Quiz Card Slide | Mito ou Verdade | Click em Mito/Verdade | Card desloca e feedback aparece |
-| ANA-M06 | Tabs Content Crossfade | Objetivos | Click em tab | Conteúdo muda por seleção |
-| ANA-M07 | Video Autoplay Loop | Bastidores | Entrada na viewport | Vídeo em loop; autoplay deve ser silencioso e oferecer controle |
-| ANA-M08 | FAQ Height Expansion + Icon Rotation | FAQ | Click | Expansão vertical e rotação do indicador |
-| ANA-M09 | Infinite Horizontal Marquee | Instagram | Relatado durante navegação | O relatório também menciona deslocamento associado ao scroll; confirmar se é marquee automático, scroll-linked ou ambos |
-| ANA-M10 | CTA Hover Feedback | Botões/CTAs | Hover | Mudança de cor, escala e movimento de seta |
+| ANA-M01 | Header Fade-in + Slide Down | Header | 00:00–00:02 | Load | Entrada breve do cabeçalho |
+| ANA-M02 | Hero Text Mask Reveal + Stagger | Hero | 00:01–00:03 | Load | Linhas do H1 reveladas em sequência |
+| ANA-M03 | Hero Image Scale-in + Fade | Hero | 00:00–00:03 | Load | Entrada suave da fotografia |
+| ANA-M04 | Animated Organic SVG Line | Divisores entre seções | Não indicado | Scroll/trecho da página | O relatório descreve traços orgânicos fluidos; gatilho e sincronização precisam de validação adicional |
+| ANA-M05 | Quiz Card Slide | Mito ou Verdade | 00:08–00:24 | Click em Mito/Verdade | Card desloca e feedback aparece |
+| ANA-M06 | Tabs Content Crossfade | Objetivos | 00:40–00:46 | Click em tab | Conteúdo muda por seleção |
+| ANA-M07 | Video Autoplay Loop | Bastidores | 01:12–01:15 | Entrada na viewport | Vídeo em loop; autoplay deve ser silencioso e oferecer controle |
+| ANA-M08 | FAQ Height Expansion + Icon Rotation | FAQ | 01:52–01:55 | Click | Expansão vertical e rotação do indicador |
+| ANA-M09 | Infinite Horizontal Marquee | Instagram | 01:40–01:50 | Relatado durante navegação | O relatório também menciona deslocamento associado ao scroll; confirmar se é marquee automático, scroll-linked ou ambos |
+| ANA-M10 | CTA Hover Feedback | Botões/CTAs | Não indicado | Hover | Mudança de cor, escala e movimento de seta |
 
 **Nota:** timestamps específicos e curvas/durações fornecidos no relatório são estimativas visuais, não medições de código. Não transformar estimativas em valores exatos.
 
