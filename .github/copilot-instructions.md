@@ -22,7 +22,7 @@ Rules:
 - Antes de criar uma landing page, leia `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md` e `IMPLEMENTATION-PLAYBOOK.md`.
 - Crie o Motion Brief do projeto e selecione IDs do catálogo.
 - Implemente motion no hero, em múltiplas seções durante o scroll, em pelo menos um elemento de mídia e nos estados de interação/CTA.
-- Inclua pelo menos uma interação contextual realmente funcional. Meta usual: 6–10 tratamentos de motion e 3–5 padrões interativos por landing page.
+- Inclua pelo menos uma interação contextual realmente funcional. Mínimo de aceite: 6 tratamentos distintos de motion e 3 padrões interativos por landing page (faixa recomendada: 6–10 e 3–5).
 - Reutilize o Motion Starter Kit quando adequado; adapte ao framework e às convenções do projeto.
 - Não deixe motion apenas planejado, em comentário ou placeholder. Teste e registre evidência em desktop/mobile, teclado/toque e reduced-motion.
 - Não adicione biblioteca sem necessidade e justificativa; não sacrifique performance, acessibilidade ou conversão.
