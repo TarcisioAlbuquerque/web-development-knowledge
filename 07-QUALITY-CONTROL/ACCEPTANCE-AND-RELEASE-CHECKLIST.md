@@ -16,7 +16,7 @@
 ## Motion & Interaction — gate obrigatório
 - [ ] Motion Brief existe e foi aprovado; IDs selecionados estão registrados.
 - [ ] Baseline de landing page implementado: sequência de hero, scroll reveals em várias seções, motion de mídia, estados de CTA/controles e interação contextual.
-- [ ] Meta de 6–10 tratamentos de motion e 3–5 padrões interativos avaliada; exceções justificadas no brief.
+- [ ] Mínimo atingido: 6 tratamentos de motion distintos e 3 padrões interativos úteis; exceção abaixo do mínimo documentada e aprovada pelo usuário/cliente.
 - [ ] Hero sequence e text/image reveal testados no navegador.
 - [ ] Scroll reveal testado ao descer e subir, sem conteúdo escondido ou travado.
 - [ ] Todos os componentes interativos testados por mouse, teclado e toque conforme aplicável.
