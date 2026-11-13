@@ -40,7 +40,6 @@
       paths.forEach((path) => {
         try {
           const length = path.getTotalLength();
-          path.style.setProperty("--motion-svg-length", String(length));
           path.style.strokeDasharray = String(length);
           path.style.strokeDashoffset = String(length);
         } catch {
@@ -89,7 +88,7 @@
     activate(initiallySelected);
   });
 
-  // Explicit marquee pause/resume control.
+  // Explicit marquee pause/resume control. Reduced-motion users get a static track.
   document.querySelectorAll("[data-marquee]").forEach((marquee) => {
     const toggle = marquee.querySelector("[data-marquee-toggle]");
     if (!toggle) return;
@@ -97,7 +96,8 @@
     if (reduceMotion) {
       marquee.classList.add("is-paused");
       toggle.setAttribute("aria-pressed", "true");
-      toggle.textContent = toggle.dataset.resumeLabel || "Retomar movimento";
+      toggle.textContent = "Movimento reduzido";
+      toggle.disabled = true;
       return;
     }
 
