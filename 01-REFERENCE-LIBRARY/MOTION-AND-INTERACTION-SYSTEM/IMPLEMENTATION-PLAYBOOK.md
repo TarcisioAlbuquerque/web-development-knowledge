@@ -176,3 +176,15 @@ Não afirmar "usa GSAP", "usa Lenis" ou "usa Framer Motion" por observação vis
 - tecnologia confirmada por código;
 - provável tecnologia;
 - tecnologia recomendada para implementação.
+
+
+## Starter kit avançado disponível
+Quando o projeto justificar GSAP/ScrollTrigger, consulte `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/gsap-recipes.js`. Ele contém receitas reutilizáveis para:
+- reveal e stagger vinculados ao viewport;
+- desenho de SVG;
+- image reveal por clip-path;
+- parallax desktop;
+- pin storytelling;
+- horizontal scroll desktop.
+
+O módulo é opcional e requer a dependência GSAP instalada no projeto. Em mobile e reduced-motion, pin/parallax/horizontal ficam desativados; o desenvolvedor deve preservar alternativa vertical ou scroll-snap. Não carregar GSAP por padrão em sites simples.
