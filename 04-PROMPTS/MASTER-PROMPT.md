@@ -42,3 +42,7 @@ Antes de desenhar ou codificar:
 O Front-end Engineer deve implementar os comportamentos reais. O QA deve testar cada ID em desktop e mobile, teclado/toque e reduced-motion. Efeito apenas descrito, comentário TODO, botão sem ação ou componente não testado não conta como entrega.
 
 Se um padrão do baseline for inadequado, documentar justificativa e alternativa concreta no Motion Brief. Não sacrificar usabilidade, acessibilidade, velocidade ou conversão para aumentar a quantidade de efeitos.
+
+
+## Bootstrap para repositórios independentes de cliente
+Se o site estiver em outro repositório/workspace, siga `PROJECT-BOOTSTRAP-INSTRUCTIONS.md` para disponibilizar o sistema canônico ao agente. Não presuma sincronização automática de contexto entre o repositório de conhecimento e o projeto do cliente. Crie o Motion Brief dentro do próprio projeto e transporte-o nos handoffs.
