@@ -4,7 +4,7 @@ Starter kit sem dependência obrigatória de framework para acelerar padrões co
 
 ## Arquivos
 - `motion.css`: tokens, reveal, image reveal, text mask, hover feedback, scroll-snap carousel, marquee e SVG draw.
-- `motion.js`: IntersectionObserver, tabs acessíveis, pause control de marquee, SVG draw e CTA contextual para WhatsApp.
+- `motion.js`: IntersectionObserver, tabs acessíveis, pause control de marquee, SVG draw, vídeo por viewport e CTA contextual para WhatsApp.
 - `quiz.js`: quiz multi-pergunta com feedback, progresso, pontuação e reinício.
 - `carousel.js`: controles anterior/próximo para trilha horizontal com scroll-snap nativo.
 
@@ -97,6 +97,15 @@ Para manter o loop sem salto, os dois grupos devem ter conteúdo e largura equiv
 </div>
 ```
 A trilha também aceita swipe/toque e scroll horizontal nativo. Botões e estado são controlados por `carousel.js`.
+
+## Vídeo ativado por viewport
+```html
+<video data-viewport-video muted playsinline loop preload="metadata" poster="/images/bastidores-poster.webp" controls>
+  <source src="/media/bastidores.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo HTML.
+</video>
+```
+O script força mute/playsinline, tenta reproduzir quando o vídeo entra no viewport, pausa quando sai e habilita controles se o autoplay falhar. Com `prefers-reduced-motion`, não inicia automaticamente e mantém controles. Use poster, proporção reservada e mídia otimizada.
 
 ## WhatsApp contextual
 ```html
