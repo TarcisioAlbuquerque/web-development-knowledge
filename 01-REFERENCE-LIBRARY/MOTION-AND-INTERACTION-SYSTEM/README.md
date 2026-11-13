@@ -34,9 +34,9 @@ Para toda landing page nova, é obrigatório:
    - pelo menos uma interação que ajude o usuário a entender, escolher, explorar ou converter.
 5. Considerar pelo menos um recurso de Advanced Motion (parallax, sticky storytelling, SVG draw, marquee, horizontal scroll ou scroll-linked animation) quando acrescentar valor real. Se não for adequado, registrar a razão e usar uma alternativa mais apropriada.
 6. Para todo site, manter um sistema de movimento consistente nas páginas-chave e feedback funcional nos controles. Em landing pages, aplicar também o mínimo quantitativo abaixo.
-6. Implementar os efeitos efetivamente no código; um plano, placeholder ou comentário não conta como entrega.
-7. Testar no navegador desktop e mobile, incluindo teclado e `prefers-reduced-motion`.
-8. Registrar IDs dos padrões implementados e evidências de teste no relatório do projeto.
+7. Implementar os efeitos efetivamente no código; um plano, placeholder ou comentário não conta como entrega.
+8. Testar no navegador desktop e mobile, incluindo teclado e `prefers-reduced-motion`.
+9. Registrar IDs dos padrões implementados e evidências de teste no relatório do projeto.
 
 ### Quantidade e qualidade
 
