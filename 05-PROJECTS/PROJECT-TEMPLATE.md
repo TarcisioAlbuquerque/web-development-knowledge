@@ -47,3 +47,7 @@ Registrar testes realizados, limitações aceitas, URL, instruções, suporte e 
 - Exceções ao baseline e aprovação:
 - Evidências de QA (capturas/gravações):
 - Estado: DRAFT / IN_REVIEW / APPROVED / BLOCKED
+
+
+## Bootstrap do agente
+Antes de iniciar desenvolvimento em um repositório de cliente, seguir `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PROJECT-BOOTSTRAP-INSTRUCTIONS.md`. Garantir que AGENTS.md ou Copilot Instructions do projeto cliente apontem para o sistema canônico ou para uma cópia disponível no workspace.
