@@ -16,7 +16,7 @@
 | UX/estrutura | Workflow + seção 03 do prompt especializado |
 | Copy do site | Workflow + seção 04 do prompt especializado |
 | Direção visual | Design Library + seção 05 do prompt especializado |
-| Animações | `INTERACTION-AND-VISUAL-TECHNIQUES.md` + Development Standards + seção 06 do prompt |
+| Animações e interações | `MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md`, `IMPLEMENTATION-PLAYBOOK.md`, Motion Starter Kit + Development Standards + seção 06 do prompt |
 | Stack/integrações | Development Standards + seção 07 do prompt |
 | Código | `AGENTS.md` + Development Standards + seção 08 do prompt |
 | Auditoria/publicação | `ACCEPTANCE-AND-RELEASE-CHECKLIST.md` + seção 09 do prompt |
@@ -32,3 +32,7 @@ Comece por `01-REFERENCE-LIBRARY/README.md`, fichas específicas, técnicas de i
 
 ## Contexto eficiente
 Não carregue todos os documentos em toda conversa. Leia o contexto mestre e o índice; selecione os documentos relevantes para a função/projeto; amplie quando surgir dependência. Sempre confirme versão/branch quando possível. Nunca suponha sincronização automática entre plataformas.
+
+
+## Gate Motion & Interaction
+Toda landing page consulta o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`, preenche seu Motion Brief, implementa a seleção e registra evidências no QA. O starter kit está em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/`.
