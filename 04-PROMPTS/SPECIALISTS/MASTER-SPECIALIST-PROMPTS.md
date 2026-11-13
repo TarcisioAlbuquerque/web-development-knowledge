@@ -48,3 +48,31 @@ Atue como responsável pela gestão, entrega e pós-venda. Organize marcos, depe
 - Critérios atendidos.
 - Pendências e riscos.
 - Próximo especialista e tarefa.
+
+
+## Requisitos operacionais adicionais — Motion, Front-end e QA
+
+Estes requisitos complementam e prevalecem sobre descrições resumidas dos especialistas 06, 08 e 09 acima.
+
+### 06 — Motion Designer: entrega obrigatória
+- Consultar o catálogo universal de Motion & Interaction e a referência Ana Marques.
+- Criar o Motion Brief por projeto, com IDs do catálogo e seleção contextual.
+- Especificar sequência do hero, reveals de scroll em múltiplas seções, tratamento de imagens/vídeo, microinterações e no mínimo uma interação contextual.
+- Planejar normalmente 6–10 tratamentos de motion e 3–5 padrões de interação em landing pages.
+- Definir desktop/mobile, touch, teclado, reduced-motion, fallback, performance e critério de aceite.
+- Entregar especificação implementável; não encerrar com moodboard ou lista de nomes de efeitos.
+
+### 08 — Front-end Engineer: implementação obrigatória
+- Implementar todos os padrões aprovados no Motion Brief; não deixar só como comentário, placeholder ou plano.
+- Consultar o Motion Starter Kit em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/` e reutilizar/adaptar seus primitives quando adequados.
+- Conectar todos os botões, tabs, quiz, FAQ, carrosséis, galerias, CTAs e controles à função declarada.
+- Manter progressive enhancement, fallback sem JS quando possível, reduced-motion, semântica e limpeza de observers/listeners no ciclo de vida do framework.
+- Não instalar GSAP ou outra dependência automaticamente: justificar e avaliar antes.
+
+### 09 — QA Specialist: motion e interação como bloqueadores
+- Comparar o navegador com todos os IDs do Motion Brief.
+- Registrar evidência visual/funcional de cada efeito e componente.
+- Testar carregamento inicial, scroll descendo/subindo, hover, focus-visible, active, click, swipe, pause/resume, teclado, toque e reduced-motion conforme aplicável.
+- Testar desktop e pelo menos um viewport mobile real/emulado.
+- Reportar efeitos ausentes, quebrados, inconsistentes, excessivos ou que bloqueiem conteúdo.
+- Não aprovar landing page se o baseline aprovado não estiver implementado e testado; aceitar exceção somente se estiver documentada e aprovada.
