@@ -40,6 +40,6 @@ A etapa 7 (Motion) não é opcional nem pode terminar apenas em recomendações.
 5. Testar no navegador desktop/mobile, com teclado, toque e `prefers-reduced-motion`.
 6. Registrar evidências e IDs no QA.
 
-Baseline de landing page: sequência animada de hero, reveals em várias seções, movimento/revelação de mídia, feedback de hover/focus/active nos CTAs e controles, e pelo menos uma interação contextual útil. Como intensidade orientativa, buscar 6–10 tratamentos distintos de motion e 3–5 padrões interativos por landing page. Se algum item não fizer sentido, documentar a exceção e alternativa no Motion Brief.
+Baseline de landing page: sequência animada de hero, reveals em várias seções, movimento/revelação de mídia, feedback de hover/focus/active nos CTAs e controles, e pelo menos uma interação contextual útil. Como mínimo de aceite, implementar pelo menos 6 tratamentos distintos de motion e 3 padrões interativos úteis por landing page; a faixa recomendada é 6–10 e 3–5. Exceção abaixo do mínimo exige justificativa e aprovação explícita do usuário/cliente no Motion Brief.
 
 Não inserir todos os efeitos em todos os sites. O catálogo completo é universal e obrigatório para consulta; a seleção é contextual. O que não é aceitável é entregar uma landing page estática por esquecimento, falta de planejamento ou ausência de handoff.
