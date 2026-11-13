@@ -33,17 +33,18 @@ Para toda landing page nova, é obrigatório:
    - pelo menos um comportamento de navegação/interação contextual (tabs, seletor, quiz, galeria, carrossel, FAQ, formulário progressivo ou equivalente adequado);
    - pelo menos uma interação que ajude o usuário a entender, escolher, explorar ou converter.
 5. Considerar pelo menos um recurso de Advanced Motion (parallax, sticky storytelling, SVG draw, marquee, horizontal scroll ou scroll-linked animation) quando acrescentar valor real. Se não for adequado, registrar a razão e usar uma alternativa mais apropriada.
+6. Para todo site, manter um sistema de movimento consistente nas páginas-chave e feedback funcional nos controles. Em landing pages, aplicar também o mínimo quantitativo abaixo.
 6. Implementar os efeitos efetivamente no código; um plano, placeholder ou comentário não conta como entrega.
 7. Testar no navegador desktop e mobile, incluindo teclado e `prefers-reduced-motion`.
 8. Registrar IDs dos padrões implementados e evidências de teste no relatório do projeto.
 
 ### Quantidade e qualidade
 
-Como referência de intensidade para uma landing page profissional, buscar **6–10 tratamentos de motion distintos e 3–5 padrões de interação úteis**, distribuídos ao longo da experiência. Isso é uma faixa de planejamento, não uma competição de quantidade. Repetições coerentes de um mesmo sistema contam como consistência, não como novos efeitos.
+**Mínimo de aceite para landing pages:** pelo menos **6 tratamentos de motion distintos** e **3 padrões de interação úteis**, distribuídos ao longo da experiência. A faixa recomendada é 6–10 tratamentos e 3–5 padrões interativos. Repetições do mesmo reveal em cards diferentes contam como consistência, não como novos efeitos. Os padrões precisam ser perceptíveis e funcionais, não apenas classes CSS sem efeito visível.
 
 O catálogo inteiro fica disponível para seleção entre projetos; **não é obrigatório colocar todos os efeitos em uma única página**. Nunca adicionar movimento sem objetivo, quebrar a navegação, atrasar o acesso ao conteúdo ou prejudicar a identidade.
 
-Exceções ao baseline precisam ser explícitas no Motion Brief: motivo, alternativa escolhida, impacto no usuário e estado de aprovação. "Não deu tempo" ou "não foi lembrado" não são justificativas aceitáveis.
+Qualquer exceção ao mínimo precisa ser explícita no Motion Brief e aprovada pelo usuário/cliente: motivo, alternativa escolhida e impacto. Sem essa aprovação, ficar abaixo do mínimo bloqueia o aceite. "Não deu tempo" ou "não foi lembrado" não são justificativas aceitáveis.
 
 ## Mapa dos documentos
 
