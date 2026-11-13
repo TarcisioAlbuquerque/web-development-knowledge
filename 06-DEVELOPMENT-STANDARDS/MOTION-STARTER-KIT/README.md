@@ -15,7 +15,6 @@ Copie os arquivos necessários para o projeto. Inclua o CSS no stylesheet global
 <script src="/assets/motion.js" defer></script>
 <script src="/assets/quiz.js" defer></script>
 <script src="/assets/carousel.js" defer></script>
-<script src="/assets/carousel.js" defer></script>
 ```
 
 Não copie os arquivos cegamente: adapte cores, tokens, semântica e componentes à stack/briefing do cliente. O starter kit não é um pacote npm, não foi publicado como biblioteca e não instala GSAP.
