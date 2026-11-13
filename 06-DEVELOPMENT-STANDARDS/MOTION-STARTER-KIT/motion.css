@@ -1,0 +1,149 @@
+/* Motion Starter Kit — adapt tokens to each client project. */
+:root {
+  --motion-fast: 180ms;
+  --motion-medium: 320ms;
+  --motion-reveal: 720ms;
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --motion-distance: 1.5rem;
+}
+
+/* Progressive enhancement: JS adds .motion-ready.
+   If JS fails, content remains visible. */
+.motion-ready [data-motion] {
+  opacity: 0;
+  transition:
+    opacity var(--motion-reveal) var(--motion-ease-out),
+    transform var(--motion-reveal) var(--motion-ease-out);
+  will-change: opacity, transform;
+}
+
+.motion-ready [data-motion="reveal-up"] { transform: translate3d(0, var(--motion-distance), 0); }
+.motion-ready [data-motion="reveal-left"] { transform: translate3d(-var(--motion-distance), 0, 0); }
+.motion-ready [data-motion="reveal-right"] { transform: translate3d(var(--motion-distance), 0, 0); }
+.motion-ready [data-motion="fade"] { transform: none; }
+
+.motion-ready [data-motion].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+.motion-ready [data-motion-delay="1"] { transition-delay: 80ms; }
+.motion-ready [data-motion-delay="2"] { transition-delay: 160ms; }
+.motion-ready [data-motion-delay="3"] { transition-delay: 240ms; }
+.motion-ready [data-motion-delay="4"] { transition-delay: 320ms; }
+
+/* Image reveal: wrapper should reserve its own aspect ratio. */
+.motion-image {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.motion-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 900ms var(--motion-ease-out);
+}
+.motion-image.is-visible img { transform: scale(1.035); }
+
+/* Text-mask primitive: wrap each line in .motion-mask and inner text in .motion-mask__inner.
+   Add .is-visible to the parent when ready to reveal. Keep semantic text in the DOM. */
+.motion-mask { display: block; overflow: hidden; }
+.motion-mask__inner {
+  display: inline-block;
+  transform: translate3d(0, 105%, 0);
+  transition: transform 800ms var(--motion-ease-out);
+}
+.is-visible .motion-mask__inner { transform: translate3d(0, 0, 0); }
+.motion-mask:nth-child(2) .motion-mask__inner { transition-delay: 100ms; }
+.motion-mask:nth-child(3) .motion-mask__inner { transition-delay: 200ms; }
+.motion-mask:nth-child(4) .motion-mask__inner { transition-delay: 300ms; }
+
+/* SVG stroke draw; JS assigns dasharray/dashoffset and toggles .is-drawn. */
+[data-motion-svg-draw] path,
+[data-motion-svg-draw] line,
+[data-motion-svg-draw] polyline {
+  fill: none;
+  stroke-dasharray: var(--motion-svg-length, 1);
+  stroke-dashoffset: var(--motion-svg-length, 1);
+  transition: stroke-dashoffset 1200ms var(--motion-ease-out);
+}
+[data-motion-svg-draw].is-drawn path,
+[data-motion-svg-draw].is-drawn line,
+[data-motion-svg-draw].is-drawn polyline {
+  stroke-dashoffset: 0;
+}
+
+/* CTA interaction: provide equivalent focus and active feedback. */
+[data-motion-hover="lift"] {
+  transition:
+    transform var(--motion-medium) var(--motion-ease-out),
+    background-color var(--motion-medium) ease,
+    color var(--motion-medium) ease,
+    border-color var(--motion-medium) ease;
+}
+[data-motion-hover="lift"]:hover,
+[data-motion-hover="lift"]:focus-visible {
+  transform: translateY(-2px);
+}
+[data-motion-hover="lift"]:active { transform: translateY(0) scale(0.985); }
+
+[data-motion-arrow] svg,
+[data-motion-arrow] .motion-arrow {
+  transition: transform var(--motion-medium) var(--motion-ease-out);
+}
+[data-motion-arrow]:hover svg,
+[data-motion-arrow]:focus-visible svg,
+[data-motion-arrow]:hover .motion-arrow,
+[data-motion-arrow]:focus-visible .motion-arrow {
+  transform: translateX(4px);
+}
+
+/* Marquee: duplicate visual track content once; pause control is implemented in motion.js. */
+.motion-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+.motion-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: motion-marquee-scroll var(--marquee-duration, 32s) linear infinite;
+}
+.motion-marquee.is-paused .motion-marquee__track,
+.motion-marquee:focus-within .motion-marquee__track,
+.motion-marquee:hover .motion-marquee__track {
+  animation-play-state: paused;
+}
+.motion-marquee__group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: var(--marquee-gap, 1rem);
+}
+@keyframes motion-marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+
+/* Use only on short, non-essential visual dividers. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .motion-ready [data-motion],
+  .motion-mask__inner,
+  [data-motion-svg-draw] path,
+  [data-motion-svg-draw] line,
+  [data-motion-svg-draw] polyline,
+  .motion-image img,
+  [data-motion-hover="lift"],
+  [data-motion-arrow] svg,
+  [data-motion-arrow] .motion-arrow {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+  .motion-marquee__track { animation: none !important; transform: none !important; }
+}
