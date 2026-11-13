@@ -25,7 +25,7 @@
 | ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Reduced motion/fallback | Estado |
 |---|---|---|---|---|---|---|---|
 
-**Baseline para landing pages:** planejar uma entrada de hero, scroll reveals em múltiplas seções, movimento/revelação de mídia, feedback consistente nos CTAs/controles e pelo menos uma interação contextual. Meta orientativa: 6–10 tratamentos de motion e 3–5 padrões interativos úteis. Exceções devem ser justificadas abaixo.
+**Mínimo obrigatório para landing pages:** 6 tratamentos de motion distintos e 3 padrões de interação úteis. Incluir entrada de hero, scroll reveals em múltiplas seções, movimento/revelação de mídia, feedback consistente nos CTAs/controles e componentes interativos que ajudem a entender, escolher, explorar ou converter. Faixa recomendada: 6–10 tratamentos e 3–5 padrões. Exceções abaixo do mínimo precisam de aprovação explícita do usuário/cliente.
 
 ## 5. Componentes interativos selecionados
 | ID | Componente | Conteúdo/dados necessários | Estados | Conversão/tarefa apoiada | Testes |
