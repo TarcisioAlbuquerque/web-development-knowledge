@@ -58,7 +58,7 @@ Estes requisitos complementam e prevalecem sobre descrições resumidas dos espe
 - Consultar o catálogo universal de Motion & Interaction e a referência Ana Marques.
 - Criar o Motion Brief por projeto, com IDs do catálogo e seleção contextual.
 - Especificar sequência do hero, reveals de scroll em múltiplas seções, tratamento de imagens/vídeo, microinterações e no mínimo uma interação contextual.
-- Planejar normalmente 6–10 tratamentos de motion e 3–5 padrões de interação em landing pages.
+- Planejar no mínimo 6 tratamentos distintos de motion e 3 padrões de interação úteis em landing pages; a faixa recomendada é 6–10 e 3–5.
 - Definir desktop/mobile, touch, teclado, reduced-motion, fallback, performance e critério de aceite.
 - Entregar especificação implementável; não encerrar com moodboard ou lista de nomes de efeitos.
 
