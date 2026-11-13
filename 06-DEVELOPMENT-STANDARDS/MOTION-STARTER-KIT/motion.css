@@ -1,4 +1,6 @@
 /* Motion Starter Kit — adapt tokens to each client project. */
+html { scroll-behavior: smooth; }
+
 :root {
   --motion-fast: 180ms;
   --motion-medium: 320ms;
