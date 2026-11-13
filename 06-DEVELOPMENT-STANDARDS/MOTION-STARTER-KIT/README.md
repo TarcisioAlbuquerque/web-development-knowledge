@@ -15,6 +15,7 @@ Copie os arquivos necessários para o projeto. Inclua o CSS no stylesheet global
 <script src="/assets/motion.js" defer></script>
 <script src="/assets/quiz.js" defer></script>
 <script src="/assets/carousel.js" defer></script>
+<script src="/assets/carousel.js" defer></script>
 ```
 
 Não copie os arquivos cegamente: adapte cores, tokens, semântica e componentes à stack/briefing do cliente. O starter kit não é um pacote npm, não foi publicado como biblioteca e não instala GSAP.
@@ -85,14 +86,14 @@ Para manter o loop sem salto, os dois grupos devem ter conteúdo e largura equiv
 
 ## Carousel com scroll-snap
 ```html
-<div data-carousel>
-  <button type="button" data-carousel-prev aria-label="Anterior">Anterior</button>
-  <div class="motion-carousel__track" data-carousel-track>
-    <article class="motion-carousel__slide">Projeto 1</article>
-    <article class="motion-carousel__slide">Projeto 2</article>
-    <article class="motion-carousel__slide">Projeto 3</article>
+<div data-carousel role="region" aria-roledescription="carousel" aria-label="Projetos selecionados">
+  <button type="button" data-carousel-prev aria-label="Projeto anterior">Anterior</button>
+  <div class="motion-carousel__track" data-carousel-track tabindex="0" aria-label="Lista de projetos">
+    <article class="motion-carousel__slide" data-carousel-slide>Projeto 1</article>
+    <article class="motion-carousel__slide" data-carousel-slide>Projeto 2</article>
+    <article class="motion-carousel__slide" data-carousel-slide>Projeto 3</article>
   </div>
-  <button type="button" data-carousel-next aria-label="Próximo">Próximo</button>
+  <button type="button" data-carousel-next aria-label="Próximo projeto">Próximo</button>
   <p data-carousel-status aria-live="polite"></p>
 </div>
 ```
