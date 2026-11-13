@@ -90,7 +90,7 @@ Planejar e implementar uma seleção coerente, em geral:
 - M-31 para CTAs e controles, com estados hover/focus/active;
 - pelo menos um padrão adicional adequado à história da marca, por exemplo M-11, M-13, M-14, M-21, M-22, M-35 ou M-39.
 
-Para uma landing page profissional, planejar normalmente **6–10 tratamentos distintos** sem contar cada repetição de reveal como um efeito separado. O número final deve respeitar densidade de conteúdo, orçamento, device e objetivo.
+Para landing page profissional, o mínimo de aceite é **6 tratamentos distintos**; a faixa recomendada é 6–10. Não contar repetição de um mesmo reveal como um efeito diferente. Para todo projeto, adaptar ao conteúdo/dispositivos, mas ficar abaixo do mínimo em landing pages exige exceção documentada e aprovada.
 
 ## Relação com a auditoria Ana Marques
 
