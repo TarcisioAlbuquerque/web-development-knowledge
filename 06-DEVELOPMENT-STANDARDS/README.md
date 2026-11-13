@@ -48,7 +48,7 @@ Consultar o sistema completo em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYS
 - Pelo menos um tratamento de imagem ou vídeo.
 - Hover/focus-visible/active consistentes em CTAs e controles.
 - Pelo menos um componente interativo contextual, além de links estáticos.
-- Seleção usual de 6–10 tratamentos de motion e 3–5 interações úteis, ajustada ao projeto.
+- Mínimo de aceite: 6 tratamentos de motion distintos e 3 padrões de interação úteis por landing page; faixa recomendada de 6–10 e 3–5. Abaixo disso, exigir exceção documentada e aprovação explícita.
 
 ### Implementação
 - Reutilizar tokens e primitives do starter kit quando aplicáveis.
