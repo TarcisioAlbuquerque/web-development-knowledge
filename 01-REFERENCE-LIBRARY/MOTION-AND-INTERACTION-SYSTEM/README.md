@@ -54,6 +54,7 @@ Exceções ao baseline precisam ser explícitas no Motion Brief: motivo, alterna
 | `IMPLEMENTATION-PLAYBOOK.md` | Escolha de tecnologia, arquitetura, receitas e integração |
 | `CASE-STUDY-ANA-MARQUES.md` | Padrões relacionados à auditoria Ana Marques e proveniência |
 | `MOTION-BRIEF-TEMPLATE.md` | Brief obrigatório para cada projeto |
+| `PROJECT-BOOTSTRAP-INSTRUCTIONS.md` | Instruções para conectar o sistema a cada repositório de cliente |
 
 Starter kit inicial:
 - `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md`
