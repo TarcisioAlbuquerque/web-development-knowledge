@@ -28,3 +28,18 @@ A pesquisa de referências deve acontecer em dois eixos complementares:
 - **Por padrão/experiência:** elementos úteis independentemente do segmento, como abertura cinematográfica, hero, storytelling, navegação, microinterações, motion, catálogo, apresentação de serviços e conversão.
 
 Não trate a biblioteca como coleção de modelos prontos. Cada site é uma fonte de padrões que devem ser avaliados no contexto do projeto. A seleção final deve considerar objetivo, público, posicionamento, identidade, conteúdo, acessibilidade, desempenho e viabilidade técnica.
+
+
+## Motion & Interaction: gate obrigatório de produção
+
+A etapa 7 (Motion) não é opcional nem pode terminar apenas em recomendações. Em toda landing page, antes da implementação:
+1. Consultar o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`.
+2. Preencher o `MOTION-BRIEF-TEMPLATE.md`, selecionando IDs de motion e componentes interativos.
+3. Definir uma composição de movimento adequada à estratégia, conteúdo e direção de arte.
+4. Implementar os efeitos no código e conectar cada controle à sua função real.
+5. Testar no navegador desktop/mobile, com teclado, toque e `prefers-reduced-motion`.
+6. Registrar evidências e IDs no QA.
+
+Baseline de landing page: sequência animada de hero, reveals em várias seções, movimento/revelação de mídia, feedback de hover/focus/active nos CTAs e controles, e pelo menos uma interação contextual útil. Como intensidade orientativa, buscar 6–10 tratamentos distintos de motion e 3–5 padrões interativos por landing page. Se algum item não fizer sentido, documentar a exceção e alternativa no Motion Brief.
+
+Não inserir todos os efeitos em todos os sites. O catálogo completo é universal e obrigatório para consulta; a seleção é contextual. O que não é aceitável é entregar uma landing page estática por esquecimento, falta de planejamento ou ausência de handoff.
