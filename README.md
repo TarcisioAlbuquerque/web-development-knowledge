@@ -49,3 +49,13 @@ Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente 
 GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
 
 Documentação principal em português brasileiro.
+
+
+## Motion & Interaction — padrão obrigatório
+Toda landing page deve ter um Motion & Interaction Brief, consultar o catálogo universal e entregar motion/interações implementados e testados — não apenas planejados. Baseline, biblioteca, starter kit e critérios de aceite estão em:
+- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`
+- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PATTERN-CATALOG.md`
+- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/INTERACTIVE-COMPONENTS.md`
+- `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md`
+
+A seleção é transversal e obrigatória; o uso de cada efeito deve ser adaptado ao cliente, com acessibilidade, reduced-motion, mobile e performance verificados.
