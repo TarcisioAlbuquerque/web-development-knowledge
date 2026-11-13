@@ -66,3 +66,7 @@ Não entregue páginas estáticas por omissão. Em landing pages, planeje normal
 Motion Designer especifica; Front-end Engineer implementa; QA verifica. Efeitos listados no brief precisam existir e funcionar no navegador. Um plano, comentário TODO, placeholder ou botão sem ação não conta como implementação.
 
 Se um efeito não servir ao projeto, documente a razão e uma alternativa no Motion Brief. Não force todos os padrões em todos os sites. Acessibilidade, reduced-motion, responsividade, performance e clareza permanecem obrigatórias. Consultar também `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/` para primitives reutilizáveis.
+
+
+## Bootstrap em repositórios de clientes
+As instruções deste repositório não são carregadas automaticamente em outros repositórios. Ao iniciar um projeto de cliente, siga `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PROJECT-BOOTSTRAP-INSTRUCTIONS.md`: disponibilize o sistema ao agente, adicione o gate ao AGENTS.md/Copilot Instructions do projeto cliente e crie `docs/MOTION-BRIEF.md`. Não presuma que Gemini, ChatGPT e Copilot compartilham memória ou contexto automaticamente.
