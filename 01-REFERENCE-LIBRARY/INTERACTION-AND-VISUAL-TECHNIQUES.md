@@ -1,3 +1,5 @@
+> **Atualização:** este documento é um registro introdutório. O sistema canônico e operacional foi ampliado em [Motion & Interaction System](MOTION-AND-INTERACTION-SYSTEM/README.md). Para projetos novos, consulte o catálogo de padrões, componentes, playbook e starter kit listados ali.
+
 # Técnicas de interação e referências visuais
 
 **Status:** registro inicial; aprofundamento e exemplos práticos pendentes.  
