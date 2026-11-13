@@ -27,3 +27,18 @@ No relatório final, indique brevemente as referências consultadas, os padrões
 Antes e durante a implementação, avalie se alguma skill existente melhora a tarefa atual. Consulte a biblioteca de skills e verifique compatibilidade com VS Code/GitHub Copilot, origem, conteúdo completo, scripts, dependências e permissões. Recomende apenas quando houver ganho concreto.
 
 Explique ao usuário o benefício, a fonte e o método de instalação. Peça autorização antes de instalar ou executar conteúdo de terceiros. Se a instalação exigir ação manual, diga isso claramente e forneça passos exatos. Depois, confirme que o agente reconhece a skill. Não confunda skill instalada com dependências externas instaladas.
+
+
+## Gate obrigatório — Motion & Interaction em toda landing page
+
+Antes de desenhar ou codificar:
+1. Leia `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md` e `IMPLEMENTATION-PLAYBOOK.md`.
+2. Duplique e preencha `MOTION-BRIEF-TEMPLATE.md` no projeto.
+3. Selecione padrões por objetivo e registre IDs; consulte referências transversalmente, inclusive a ficha Ana Marques.
+4. Planeje motion e interações como parte da UX e da direção de arte, não como adorno pós-layout.
+
+**Baseline não negociável para landing pages:** hero com sequência de entrada, scroll reveals em múltiplas seções, tratamento de movimento/revelação de mídia, estados hover/focus/active consistentes para CTAs e controles, e pelo menos uma interação contextual relevante. Meta orientativa: 6–10 tratamentos distintos de motion e 3–5 componentes/padrões de interação úteis.
+
+O Front-end Engineer deve implementar os comportamentos reais. O QA deve testar cada ID em desktop e mobile, teclado/toque e reduced-motion. Efeito apenas descrito, comentário TODO, botão sem ação ou componente não testado não conta como entrega.
+
+Se um padrão do baseline for inadequado, documentar justificativa e alternativa concreta no Motion Brief. Não sacrificar usabilidade, acessibilidade, velocidade ou conversão para aumentar a quantidade de efeitos.
