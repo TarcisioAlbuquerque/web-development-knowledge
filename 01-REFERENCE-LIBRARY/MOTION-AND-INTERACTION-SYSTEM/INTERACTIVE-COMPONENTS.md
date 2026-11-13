@@ -90,3 +90,13 @@ Motion é movimento; interação é comportamento. Um componente pode ser intera
 5. O componente continua compreensível sem animação.
 6. Documentar props/configuração, eventos e requisitos de conteúdo.
 7. Incluir testes de teclado, toque, foco e reduced-motion.
+
+
+## Mínimo de interação em landing pages
+Toda landing page deve conter pelo menos **3 padrões de interação úteis e distintos**, escolhidos conforme a jornada do visitante. Exemplos de composição:
+- navegação por âncoras + FAQ accordion + CTA contextual;
+- seletor de serviços + galeria filtrável + formulário de orçamento;
+- quiz + tabs de objetivos + CTA personalizado;
+- galeria/carrossel + lightbox + FAQ.
+
+Não contar três botões que fazem a mesma coisa como três padrões. Cada padrão deve oferecer tarefa/feedback próprio. Exceção abaixo do mínimo requer justificativa e aprovação explícita no Motion Brief.
