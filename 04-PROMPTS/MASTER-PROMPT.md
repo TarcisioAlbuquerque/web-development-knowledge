@@ -37,11 +37,11 @@ Antes de desenhar ou codificar:
 3. Selecione padrões por objetivo e registre IDs; consulte referências transversalmente, inclusive a ficha Ana Marques.
 4. Planeje motion e interações como parte da UX e da direção de arte, não como adorno pós-layout.
 
-**Baseline não negociável para landing pages:** hero com sequência de entrada, scroll reveals em múltiplas seções, tratamento de movimento/revelação de mídia, estados hover/focus/active consistentes para CTAs e controles, e pelo menos uma interação contextual relevante. Meta orientativa: 6–10 tratamentos distintos de motion e 3–5 componentes/padrões de interação úteis.
+**Baseline não negociável para landing pages:** hero com sequência de entrada, scroll reveals em múltiplas seções, tratamento de movimento/revelação de mídia, estados hover/focus/active consistentes para CTAs e controles, e pelo menos uma interação contextual relevante. Mínimo de aceite: 6 tratamentos distintos de motion e 3 padrões de interação úteis; a faixa recomendada é 6–10 e 3–5.
 
 O Front-end Engineer deve implementar os comportamentos reais. O QA deve testar cada ID em desktop e mobile, teclado/toque e reduced-motion. Efeito apenas descrito, comentário TODO, botão sem ação ou componente não testado não conta como entrega.
 
-Se um padrão do baseline for inadequado, documentar justificativa e alternativa concreta no Motion Brief. Não sacrificar usabilidade, acessibilidade, velocidade ou conversão para aumentar a quantidade de efeitos.
+Ficar abaixo do mínimo exige justificativa, alternativa concreta e aprovação explícita do usuário/cliente no Motion Brief. Não sacrificar usabilidade, acessibilidade, velocidade ou conversão para aumentar a quantidade de efeitos.
 
 
 ## Bootstrap para repositórios independentes de cliente
