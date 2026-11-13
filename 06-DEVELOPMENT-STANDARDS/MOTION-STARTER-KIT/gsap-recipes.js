@@ -107,18 +107,14 @@ export function initGSAPRecipes(root = document) {
     select("[data-gsap-pin-section]").forEach((section) => {
       const pinned = section.querySelector("[data-gsap-pin]");
       if (!pinned) return;
-      gsap.to(pinned, {
-        y: 0,
-        scrollTrigger: {
-          trigger: section,
-          pin: pinned,
-          start: "top top",
-          end: () => `+=${Math.max(240, section.offsetHeight - window.innerHeight * 0.45)}`,
-          pinSpacing: true,
-          scrub: false,
-          anticipatePin: 1,
-          invalidateOnRefresh: true
-        }
+      ScrollTrigger.create({
+        trigger: section,
+        pin: pinned,
+        start: "top top",
+        end: () => `+=${Math.max(240, section.offsetHeight - window.innerHeight * 0.45)}`,
+        pinSpacing: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true
       });
     });
 
