@@ -110,6 +110,33 @@
     });
   });
 
+  // Viewport video: autoplay is muted, pauses offscreen, and never auto-starts for reduced motion.
+  document.querySelectorAll("video[data-viewport-video]").forEach((video) => {
+    video.muted = true;
+    video.playsInline = true;
+
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      video.pause();
+      video.controls = true;
+      return;
+    }
+
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const playAttempt = video.play();
+          if (playAttempt && typeof playAttempt.catch === "function") {
+            playAttempt.catch(() => { video.controls = true; });
+          }
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.35 });
+
+    videoObserver.observe(video);
+  });
+
   // Contextual WhatsApp links. Use only client-approved phone/message values.
   document.querySelectorAll("a[data-whatsapp-cta]").forEach((link) => {
     const phone = (link.dataset.phone || "").replace(/\D/g, "");
