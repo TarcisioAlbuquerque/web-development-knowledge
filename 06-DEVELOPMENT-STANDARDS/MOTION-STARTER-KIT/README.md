@@ -7,6 +7,7 @@ Starter kit sem dependência obrigatória de framework para acelerar padrões co
 - `motion.js`: IntersectionObserver, tabs acessíveis, pause control de marquee, SVG draw, vídeo por viewport e CTA contextual para WhatsApp.
 - `quiz.js`: quiz multi-pergunta com feedback, progresso, pontuação e reinício.
 - `carousel.js`: controles anterior/próximo para trilha horizontal com scroll-snap nativo.
+- `gsap-recipes.js`: receitas opcionais de GSAP/ScrollTrigger para reveal, stagger, SVG draw, image mask, parallax, pin e horizontal scroll.
 
 ## Instalação
 Copie os arquivos necessários para o projeto. Inclua o CSS no stylesheet global e os JS com `defer` ou como módulos após o HTML. Exemplo:
@@ -17,7 +18,17 @@ Copie os arquivos necessários para o projeto. Inclua o CSS no stylesheet global
 <script src="/assets/carousel.js" defer></script>
 ```
 
-Não copie os arquivos cegamente: adapte cores, tokens, semântica e componentes à stack/briefing do cliente. O starter kit não é um pacote npm, não foi publicado como biblioteca e não instala GSAP.
+Não copie os arquivos cegamente: adapte cores, tokens, semântica e componentes à stack/briefing do cliente. O starter kit não é um pacote npm e não foi publicado como biblioteca.
+
+O arquivo `gsap-recipes.js` é opcional e exige GSAP instalado no projeto. Consulte a documentação atual e instale a dependência somente quando os padrões avançados justificarem. Exemplo de integração em um projeto ESM:
+```sh
+npm install gsap
+```
+```js
+import { initGSAPRecipes } from "./motion/gsap-recipes.js";
+const cleanupMotion = initGSAPRecipes(document);
+// Em SPA/framework, execute cleanupMotion() ao desmontar a página/componente.
+```
 
 ## Reveal e image reveal
 ```html
@@ -38,6 +49,19 @@ Valores de `data-motion`: `reveal-up`, `reveal-left`, `reveal-right`, `fade`. De
 </h1>
 ```
 Quebre linhas de forma responsiva e preserve o texto semântico. Use em headlines, não em parágrafos longos.
+
+## GSAP / ScrollTrigger opcional
+
+Apenas quando o projeto precisar de parallax, pinning, horizontal scroll ou sequências coordenadas:
+- `data-gsap-reveal`: entrada no viewport.
+- `data-gsap-stagger`: entrada dos filhos em cascata.
+- `data-gsap-svg-draw`: desenho de paths SVG.
+- `data-gsap-image-reveal`: reveal por clip-path.
+- `data-gsap-parallax="-12"`: parallax em telas desktop.
+- `data-gsap-pin-section` com um filho `data-gsap-pin`: pin narrativo.
+- `data-gsap-horizontal` com `data-gsap-horizontal-track`: trilha horizontal controlada pelo scroll.
+
+Em telas abaixo de 900px ou com reduced-motion, receitas de pin/parallax/horizontal são desligadas; forneça layout vertical ou trilha com scroll-snap como fallback. Teste altura de viewport, touch, resize e saída da seção.
 
 ## SVG stroke draw
 ```html
