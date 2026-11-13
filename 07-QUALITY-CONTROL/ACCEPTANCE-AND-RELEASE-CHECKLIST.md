@@ -13,11 +13,22 @@
 - [ ] Layout funciona nos tamanhos-alvo.
 - [ ] Estados de interação e feedback previstos.
 
-## Motion
-- [ ] Efeitos têm propósito e seguem motion brief.
-- [ ] Não bloqueiam conteúdo ou ações.
-- [ ] Fallback e reduced-motion.
-- [ ] Mobile, toque e teclado verificados.
+## Motion & Interaction — gate obrigatório
+- [ ] Motion Brief existe e foi aprovado; IDs selecionados estão registrados.
+- [ ] Baseline de landing page implementado: sequência de hero, scroll reveals em várias seções, motion de mídia, estados de CTA/controles e interação contextual.
+- [ ] Meta de 6–10 tratamentos de motion e 3–5 padrões interativos avaliada; exceções justificadas no brief.
+- [ ] Hero sequence e text/image reveal testados no navegador.
+- [ ] Scroll reveal testado ao descer e subir, sem conteúdo escondido ou travado.
+- [ ] Todos os componentes interativos testados por mouse, teclado e toque conforme aplicável.
+- [ ] Tabs/quiz/FAQ/galeria/carrossel/formulário (os que existirem) têm estados e feedback funcionais.
+- [ ] CTA, WhatsApp e links têm destinos reais confirmados; sem placeholders.
+- [ ] Marquee/autoplay oferecem pausa ou controle equivalente quando aplicável.
+- [ ] `prefers-reduced-motion` remove/reduz movimentos não essenciais sem remover conteúdo ou função.
+- [ ] Fallback sem JavaScript mantém conteúdo legível e navegação essencial utilizável.
+- [ ] Desktop e mobile verificados; sticky, parallax e horizontal scroll testados em touch e diferentes alturas.
+- [ ] Console/build sem erros relacionados a animações, eventos ou observers.
+- [ ] Evidências (capturas/gravações) vinculadas aos IDs do Motion Brief.
+- [ ] Efeitos têm propósito, não bloqueiam conteúdo/ações e respeitam performance/acessibilidade.
 
 ## Engenharia
 - [ ] Links, botões e CTA testados.
