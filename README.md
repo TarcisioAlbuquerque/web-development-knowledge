@@ -1,61 +1,53 @@
 # Web Development Knowledge
 
-Base central de conhecimento para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais profissionais para diferentes clientes, segmentos e tecnologias.
+Fonte canônica de conhecimento para produzir, entregar e evoluir websites e experiências digitais de alta qualidade para diferentes clientes, nichos e tecnologias. AURA é uma aplicação do sistema, não seu único destino.
 
-## Princípio central
-Este repositório é a fonte oficial do conhecimento aprovado. Conversas com ChatGPT, Gemini, Claude e GitHub Copilot são ambientes de execução; decisões, metodologias, referências e padrões duradouros devem ser documentados aqui. A metodologia é universal e reutilizável; AURA é uma aplicação, não o único destino.
+## Começar
+1. Leia `AGENTS.md` e identifique a tarefa.
+2. Use `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md` como roteador.
+3. Carregue somente o workflow, as referências e os padrões necessários.
+4. Inspecione o projeto e suas decisões antes de propor alterações.
+5. Registre decisões aprovadas e estado atual no projeto.
 
-## Como começar
-1. Leia `AGENTS.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md` e `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`.
-2. Identifique se a tarefa é Web Production, Client & Business Operations ou ambas.
-3. Consulte o workflow, o especialista e o prompt relevantes.
-4. Envie a cada IA apenas o pacote de contexto necessário.
-5. Consulte referências por nicho e por padrão/experiência, inclusive entre segmentos.
-6. Registre decisões aprovadas, entregas e handoffs.
-7. Preserve material existente. Peça autorização para mudanças de escopo, ações destrutivas ou publicação.
+Não leia toda a biblioteca por padrão. A disponibilidade do conhecimento é ampla; sua recuperação deve ser seletiva.
+
+## Web Production — fluxo oficial
+1. **Strategic Diagnosis:** Discovery + Research + Strategy.
+2. **Experience & Creative Blueprint:** Architecture + UX + Content + Creative Direction + Motion & Interaction.
+3. **Technical Planning:** arquitetura, stack, integrações e viabilidade.
+4. **Development & Integration:** implementação e validação contínua.
+5. **Validation, QA & Release:** auditoria, correções, aprovação e publicação.
+6. **Delivery & Evolution:** handover, manutenção e melhorias.
+
+Use a profundidade adequada ao projeto: Compact, Standard ou Advanced. O Master Orchestrator escolhe a modalidade no diagnóstico. A metodologia é iterativa; as seis etapas não impedem revisões controladas.
+
+## Client & Business Operations
+Fluxo comercial conectado à produção: seleção de nicho → leads → qualificação → contato → reunião → proposta → fechamento → onboarding → gestão → entrega comercial → pós-venda. Não confundir copy do site com comunicação de prospecção.
 
 ## Estrutura
-- `00-CONTEXT-SYSTEM/` — contexto, índice, decisões, governança e handoff.
+- `00-CONTEXT-SYSTEM/` — contexto, índice, estado, decisões e handoffs.
 - `00-METHODOLOGY/` — metodologia universal e workflows.
-- `01-REFERENCE-LIBRARY/` — sites, motion, interações, ferramentas, guias e playbooks.
-- `02-DESIGN-LIBRARY/` — padrões visuais e de experiência.
-- `03-AGENT-SKILLS/` — especialistas, ferramentas, skills e avaliação de modelos.
-- `04-PROMPTS/` — prompts mestres, especializados e workflows.
-- `05-PROJECTS/` — contexto e entregas de cada cliente.
-- `06-DEVELOPMENT-STANDARDS/` — padrões técnicos.
-- `07-QUALITY-CONTROL/` — critérios de aceite e liberação.
-- `.github/copilot-instructions.md` — instruções do Copilot no VS Code.
+- `01-REFERENCE-LIBRARY/` — sites, padrões, motion, interações e recursos.
+- `02-DESIGN-LIBRARY/` — sistemas visuais e padrões de interface.
+- `03-AGENT-SKILLS/` — skills, procedimentos e ferramentas.
+- `04-PROMPTS/` — orquestração e prompts de tarefa.
+- `05-PROJECTS/` — briefing, decisões e entregáveis por cliente.
+- `06-DEVELOPMENT-STANDARDS/` — padrões técnicos e starter kits.
+- `07-QUALITY-CONTROL/` — critérios de validação e release.
+- `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md` — adaptadores compactos por ferramenta.
 
-## Dois fluxos integrados
-**Web Production:** descoberta → briefing → estratégia → arquitetura/UX → copy → direção visual → motion → arquitetura técnica → desenvolvimento → QA → publicação.
+## Princípios
+- Estratégia, experiência e excelência visual/técnica antes de velocidade artificial.
+- Respostas, pesquisas e documentação concisas; não repetir informação já conhecida.
+- Referências pesquisadas por necessidade e por padrão transferível, não por leitura integral da biblioteca.
+- Tecnologia e motion sem limites artificiais: escolher o que melhor serve ao projeto, justificando custo, compatibilidade, segurança, acessibilidade, performance e manutenção.
+- Não inventar dados, credenciais, avaliações, resultados ou funcionalidades.
+- Não copiar marcas, textos, imagens, layouts proprietários ou código.
+- Não afirmar inspeções, instalações ou testes que não foram realizados.
+- Preservar decisões aprovadas; registrar hipóteses, evidências e pendências separadamente.
+- Não expor segredos nem dados pessoais desnecessários.
 
-**Client & Business Operations:** seleção de nicho → pesquisa e qualificação de leads → abordagem → reunião → proposta → fechamento → onboarding → coleta de conteúdo → gestão → entrega → pós-venda.
+## Fonte de verdade
+A metodologia canônica fica em `00-METHODOLOGY/MASTER-METHODOLOGY.md`. As instruções universais ficam em `AGENTS.md`. O roteador fica em `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`. Documentos de referência e ferramentas complementam essas fontes e não devem duplicar suas regras.
 
-Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente Mestre seleciona especialistas conforme o escopo.
-
-## Regras
-- Diferencie fatos fornecidos, evidências pesquisadas, hipóteses e recomendações.
-- Registre URL, segmento, data e status de verificação de cada referência.
-- Inspiração não autoriza copiar marca, textos, imagens, depoimentos ou código.
-- Não invente dados, credenciais, avaliações, preços ou resultados.
-- Exemplos comerciais de materiais de referência não são preços atuais.
-- Avalie ferramentas, bibliotecas e skills por necessidade, compatibilidade, licença, manutenção e segurança.
-- Priorize acessibilidade, desempenho, segurança, responsividade e manutenção.
-- Não afirme testes ou instalações não realizados.
-- Não armazene senhas, tokens ou dados pessoais desnecessários.
-- O repositório é privado; não altere visibilidade ou permissões sem autorização.
-
-## Governança
-GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
-
-Documentação principal em português brasileiro.
-
-
-## Motion & Interaction — padrão obrigatório
-Toda landing page deve ter um Motion & Interaction Brief, consultar o catálogo universal e entregar motion/interações implementados e testados — não apenas planejados. Baseline, biblioteca, starter kit e critérios de aceite estão em:
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PATTERN-CATALOG.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/INTERACTIVE-COMPONENTS.md`
-- `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md`
-
-A seleção é transversal e obrigatória; o uso de cada efeito deve ser adaptado ao cliente, com acessibilidade, reduced-motion, mobile e performance verificados.
+O repositório permanece privado. Alterações são feitas de forma incremental, preferencialmente em branch, com relatório de arquivos, testes e pendências.
