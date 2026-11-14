@@ -1,53 +1,59 @@
 # Acceptance & Release Checklist
 
-## Estratégia/conteúdo
-- [ ] Briefing e objetivo aprovados.
-- [ ] Público, oferta e CTA claros.
-- [ ] Claims, serviços, dados, credenciais e provas confirmados.
-- [ ] Copy revisada e adequada ao idioma/mercado.
+Usar contra o escopo, os blueprints e os critérios aprovados do projeto. A profundidade dos testes acompanha a modalidade Compact, Standard ou Advanced; os critérios críticos de qualidade não são reduzidos.
+
+## Estratégia e conteúdo
+- [ ] Briefing, objetivo, público e escopo compreendidos.
+- [ ] Proposta de valor e CTA claros.
+- [ ] Serviços, dados, credenciais, claims e provas confirmados.
+- [ ] Copy adequada ao idioma, mercado e público.
+- [ ] Sem depoimentos, métricas ou garantias inventados.
 
 ## UX e visual
 - [ ] Arquitetura responde às tarefas do visitante.
-- [ ] Hierarquia e navegação coerentes.
-- [ ] Direção visual respeita decisões aprovadas.
-- [ ] Layout funciona nos tamanhos-alvo.
-- [ ] Estados de interação e feedback previstos.
+- [ ] Hierarquia, navegação e estados são coerentes.
+- [ ] Direção visual respeita a identidade e decisões aprovadas.
+- [ ] Tipografia, mídia, espaçamento e contraste revisados.
+- [ ] Responsive nos dispositivos e larguras relevantes.
+- [ ] Formulários e controles têm labels, feedback e estados claros.
 
-## Motion & Interaction — gate obrigatório
-- [ ] Motion Brief existe e foi aprovado; IDs selecionados estão registrados.
-- [ ] Baseline de landing page implementado: sequência de hero, scroll reveals em várias seções, motion de mídia, estados de CTA/controles e interação contextual.
-- [ ] Mínimo atingido: 6 tratamentos de motion distintos e 3 padrões interativos úteis; exceção abaixo do mínimo documentada e aprovada pelo usuário/cliente.
-- [ ] Hero sequence e text/image reveal testados no navegador.
-- [ ] Scroll reveal testado ao descer e subir, sem conteúdo escondido ou travado.
-- [ ] Todos os componentes interativos testados por mouse, teclado e toque conforme aplicável.
-- [ ] Tabs/quiz/FAQ/galeria/carrossel/formulário (os que existirem) têm estados e feedback funcionais.
-- [ ] CTA, WhatsApp e links têm destinos reais confirmados; sem placeholders.
-- [ ] Marquee/autoplay oferecem pausa ou controle equivalente quando aplicável.
-- [ ] `prefers-reduced-motion` remove/reduz movimentos não essenciais sem remover conteúdo ou função.
-- [ ] Fallback sem JavaScript mantém conteúdo legível e navegação essencial utilizável.
-- [ ] Desktop e mobile verificados; sticky, parallax e horizontal scroll testados em touch e diferentes alturas.
-- [ ] Console/build sem erros relacionados a animações, eventos ou observers.
-- [ ] Evidências (capturas/gravações) vinculadas aos IDs do Motion Brief.
-- [ ] Efeitos têm propósito, não bloqueiam conteúdo/ações e respeitam performance/acessibilidade.
+## Motion & Interaction
+- [ ] Motion/interaction previsto no Experience Blueprint ou brief dedicado.
+- [ ] Cada efeito selecionado tem propósito e corresponde à direção de arte.
+- [ ] Motion e interações selecionados foram implementados; sem placeholders ou controles sem ação.
+- [ ] Timing, transições, sequências e comportamento de mídia testados.
+- [ ] Teclado, foco, toque e estados hover/focus/active testados quando aplicáveis.
+- [ ] `prefers-reduced-motion` oferece alternativa sem remover conteúdo ou função.
+- [ ] Movimento contínuo/autoplay possui controle quando aplicável.
+- [ ] Sticky, pin, parallax ou scroll horizontal testados em diferentes alturas, touch e saída da seção.
+- [ ] Conteúdo continua acessível sem depender de JavaScript ou animação.
+- [ ] Performance e estabilidade visual não foram prejudicadas.
+- [ ] Limitações e exceções documentadas; sem quotas de efeitos.
 
-## Engenharia
-- [ ] Links, botões e CTA testados.
-- [ ] Formulários e integrações testados com destino confirmado.
+## Engenharia e integrações
+- [ ] Links, botões, CTAs e navegação testados.
+- [ ] Formulários e integrações testados com destino real autorizado.
+- [ ] Dados, permissões e serviços externos revisados.
 - [ ] Nenhum secret exposto.
-- [ ] Dependências e setup documentados.
-- [ ] Build/console sem erros conhecidos, quando verificável.
+- [ ] Dependências, versões e setup documentados.
+- [ ] Build, console e testes disponíveis verificados.
 
-## QA e publicação
-- [ ] Responsividade testada.
-- [ ] Acessibilidade básica revisada.
-- [ ] SEO técnico básico revisado.
-- [ ] Performance avaliada com ferramenta disponível.
-- [ ] Pendências e limitações informadas.
-- [ ] Domínio/deploy/publicação autorizados pelo cliente.
-- [ ] URL pública, HTTPS e fluxos em produção testados.
-- [ ] Instruções e limites de suporte entregues.
+## Acessibilidade, performance e SEO
+- [ ] Operação por teclado e foco visível.
+- [ ] Semântica, labels, contraste e textos alternativos.
+- [ ] Imagens, fontes e scripts otimizados.
+- [ ] Core Web Vitals ou ferramentas equivalentes avaliadas quando mensuráveis.
+- [ ] Metadados, títulos e SEO técnico básico revisados.
+- [ ] HTTPS e privacidade revisados quando aplicável.
 
-## Estado
-- APPROVED: critérios obrigatórios atendidos.
-- APPROVED WITH LIMITATIONS: limitações documentadas e aceitas.
-- REJECTED: bloqueadores ou requisitos críticos não atendidos.
+## Release
+- [ ] Bloqueadores corrigidos ou limitações formalmente aceitas.
+- [ ] Cliente/usuário aprovou conteúdo, experiência e escopo final.
+- [ ] Deploy/publicação autorizados.
+- [ ] URL publicada e fluxos críticos testados em produção.
+- [ ] Handover, acessos seguros e limites de suporte preparados.
+
+## Estado final
+- **APPROVED:** critérios críticos atendidos.
+- **APPROVED WITH LIMITATIONS:** limitações documentadas e aceitas.
+- **REJECTED:** há bloqueadores ou requisitos críticos não atendidos.
