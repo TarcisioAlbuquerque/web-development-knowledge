@@ -1,38 +1,48 @@
-# Knowledge Index
+# Knowledge Index — Context Router
 
-## Leitura inicial
-1. `README.md`
-2. `AGENTS.md`
-3. `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md`
-4. `00-METHODOLOGY/MASTER-METHODOLOGY.md`
-5. Este índice.
+Use este índice para buscar o mínimo de contexto suficiente. Não leia todos os documentos por padrão. Confirme se os caminhos existem antes de depender deles.
 
-## Por tarefa
-| Tarefa | Documentos |
-|---|---|
-| Entender sistema | `MASTER-CONTEXT.md` + `MASTER-METHODOLOGY.md` |
-| Briefing/descoberta | `WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md` + seção 02 do prompt especializado |
-| Estratégia/nicho | Workflow + seção 01 do prompt especializado |
-| UX/estrutura | Workflow + seção 03 do prompt especializado |
-| Copy do site | Workflow + seção 04 do prompt especializado |
-| Direção visual | Design Library + seção 05 do prompt especializado |
-| Animações e interações | `MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md`, `IMPLEMENTATION-PLAYBOOK.md`, Motion Starter Kit + Development Standards + seção 06 do prompt |
-| Stack/integrações | Development Standards + seção 07 do prompt |
-| Código | `AGENTS.md` + Development Standards + seção 08 do prompt |
-| Auditoria/publicação | `ACCEPTANCE-AND-RELEASE-CHECKLIST.md` + seção 09 do prompt |
-| Pesquisar leads | Workflow comercial + `SITES-COM-IA-18-AULAS.md` + seção 10 do prompt |
-| Abordagem comercial | `CLIENT-OUTREACH.md` + seção 10 do prompt |
-| Proposta/fechamento | Workflow comercial + seção 11 do prompt |
-| Entrega/pós-venda | Project Template + seção 12 do prompt |
-| Seleção de IA | `AGENT-REGISTRY-AND-MODEL-ROUTING.md` |
-| Transferência | `GOVERNANCE-DECISIONS-AND-HANDOFFS.md` |
+## Inicialização
+- Regras: `/AGENTS.md`.
+- Contexto do sistema: `MASTER-CONTEXT.md` (somente ao iniciar novo trabalho ou quando faltar contexto).
+- Metodologia: `../00-METHODOLOGY/MASTER-METHODOLOGY.md` (novo projeto, planejamento ou dúvida de processo).
+- Estado do cliente: `../05-PROJECTS/<cliente>/PROJECT-STATE.md`, quando existir.
 
-## Referências
-Comece por `01-REFERENCE-LIBRARY/README.md`, fichas específicas, técnicas de interação e `01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/`. Consulte transversalmente.
+## Roteamento por etapa
 
-## Contexto eficiente
-Não carregue todos os documentos em toda conversa. Leia o contexto mestre e o índice; selecione os documentos relevantes para a função/projeto; amplie quando surgir dependência. Sempre confirme versão/branch quando possível. Nunca suponha sincronização automática entre plataformas.
+| Etapa | Contexto principal | Consultar somente quando necessário |
+|---|---|---|
+| 1. Strategic Diagnosis | Master Methodology + briefing atual | fichas do nicho, pesquisa de mercado, playbook comercial |
+| 2. Experience & Creative Blueprint | Strategic Brief + metodologia | fichas de referência selecionadas, Design Library, Motion System, prompts de UX/copy |
+| 3. Technical Planning | Experience Blueprint + Development Standards | documentação atual da stack, integrações, segurança, hosting |
+| 4. Development & Integration | Technical Blueprint + instruções do projeto | padrões técnicos, skill relevante, receita do Starter Kit |
+| 5. Validation, QA & Release | Acceptance & Release Checklist + requisitos aprovados | ferramentas de teste específicas e documentação de deploy |
+| 6. Delivery & Evolution | escopo, QA final e estado do projeto | handover, manutenção e analytics contratados |
 
+## Bibliotecas
+- Referências web: `../01-REFERENCE-LIBRARY/README.md` → abrir apenas fichas candidatas.
+- Design: `../02-DESIGN-LIBRARY/` → consultar padrões usados no projeto.
+- Motion: `../01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md` → catálogo/playbook/receita específica; não ler todos os padrões.
+- Skills: `../03-AGENT-SKILLS/` → avaliar apenas a tarefa atual.
+- Desenvolvimento: `../06-DEVELOPMENT-STANDARDS/` → selecionar padrão compatível.
+- QA: `../07-QUALITY-CONTROL/ACCEPTANCE-AND-RELEASE-CHECKLIST.md`.
 
-## Gate Motion & Interaction
-Toda landing page consulta o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`, preenche seu Motion Brief, implementa a seleção e registra evidências no QA. O starter kit está em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/`.
+## Artefatos centrais por projeto
+- `STRATEGIC-BRIEF.md` — negócio, público, problema, proposta de valor, conversão, restrições e evidências.
+- `EXPERIENCE-BLUEPRINT.md` — arquitetura, jornada, UX, conteúdo, direção visual, design system e motion/interações.
+- `TECHNICAL-BLUEPRINT.md` — stack, arquitetura, integrações, segurança, performance e plano técnico.
+- `PROJECT-STATE.md` — fase, decisões, pendências, aprovações e próximo passo.
+
+Esses quatro arquivos são o núcleo, não uma burocracia. Em projetos Compact, seções podem ser combinadas em menos arquivos desde que as decisões continuem claras. QA report, handover e especificações adicionais são criados quando a complexidade ou o contrato exigir.
+
+## Outros workflows
+Client & Business Operations continua separado da produção web. Consulte os documentos comerciais existentes por busca de nome/assunto; não use caminhos antigos sem verificar que ainda existem. Não confunda copy de prospecção com copy de site.
+
+## Ferramentas e agentes
+- Claude Code: `/CLAUDE.md`.
+- Gemini CLI: `/GEMINI.md`.
+- GitHub Copilot: `/.github/copilot-instructions.md`.
+Os adaptadores apontam para as mesmas regras; não devem duplicar a metodologia.
+
+## Regra de expansão
+Quando um documento não for encontrado, procure pelo nome/assunto na árvore real do repositório; não invente uma rota nem substitua silenciosamente por um arquivo parecido. Registre rotas corrigidas nesta fonte canônica.
