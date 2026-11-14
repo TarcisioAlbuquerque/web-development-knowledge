@@ -33,7 +33,7 @@ Use este índice para buscar o mínimo de contexto suficiente. Não leia todos o
 - `TECHNICAL-BLUEPRINT.md` — stack, arquitetura, integrações, segurança, performance e plano técnico.
 - `PROJECT-STATE.md` — fase, decisões, pendências, aprovações e próximo passo.
 
-Esses quatro arquivos são o núcleo, não uma burocracia. Em projetos Compact, seções podem ser combinadas em menos arquivos desde que as decisões continuem claras. QA report, handover e especificações adicionais são criados quando a complexidade ou o contrato exigir.
+Templates reutilizáveis: `../05-PROJECTS/_TEMPLATES/STRATEGIC-BRIEF.template.md`, `EXPERIENCE-BLUEPRINT.template.md`, `TECHNICAL-BLUEPRINT.template.md` e `PROJECT-STATE.template.md`.\n\nEsses quatro arquivos são o núcleo, não uma burocracia. Em projetos Compact, seções podem ser combinadas em menos arquivos desde que as decisões continuem claras. QA report, handover e especificações adicionais são criados quando a complexidade ou o contrato exigir.
 
 ## Outros workflows
 Client & Business Operations continua separado da produção web. Consulte os documentos comerciais existentes por busca de nome/assunto; não use caminhos antigos sem verificar que ainda existem. Não confunda copy de prospecção com copy de site.
