@@ -2,22 +2,25 @@
 
 - **URL:** https://jjadvogadosassociados.vercel.app/
 - **Segmento:** advocacia / escritório de advocacia.
-- **Data de inclusão:** 2026-11-02.
-- **Status:** referência recebida; inspeção visual e funcional pendente.
+- **Status:** referência recebida; observações do usuário registradas; inspeção direta independente pendente.
 
-## Observação inicial do usuário
-O usuário gostou especialmente da ideia de entrada do site (primeira impressão / seção inicial / hero). Marcar esse aspecto como ponto de interesse para análise detalhada quando a página puder ser inspecionada.
+## Observações do usuário
+- Interesse na primeira impressão e na entrada/preloader.
+- Gostou do ritmo/tempo da entrada; estudar timing sem criar espera artificial.
+- A interação para montar uma mensagem de atendimento é especialmente relevante para advocacia: ajuda quem precisa de orientação, mas não sabe como iniciar o contato.
 
-## Análise pendente
-Não foi possível carregar a página no ambiente de inspeção nesta sessão. Não presumir layout, animação, mensagem, estrutura ou funcionalidades.
+Essas são preferências fornecidas pelo usuário; não constituem validação técnica da implementação.
 
-Na próxima revisão, observar especialmente:
-- composição e impacto da primeira dobra;
-- transição/entrada visual e comportamento do hero;
-- hierarquia da marca e da mensagem;
-- clareza da atuação jurídica e chamada para contato;
-- responsividade, acessibilidade e desempenho;
-- padrões transferíveis para sites de advocacia sem copiar identidade ou conteúdo.
+## Padrões transferíveis
+- **Branded intro/preloader:** estudar como criar uma abertura curta, coerente e não bloqueante.
+- **Guided Inquiry Builder:** fluxo de perguntas breves que gera uma mensagem organizada para WhatsApp/formulário, com prévia e edição antes do envio.
+- **Clarity-first legal contact:** facilitar a explicação inicial sem prometer orientação jurídica automática.
+
+## Próxima inspeção
+Verificar sequência e timing reais, acessibilidade, performance, fallback, estados do gerador de mensagem, comportamento mobile e destinos dos CTAs.
 
 ## Cuidados do segmento
-Respeitar as regras profissionais e éticas aplicáveis à publicidade jurídica. Não reproduzir promessas de resultado, garantias, credenciais ou depoimentos sem validação.
+Respeitar regras profissionais e éticas aplicáveis à publicidade jurídica. Não reproduzir promessas de resultado, garantias, credenciais ou depoimentos sem validação. O formulário deve coletar somente informações necessárias e avisar para não enviar dados sensíveis em excesso.
+
+## Reutilização
+Adaptar o padrão de consulta guiada a outros profissionais quando reduzir fricção. Não copiar textos, identidade visual, composição proprietária ou código.
