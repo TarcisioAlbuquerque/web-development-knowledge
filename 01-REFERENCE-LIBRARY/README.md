@@ -1,34 +1,38 @@
-# Biblioteca de referências
+# Reference Library
 
-Cada referência deve ter uma ficha com URL, segmento, data/status da análise, arquitetura, direção visual, UX, motion, conversão, padrões transferíveis e ressalvas.
+Biblioteca transversal de sites, experiências, padrões, técnicas, ferramentas e recursos. Cada referência deve distinguir observações fornecidas pelo usuário de inspeção direta e evidência técnica.
 
-## Referências registradas
-- [Rosimeire — site de prévia](ROSIMEIRE.md) — segmento e análise visual pendentes.
-- [J&J Advogados Associados](JJ-ADVOGADOS-ASSOCIADOS.md) — advocacia; ideia de entrada/primeira impressão.
-- [Nexo AGC](NEXO-AGC.md) — agência de desenvolvimento web; referência estratégica para a oferta de sites institucionais e landing pages.
-- [DesEngs](DESENGS.md) — diretório de descoberta de recursos para Design Engineers; não é uma skill por si só.
-- [Land-book](LAND-BOOK.md) — galeria de inspiração para websites e landing pages.
-- [Refero Styles](REFERO-STYLES.md) — biblioteca de sistemas visuais em DESIGN.md para orientar agentes.
-- [Refero](REFERO.md) — pesquisa de interfaces reais, padrões de UI/UX e fluxos.
-- [SAMURAI Tech](SAMURAI-TECNOLOGIA.md) — estratégia comercial, diagnóstico, demonstrações conceituais e apresentação de soluções digitais.
-- [Paulo Victor — Portfolio](PORTFOLIO-PV.md) — abertura/intro indicada pelo usuário; inspeção visual ainda pendente.
-- [Técnicas de interação e referências visuais](INTERACTION-AND-VISUAL-TECHNIQUES.md) — scroll-linked, GSAP ScrollTrigger, parallax, sticky, horizontal scroll, glassmorphism e recursos aguardando identificação.
+## Como consultar
+1. Partir da necessidade do projeto: nicho, seção, tarefa do usuário, objetivo comercial ou padrão visual/funcional.
+2. Buscar por tags e padrões transferíveis, não apenas pelo segmento.
+3. Abrir somente fichas candidatas relevantes e tentar inspecionar os originais.
+4. Registrar o que foi observado, o que foi verificado, o que foi inferido e o que continua pendente.
+5. Adaptar princípios ao cliente; nunca copiar identidade, texto, mídia, código ou elementos protegidos.
 
-## Regra
-Não classificar um site por suposição. Se não for possível inspecioná-lo, registrar como pendente até receber evidência suficiente.
+Não leia a biblioteca inteira em cada projeto. A biblioteca é ampla; a recuperação é seletiva.
 
-## Como consultar a biblioteca durante projetos
-A consulta é transversal: pesquisar tanto referências do mesmo segmento quanto referências de outros segmentos que tenham padrões relevantes para a necessidade atual. Exemplo: uma abertura/intro de um escritório de advocacia pode inspirar um site de nutrição, se a experiência combinar com a estratégia e a identidade da profissional.
+## Referências e diretórios registrados
+- [Rosimeire — site de prévia](ROSIMEIRE.md) — advocacia; inspeção direta pendente.
+- [J&J Advogados Associados](JJ-ADVOGADOS-ASSOCIADOS.md) — advocacia; entrada, preloader e consulta guiada.
+- [Nexo AGC](NEXO-AGC.md) — agência/desenvolvimento web.
+- [DesEngs](DESENGS.md) — diretório de descoberta para Design Engineers e engenharia de design.
+- [Land-book](LAND-BOOK.md) — galeria de inspiração web.
+- [Refero Styles](REFERO-STYLES.md) — sistemas visuais e DESIGN.md.
+- [Refero](REFERO.md) — referências de UI/UX e fluxos.
+- [SAMURAI Tech](SAMURAI-TECNOLOGIA.md) — estratégia e apresentação de soluções digitais.
+- [Paulo Victor — Portfolio](PORTFOLIO-PV.md) — abertura/intro observada em gravação.
+- [Técnicas de interação e referências visuais](INTERACTION-AND-VISUAL-TECHNIQUES.md) — técnicas de motion e padrões em investigação.
+- [Observações e referências enviadas em novembro de 2026](REFERENCE-OBSERVATIONS-2026-11.md) — índice complementar de URLs, tags e observações do usuário.
 
-O agente deve tentar acessar os sites originais, não depender somente das fichas. Deve distinguir claramente entre referência registrada, site efetivamente inspecionado e análise pendente por bloqueio ou falha de acesso. Relatar limitações ao final e pedir material alternativo apenas quando necessário.
+## Sistema Motion & Interaction
+O sistema canônico é `MOTION-AND-INTERACTION-SYSTEM/README.md`. Consulte somente o catálogo, componente ou receita selecionada para o projeto. Motion não tem quotas de quantidade; escolha pela coerência, propósito e qualidade.
 
+## Evidência
+Use estados:
+- `USER-OBSERVED`: observação ou preferência comunicada pelo usuário.
+- `DIRECTLY-INSPECTED`: página inspecionada diretamente, com data e escopo.
+- `CODE-VERIFIED`: tecnologia confirmada em código.
+- `PARTIALLY-VERIFIED`: apenas parte da experiência verificada.
+- `PENDING`: falta inspeção ou evidência.
 
-## Sistema obrigatório de Motion & Interaction
-Consulte `MOTION-AND-INTERACTION-SYSTEM/README.md` antes de qualquer novo projeto web. Ele contém:
-- catálogo universal de animações e técnicas;
-- catálogo de componentes interativos;
-- playbook de implementação;
-- case study Ana Marques;
-- template obrigatório de Motion Brief.
-
-A auditoria Ana Marques foi convertida em padrões de referência, sem copiar conteúdo/identidade. O sistema deve ser consultado transversalmente por função e não apenas por nicho.
+Uma URL registrada não significa que a página foi aberta. Uma aparência visual não prova qual tecnologia foi utilizada. Se o acesso falhar, preserve a referência e registre a limitação; não declare que a página está fora do ar sem evidência.
