@@ -1,20 +1,23 @@
 # Rosimeire — site de prévia
 
 - **URL:** https://rosimeire-previa.pages.dev/
-- **Segmento:** pendente de identificação.
-- **Status:** referência recebida; inspeção visual e funcional pendente.
+- **Segmento:** advocacia, conforme identificação fornecida pelo usuário.
+- **Status:** referência recebida; classificação informada pelo usuário; inspeção visual e funcional independente pendente.
 - **Data de inclusão:** 2026-11-02.
 
-## Análise
-Ainda não foi possível carregar o site no ambiente de inspeção. Por isso, não vamos presumir o segmento, a estrutura, a estética ou as funcionalidades.
+## Evidência disponível
+O usuário identificou o projeto como referência de advocacia. Ainda não há observação visual específica confirmada nesta ficha.
 
-## Próxima revisão
-Quando o site estiver acessível para inspeção, completar:
-- posicionamento e público;
+## Análise pendente
+Quando a página puder ser inspecionada, registrar:
+- posicionamento, público e áreas de atuação;
 - arquitetura e conteúdo;
 - direção visual, tipografia e cores;
 - UX, responsividade, motion e interações;
-- conversão e integrações;
-- padrões transferíveis para projetos futuros.
+- conversão, formulários e integrações;
+- padrões transferíveis.
 
-A referência fica registrada sem atribuir características não verificadas.
+Não presumir estrutura, estética ou funcionalidades a partir do segmento.
+
+## Cuidados do segmento
+Respeitar regras profissionais e éticas aplicáveis à publicidade jurídica. Não reproduzir promessas de resultado, garantias ou prova social sem validação.
