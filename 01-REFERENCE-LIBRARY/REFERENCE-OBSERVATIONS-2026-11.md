@@ -13,9 +13,9 @@
 | Referência | URL | Segmento/categoria | Observação / interesse | Estado |
 |---|---|---|---|---|
 | Dra. Suellen Pneumopediatra | https://drasuellenpneumopediatra.vercel.app/ | Saúde / pneumopediatria | Referência profissional para saúde infantil | USER-OBSERVED; inspeção pendente |
-| Dr. Alex Pedroso | https://www.dralexpedroso.com.br/ | Saúde / profissional | Referência de site profissional | Já registrada em contexto; validar ficha canônica |
+| Dr. Alex Pedroso | https://www.dralexpedroso.com.br/ | Saúde / profissional | Referência de site profissional | Referência previamente mencionada; localizar/validar ficha canônica |
 | Dra. Laura Ferreira de Sá | https://www.dralauraferreiradesa.com.br/ | Saúde / profissional | Referência de site profissional | USER-OBSERVED; inspeção pendente |
-| Elora Clinic | https://lucassouto2708-ship-it.github.io/elora-clinic/ | Clínica / odontologia premium | Referência de estética e experiência premium | Referência já conhecida; inspeção pendente nesta revisão |
+| Elora Clinic | https://lucassouto2708-ship-it.github.io/elora-clinic/ | Clínica / odontologia premium | Referência de estética e experiência premium | Referência previamente mencionada; localizar/validar ficha canônica |
 | Ana Carolina Nutri | https://anacarolina-nutri.vercel.app/#rotina | Nutrição | Prato interativo, áreas de atuação e seção Instagram | USER-OBSERVED; registrar padrões abaixo |
 | Espaço Postura | https://espacopostura.netlify.app/ | Saúde / bem-estar / postura | Usuário gostou da página como experiência completa | USER-OBSERVED; inspeção pendente |
 | Rosimeire | https://rosimeire-previa.pages.dev/ | Advocacia | Usuário identifica como referência de advocacia | Ficha canônica: `ROSIMEIRE.md` |
@@ -24,8 +24,8 @@
 | Caruarch Arquitetura | https://caruarch-arquitetura.vercel.app/ | Arquitetura | Usuário gostou da página como experiência completa | USER-OBSERVED; inspeção pendente |
 | DesEngs | https://desengs.com/ | Engenharia de design / Design Engineering | Descoberta de recursos para design e modelagem | Referência de recursos; verificar categorias atuais |
 | CK Rastreadores | https://ck-rastreadores.dj415374.workers.dev/ | Tecnologia / rastreamento veicular | Referência recebida; padrão específico não indicado | USER-OBSERVED; classificação visual pendente |
-| Morais Tour | https://agencia-morais-tour-lp.vercel.app/ | Turismo | Atualização de URL da referência já conhecida | Preservar ficha anterior e verificar canonical |
-| Zolita Moda | https://zolita.netlify.app/ | Retail / moda | Usuário gostou muito do projeto como um todo | Ficha existente; adicionar preferência geral |
+| Morais Tour | https://agencia-morais-tour-lp.vercel.app/ | Turismo | URL fornecida pelo usuário; localizar/validar ficha canônica | Preservar ficha anterior e verificar canonical |
+| Zolita Moda | https://zolita.netlify.app/ | Retail / moda | Usuário gostou muito do projeto como um todo | Referência previamente registrada pelo usuário; localizar ficha canônica e adicionar preferência geral |
 | Lumina School | https://www.luminaschool.com.br/ | Educação | Referência recebida | USER-OBSERVED; inspeção pendente |
 | Printza | https://www.printza.com.br/ | Impressão / personalizados | Referência recebida | USER-OBSERVED; inspeção pendente |
 | Duo Financial | https://www.duofinancial.dev.br/ | Financeiro / serviços | Usuário considera bom projeto | USER-OBSERVED; inspeção pendente |
