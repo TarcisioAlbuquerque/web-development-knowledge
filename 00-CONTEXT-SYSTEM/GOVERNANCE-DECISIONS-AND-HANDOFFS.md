@@ -1,50 +1,45 @@
 # Governance, Decisions & Handoffs
 
-## Decisões aprovadas (2026-11-12)
-- O repositório `TarcisioAlbuquerque/web-development-knowledge` permanece privado.
-- A metodologia é universal e serve clientes/nichos diversos; AURA é um caso de aplicação.
-- O fluxo básico deve funcionar com ferramentas gratuitas; não depender de Claude Code, API paga ou assinatura premium.
+## Decisões aprovadas — metodologia 2026-11-14
+- Web Production possui seis etapas canônicas: Strategic Diagnosis; Experience & Creative Blueprint; Technical Planning; Development & Integration; Validation, QA & Release; Delivery & Evolution.
+- Um Master Orchestrator é responsável pelo projeto de ponta a ponta e assume especialidades conforme necessário. Agentes paralelos não são o padrão.
+- Motion não tem quotas artificiais de quantidade ou complexidade. Selecionar técnicas por coerência, objetivo, acessibilidade, performance, compatibilidade e manutenção.
+- Priorizar excelência visual/técnica/funcional, respostas concisas, recuperação seletiva e mínima repetição.
+- Usar modalidades Compact, Standard e Advanced sem reduzir critérios críticos de qualidade.
+- Manter quatro artefatos centrais quando a complexidade justificar: Strategic Brief, Experience Blueprint, Technical Blueprint e Project State; projetos Compact podem combinar documentos.
+- A metodologia é universal; AURA é uma aplicação.
+- A biblioteca deve ser pesquisada transversalmente, sob demanda, por nicho e por padrão.
+- O repositório permanece privado; a migração é feita em branch, sem alterar main automaticamente.
+
+## Decisões aprovadas anteriormente — 2026-11-12
+- O fluxo básico deve funcionar sem depender de assinatura paga/API específica.
 - Referências devem ser consultadas transversalmente, por nicho e por padrões transferíveis.
-- Materiais já existentes devem ser preservados e mudanças incrementais.
-- O sistema integra duas frentes: Web Production e Client & Business Operations.
-- Os PDFs “Roteiro Prático do Aluno — Sites com IA do Zero” e “Guia de abordagem de clientes” são fontes complementares, não substituem a metodologia central.
+- Materiais existentes devem ser preservados; mudanças são incrementais.
+- O sistema integra Web Production e Client & Business Operations.
+- PDFs e guias complementares não substituem a metodologia canônica.
 
 ## Decisões pendentes
-- Preferência final de modelos por especialidade: decidir após testes reais comparáveis.
+- Preferência final de ferramentas/modelos por tarefa: decidir após testes comparáveis.
 - Stack padrão por tipo de projeto: manter seleção contextual, não uma stack única.
-- Armazenamento dos PDFs originais: guias Markdown foram versionados; os binários originais permanecem anexados à conversa e não foram copiados para o GitHub nesta atualização.
+- Acesso direto a referências que continuam pendentes: revisar quando houver disponibilidade.
 
-## Changelog inicial — 2026-11-12
-Context System, workflows, guias derivados, cadastro de especialistas, prompts especializados, padrões técnicos, QA e template de projeto adicionados; README e AGENTS atualizados. Nenhum arquivo preexistente foi excluído.
+## Changelog
+- **2026-11-12:** Context System, workflows, guias, prompts, padrões técnicos e QA adicionados.
+- **2026-11-14:** metodologia consolidada em seis etapas; instruções globais e prompt mestre simplificados; roteador de contexto atualizado; motion sem quotas; adaptadores por ferramenta adicionados; referências e observações do usuário atualizadas; branch de migração criada para revisão.
 
 ## Protocolo de handoff
-Cada especialista encerra com:
-1. Projeto/etapa e objetivo recebido.
-2. Contexto consultado (caminhos, fontes e commit quando possível).
-3. Resultado e caminhos dos entregáveis.
-4. Decisões aprovadas, propostas e hipóteses separadas.
-5. Critérios atendidos e evidências.
-6. Pendências, riscos e validações não realizadas.
-7. Próximo especialista recomendado e tarefa.
+Cada etapa registra apenas:
+1. objetivo/etapa e modalidade;
+2. contexto e fontes relevantes consultadas;
+3. resultado e caminhos dos entregáveis;
+4. decisões aprovadas, hipóteses e pendências;
+5. testes/evidências realmente obtidos;
+6. riscos e próximo passo.
 
-Estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Nunca marcar como APPROVED por inferência. Não alterar etapa aprovada silenciosamente. Solicitações de mudança precisam indicar impacto.
+Estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Nunca marcar APPROVED por inferência. Não alterar decisões aprovadas silenciosamente.
 
-## Pacotes de contexto
-### Base comum
-README, AGENTS.md, MASTER-CONTEXT, KNOWLEDGE-INDEX, briefing e decisões aprovadas do projeto.
-
-### Pacotes especializados
-- Estratégia: segmento, mercado, oferta, evidências e restrições.
-- Briefing: dados do negócio, serviços, público, contatos autorizados, conteúdo e pendências.
-- UX: objetivo, público, sitemap, conteúdo e critérios.
-- Copy do site: briefing, posicionamento, oferta, arquitetura e tom.
-- Copy comercial/prospecção: lead/contexto verificado, oferta, canal, mercado e preferências de contato.
-- Direção visual: briefing, copy aprovada, referências e tokens.
-- Motion: arquitetura, direção visual, conteúdo, dispositivos e restrições.
-- Arquitetura técnica: requisitos, ambiente, orçamento, manutenção e integrações.
-- Front-end: specs aprovadas, arquivos, padrões e instruções.
-- QA: critérios de aceite, versão/build e dispositivos/navegadores.
-- Project Manager/Customer Success: escopo, prazos acordados, responsáveis, aceite, pendências e histórico permitido.
+## Contexto e estado do projeto
+Os artefatos centrais e o `PROJECT-STATE.md` devem guardar a versão vigente, não um histórico integral. GitHub é a fonte canônica. Conversas e memórias auxiliam, mas não substituem documentação aprovada.
 
 ## Regras de atualização
-GitHub é fonte canônica; conversas e memórias podem auxiliar, mas não substituem documentação aprovada. Fornecer pacote de contexto se plataforma não conseguir ler repositório privado. Não enviar todos os documentos a todo agente. Não expor segredos ou dados pessoais desnecessários.
+Não enviar todos os documentos a todo agente. Não duplicar regras entre arquivos; cada regra tem uma fonte canônica e os adaptadores apontam para ela. Não expor segredos ou dados pessoais desnecessários.
