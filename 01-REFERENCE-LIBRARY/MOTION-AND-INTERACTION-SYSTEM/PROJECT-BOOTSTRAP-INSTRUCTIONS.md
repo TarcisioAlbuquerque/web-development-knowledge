@@ -1,64 +1,46 @@
-# Bootstrap obrigatório — Motion & Interaction em projetos de clientes
+# Bootstrap — Motion & Interaction em projetos de clientes
 
-Use este documento ao abrir/criar um repositório independente de cliente. O repositório de conhecimento é a fonte canônica, mas suas instruções não são automaticamente carregadas por Gemini, ChatGPT, Copilot ou por um repositório de cliente separado.
+Use somente ao iniciar um novo repositório de cliente. O sistema central é a fonte de conhecimento; o projeto do cliente recebe apenas o contexto necessário.
 
-## 1. Preparar o projeto
-1. Garanta que o agente que vai implementar o site consiga consultar a pasta MOTION-AND-INTERACTION-SYSTEM e MOTION-STARTER-KIT.
-2. Se o workspace não tiver acesso ao repositório de conhecimento, copie os documentos necessários para docs/reference/motion-and-interaction/ ou forneça os arquivos/links no contexto do agente.
-3. Copie MOTION-BRIEF-TEMPLATE.md para docs/MOTION-BRIEF.md e preencha-o antes de estruturar o motion.
-4. Adicione o bloco de instruções abaixo ao AGENTS.md ou .github/copilot-instructions.md do projeto de cliente.
+## 1. Disponibilizar o conhecimento
+1. Identifique os padrões de motion/interação relevantes ao briefing.
+2. Se o agente não tiver acesso ao repositório central, forneça apenas os documentos selecionados: trecho do catálogo, componente e receita aplicáveis.
+3. Não copie a biblioteca inteira nem o Starter Kit completo por padrão.
+4. Integre o planejamento na seção Motion & Interaction do `EXPERIENCE-BLUEPRINT.md`.
+5. Crie `docs/MOTION-BRIEF.md` separado somente quando a complexidade justificar: sequências coordenadas, várias páginas/breakpoints, motion avançado ou handoff dedicado.
 
-## 2. Bloco para AGENTS.md / Copilot Instructions
+## 2. Instrução compacta para o projeto cliente
+
+Adapte este bloco ao `AGENTS.md` do projeto. Os arquivos de contexto específicos de Claude/Gemini/Copilot devem apontar para estas regras sem duplicar o conteúdo.
 
 ```md
-## Mandatory Motion & Interaction Gate
-
-Before designing or implementing any page, read the project's docs/MOTION-BRIEF.md and the shared Motion & Interaction System:
-- README.md
-- PATTERN-CATALOG.md
-- INTERACTIVE-COMPONENTS.md
-- IMPLEMENTATION-PLAYBOOK.md
-- the Motion Starter Kit README and source files.
-
-Motion and interaction are required product features, not optional polish.
-
-For every landing page, plan and implement:
-- an intentional hero entrance sequence;
-- reveal motion across multiple content sections;
-- at least one image/video motion treatment;
-- consistent hover, focus-visible and active feedback for CTAs and controls;
-- at least one contextual interactive component that helps visitors understand, choose, explore or convert.
-
-Minimum acceptance for a professional landing page: 6 distinct motion treatments and 3 useful interaction patterns; recommended range: 6–10 motion treatments and 3–5 interactions. Adapt the selection to the brief; do not force every catalog item into one site. Falling below the minimum requires a concrete alternative and explicit user/client approval in the Motion Brief.
-
-Map every implemented effect/component to a stable catalog ID. A concept, TODO, placeholder or button without a working action does not count as implementation.
-
-The frontend agent must implement the approved brief. QA must verify every selected ID in a real browser on desktop and mobile, with keyboard/touch and prefers-reduced-motion. Do not mark the page ready until the motion and interaction checklist is complete.
-
-Never sacrifice content clarity, accessibility, performance, responsive behavior or conversion just to increase animation count. Preserve progressive enhancement and a usable experience when motion is disabled.
+## Motion & Interaction
+- Planeje motion e interações como parte da experiência e da direção criativa.
+- Consulte seletivamente o Motion & Interaction System compartilhado, por necessidade e objetivo.
+- Não há quotas de efeitos. Escolha soluções coerentes com marca, conteúdo, jornada e conversão.
+- Considere CSS, APIs nativas, GSAP/ScrollTrigger, Motion/Framer, Lenis, SVG, WebGL/3D ou outras ferramentas quando fizerem sentido e forem compatíveis.
+- Registre intenção, triggers, estados, comportamento mobile e reduced-motion no Experience Blueprint ou Motion Brief.
+- Implemente os comportamentos selecionados de verdade; não deixe placeholders nem controles sem ação.
+- Teste no navegador: desktop/mobile, teclado/toque, foco, reduced-motion, performance e fallback.
+- Nunca sacrifique clareza, acessibilidade, responsividade, segurança ou desempenho por efeitos visuais.
 ```
 
-## 3. Prompt de arranque para el agente
+## 3. Execução pelo Orchestrator
+- Inspecione o briefing e a arquitetura antes de selecionar efeitos.
+- Busque referências por padrão e nicho, mas abra somente candidatas relevantes.
+- Selecione a ferramenta mais simples que atenda ao resultado; escale quando o projeto justificar.
+- Não assuma que uma referência usa determinada biblioteca pela aparência.
+- Não presuma sincronização de memória entre ChatGPT, Claude, Gemini e Copilot.
+- Não delegue por padrão; mantenha o Orchestrator como responsável pelo handoff.
 
-Copie este texto en el primer encargo de cada sitio:
+## 4. Definition of Done
+- O blueprint explica por que cada comportamento foi selecionado.
+- Os efeitos e componentes previstos estão implementados e funcionais.
+- Os controles têm estados, feedback e semântica adequados.
+- Reduced-motion e fallback preservam conteúdo e função.
+- Mobile, teclado e toque foram verificados quando aplicáveis.
+- QA registra testes reais, limitações e pendências.
+- O resultado é coerente com a identidade e melhora a experiência; não depende de cumprir uma quantidade de efeitos.
 
-> Antes de proponer el diseño o escribir código, consulta el Motion & Interaction System de la base de conocimiento, revisa el briefing y crea docs/MOTION-BRIEF.md con IDs del catálogo. Propón una composición de motion de intensidad media-alta con mínimo 6 tratamientos de motion y 3 patrones de interacción funcionales, relevantes para este negocio. No entregues una landing page estática: implementa los efectos aprobados en el navegador y prueba los comportamientos. Usa el Motion Starter Kit cuando sea adecuado y justifica cualquier dependencia adicional. Al finalizar, entrega los IDs implementados, archivos, evidencias de desktop/mobile, pruebas de teclado/touch/reduced-motion y cualquier excepción.
-
-## 4. Regra de sincronização entre agentes
-
-- O GitHub é a fonte canônica, mas não existe sincronização automática de memória entre ferramentas/modelos.
-- Sempre fornecer os documentos ou links ao agente que inicia o projeto.
-- Em handoffs entre Gemini, ChatGPT, Copilot ou outro agente, transportar o Motion Brief e o estado dos IDs implementados.
-- Não considerar "a IA já sabe" como prova de que consultou a metodologia.
-- Registrar divergências ou melhorias no repositório central antes de transformar uma proposta em padrão.
-
-## 5. Definition of Done
-
-Um site só pode ser considerado pronto quando:
-- Motion Brief está preenchido e aprovado;
-- padrões selecionados estão implementados de verdade;
-- cada interação executa a função prometida;
-- IDs estão mapeados para seções/componentes;
-- evidências de QA estão anexadas ao projeto;
-- mobile, teclado/toque e reduced-motion passaram;
-- exceções estão documentadas e aceitas.
+## 5. Handoff
+Registrar brevemente: padrões selecionados/implementados, arquivos afetados, tecnologia usada (quando confirmada), testes executados, limitações e próximo passo. O Motion Brief é transportado entre sessões somente quando existir como documento separado.
