@@ -1,16 +1,21 @@
-# Nome do site
+# Reference — [Name]
 
 - URL:
-- Segmento:
-- Tipo de negócio:
-- Data da análise:
-- Status de verificação:
+- Category/segment:
+- Intended use:
+- Added on:
+- Last inspected:
+- Verification: NOT CHECKED / PARTIAL / VISUALLY INSPECTED / CODE INSPECTED
+- Source/evidence: direct visit, screenshot, recording, report or public documentation
 
-## Posicionamento e objetivo
-## Arquitetura e conteúdo
-## Direção visual
-## UX, interação e motion
-## Conversão
-## Padrões transferíveis
-## Limitações e elementos que não devem ser copiados
-## Evidências, hipóteses e pendências
+## Positioning and purpose
+## Site/page architecture
+## Visual direction and design system
+## UX and interactions
+## Motion patterns
+## Content/conversion
+## Transferable principles
+## What not to copy
+## Accessibility/performance observations
+## Evidence vs inference
+## Limitations and follow-up

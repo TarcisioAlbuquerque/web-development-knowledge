@@ -1,38 +1,31 @@
-# Knowledge Index
+# Knowledge Index — roteador de contexto
 
-## Leitura inicial
-1. `README.md`
-2. `AGENTS.md`
-3. `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md`
-4. `00-METHODOLOGY/MASTER-METHODOLOGY.md`
-5. Este índice.
+Comece aqui. Abra somente as fontes necessárias para a tarefa atual.
 
-## Por tarefa
-| Tarefa | Documentos |
+| Necessidade | Fonte canônica |
 |---|---|
-| Entender sistema | `MASTER-CONTEXT.md` + `MASTER-METHODOLOGY.md` |
-| Briefing/descoberta | `WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md` + seção 02 do prompt especializado |
-| Estratégia/nicho | Workflow + seção 01 do prompt especializado |
-| UX/estrutura | Workflow + seção 03 do prompt especializado |
-| Copy do site | Workflow + seção 04 do prompt especializado |
-| Direção visual | Design Library + seção 05 do prompt especializado |
-| Animações e interações | `MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md`, `IMPLEMENTATION-PLAYBOOK.md`, Motion Starter Kit + Development Standards + seção 06 do prompt |
-| Stack/integrações | Development Standards + seção 07 do prompt |
-| Código | `AGENTS.md` + Development Standards + seção 08 do prompt |
-| Auditoria/publicação | `ACCEPTANCE-AND-RELEASE-CHECKLIST.md` + seção 09 do prompt |
-| Pesquisar leads | Workflow comercial + `SITES-COM-IA-18-AULAS.md` + seção 10 do prompt |
-| Abordagem comercial | `CLIENT-OUTREACH.md` + seção 10 do prompt |
-| Proposta/fechamento | Workflow comercial + seção 11 do prompt |
-| Entrega/pós-venda | Project Template + seção 12 do prompt |
-| Seleção de IA | `AGENT-REGISTRY-AND-MODEL-ROUTING.md` |
-| Transferência | `GOVERNANCE-DECISIONS-AND-HANDOFFS.md` |
+| Contexto/princípios | MASTER-CONTEXT.md |
+| Governança/decisões/handoff | GOVERNANCE-DECISIONS-AND-HANDOFFS.md |
+| Processo de produção | 00-METHODOLOGY/MASTER-METHODOLOGY.md |
+| Etapas e entregáveis | 00-METHODOLOGY/WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md |
+| Aprender do zero ao avançado | 00-METHODOLOGY/EXPERTISE-ROADMAP.md |
+| Referências | 01-REFERENCE-LIBRARY/README.md + fichas selecionadas |
+| Design visual | 02-DESIGN-LIBRARY/README.md |
+| Motion/interações | 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md + Brief; catálogo/playbook só se necessário |
+| Engenharia | 06-DEVELOPMENT-STANDARDS/README.md |
+| Critérios de aceite | 07-QUALITY-CONTROL/ACCEPTANCE-AND-RELEASE-CHECKLIST.md |
+| Projeto/cliente | 05-PROJECTS/<project>/ |
+| Skills e avaliação | 03-AGENT-SKILLS/README.md + EVALUATION-FRAMEWORK.md |
+| Agentes Claude | .claude/agents/ |
+| Prospecção | 01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/CLIENT-ACQUISITION/CLIENT-OUTREACH.md |
+| Brief de tarefa | 04-PROMPTS/TASK-BRIEF-TEMPLATE.md |
 
-## Referências
-Comece por `01-REFERENCE-LIBRARY/README.md`, fichas específicas, técnicas de interação e `01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/`. Consulte transversalmente.
+## Pacote mínimo
+- Pequena alteração: contexto do projeto + arquivos afetados + padrão técnico pertinente.
+- Novo site: briefing + metodologia + poucas referências + Skills acionadas.
+- Motion: Motion Brief + IDs escolhidos + implementação/QA relevantes.
+- Auditoria: requisitos aprovados + checklist + versão/URL testada.
+- Prospecção: fatos públicos verificados + país/canal + oferta.
 
-## Contexto eficiente
-Não carregue todos os documentos em toda conversa. Leia o contexto mestre e o índice; selecione os documentos relevantes para a função/projeto; amplie quando surgir dependência. Sempre confirme versão/branch quando possível. Nunca suponha sincronização automática entre plataformas.
-
-
-## Gate Motion & Interaction
-Toda landing page consulta o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`, preenche seu Motion Brief, implementa a seleção e registra evidências no QA. O starter kit está em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/`.
+## Não carregar por padrão
+Todos os arquivos, fichas, catálogos ou Skills. Não copiar documentos longos para o prompt; leia caminhos específicos quando necessários.

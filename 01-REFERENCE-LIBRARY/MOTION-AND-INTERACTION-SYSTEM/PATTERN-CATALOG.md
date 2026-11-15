@@ -1,97 +1,82 @@
-# Catálogo de padrões de Motion Design
+# Motion Pattern Catalog
 
-Este catálogo reúne efeitos que podem ser combinados em projetos de diferentes segmentos. Os IDs são estáveis para referência em briefs, código, handoffs e QA.
+Stable IDs for briefs, implementation notes and QA. The catalog is a menu, not a checklist. Select patterns only when they support the task and visual direction.
 
-**Legenda:**  
-- **ANA / RELATADO:** aparece no relatório de auditoria do site Ana Marques fornecido pelo usuário; conferir a proveniência em `CASE-STUDY-ANA-MARQUES.md`.  
-- **UNIVERSAL / RECOMENDADO:** padrão de biblioteca para avaliar e aplicar conforme o projeto; não significa que foi visto no site Ana Marques.
+Evidence key: ANA = reported in user-supplied audit; UNIVERSAL = general reusable pattern, not attributed to that reference.
 
-## 1. Entrada e primeira impressão
+## Entry and first impression
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-01 | Header Fade + Slide | Briefly introduces navigation; do not delay access. |
+| M-02 | Hero Text Mask Reveal | Editorial heading reveal; preserve semantic text and responsive wrapping. |
+| M-03 | Hero Stagger | Sequence headline, support, CTA and media. |
+| M-04 | Hero Image Scale + Fade | Introduces media; reserve dimensions and avoid cropping subject. |
+| M-05 | Split/Clip Reveal | Reveal image/block through a mask; ensure fallback. |
+| M-06 | Blur-to-Sharp Reveal | Selective emphasis; avoid motion discomfort and blurry text. |
+| M-07 | Load/Intro Sequence | Brand introduction; short, skippable/non-blocking, never gate essential content. |
 
-| ID | Padrão | Comportamento | Uso recomendado |
-|---|---|---|---|
-| M-01 | Header Fade + Slide | Header aparece com opacidade e pequeno deslocamento vertical | Entrada limpa, navegação |
-| M-02 | Hero Text Mask Reveal | Título é revelado por linha/palavra dentro de máscara | Portfólios, marcas, profissionais |
-| M-03 | Hero Stagger | Headline, apoio, CTA e mídia entram em sequência | Hierarquia e narrativa |
-| M-04 | Hero Image Scale + Fade | Imagem entra com escala sutil e opacidade | Fotografia, retratos, produtos |
-| M-05 | Split/Clip Reveal | Imagem ou bloco é descoberto por máscara/clip | Editorial, campanha, portfólio |
-| M-06 | Blur-to-Sharp Reveal | Elemento sai de blur controlado para nitidez | Uso pontual; evitar em texto longo |
-| M-07 | Load/Intro Sequence | Sequência breve de abertura | Só quando agrega identidade; nunca atrasar conteúdo |
+## Scroll and narrative
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-08 | Scroll Fade/Reveal | Enter-viewport reveal; content visible without JS. |
+| M-09 | Stagger on Scroll | Grouped reveals; avoid excessive delay. |
+| M-10 | Scroll-linked Transform | Progress tied to scroll; respect native scrolling. |
+| M-11 | Sticky Storytelling | Fixed panel with adjacent narrative; provide predictable exit. |
+| M-12 | Scroll Pinning | Pinned sequence; use only when it improves comprehension. |
+| M-13 | Parallax Layers | Depth between layers; modest movement, mobile fallback. |
+| M-14 | Horizontal Scroll Scene | Horizontal narrative; keyboard/touch and vertical fallback. |
+| M-15 | Progress Indicator | Reading or step progress; reflect real state. |
+| M-16 | Section Transition | Visual continuity between sections without hiding content. |
 
-## 2. Scroll reveal e narrativa
+## Image, SVG and graphics
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-17 | Image Reveal Mask | Image reveal; preserve image semantics and focal point. |
+| M-18 | Image Scale on Scroll | Controlled scale during scroll; prevent clipping/CLS. |
+| M-19 | Image Parallax | Separate media movement; evaluate subject crop and reduced motion. |
+| M-20 | Image Crossfade | Change between media; announce meaningful content changes. |
+| M-21 | Animated SVG Stroke | Draw line/path; decorative SVG should be hidden from AT. |
+| M-22 | Organic SVG Divider | Connect sections; visual ornament only when brand-appropriate. |
+| M-23 | Shape Morph | Shape transformation; do not obscure information. |
+| M-24 | Cursor-follow Media | Desktop pointer effect; never essential and disable on touch. |
 
-| ID | Padrão | Comportamento | Uso recomendado |
-|---|---|---|---|
-| M-08 | Scroll Fade/Reveal | Conteúdo aparece ao entrar na viewport | Seções, cards, depoimentos |
-| M-09 | Stagger on Scroll | Elementos relacionados aparecem em sequência | Grids e listas |
-| M-10 | Scroll-linked Transform | Propriedades acompanham o progresso do scroll | Narrativa visual específica |
-| M-11 | Sticky Storytelling | Painel fica sticky enquanto conteúdo adjacente avança | Processo, etapas, manifesto |
-| M-12 | Scroll Pinning | Seção/painel é fixado durante uma timeline | Uso seletivo; preservar saída e navegação |
-| M-13 | Parallax Layers | Camadas movem-se em velocidades diferentes | Fotografia, profundidade, hero |
-| M-14 | Horizontal Scroll Scene | Scroll vertical controla trilha horizontal | Portfólios e galerias; alternativa por swipe no mobile |
-| M-15 | Progress Indicator | Indicador acompanha leitura/etapas | Artigos, processos, narrativas |
-| M-16 | Section Transition | Mudança visual entre blocos sem interromper conteúdo | Continuidade editorial |
+## Components and transitions
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-25 | Card Slide Transition | Step/quiz/card state change; retain keyboard context. |
+| M-26 | Content Crossfade | Tabs/filter state; keep content perceivable. |
+| M-27 | Accordion Expansion | Disclosure; native details/summary preferred when adequate. |
+| M-28 | Modal/Drawer Transition | Panel transition; correct focus and Escape behavior required. |
+| M-29 | Navigation State Transition | Active navigation feedback; not the only state cue. |
+| M-30 | Page/Route Transition | Route change; avoid delaying navigation/history. |
+| M-31 | CTA Hover/Focus | Action feedback; equivalent keyboard focus/active states. |
+| M-32 | Card/Image Hover | Pointer affordance; provide touch/focus equivalent. |
+| M-33 | Magnetic Interaction | Decorative pointer response; use rarely and never as sole target. |
+| M-34 | Custom Cursor | Portfolio-specific effect; preserve native cursor fallback. |
 
-## 3. Imagem, SVG e elementos gráficos
+## Continuous motion and audiovisual
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-35 | Infinite Marquee | Continuous track; pause control and reduced-motion behavior. |
+| M-36 | Auto Carousel | Timed slide change; pause and manual control required. |
+| M-37 | Video Autoplay Loop | Silent contextual video; poster, controls, reduced-motion fallback. |
+| M-38 | Video Scrub | Scroll-controlled frames; high media/performance cost. |
+| M-39 | Gallery Crossfade | Gallery transition; preserve controls and current item state. |
+| M-40 | Ambient Motion | Background movement; do not compete with content. |
 
-| ID | Padrão | Comportamento | Uso recomendado |
-|---|---|---|---|
-| M-17 | Image Reveal Mask | Máscara revela a fotografia | Fotografia e projetos |
-| M-18 | Image Scale on Scroll | Escala da imagem muda durante o scroll | Hero e storytelling |
-| M-19 | Image Parallax | Imagem/camada desloca-se com velocidade distinta | Profundidade, com moderação |
-| M-20 | Image Crossfade | Uma imagem dá lugar a outra | Comparações, portfólio |
-| M-21 | Animated SVG Stroke | Traçado SVG é desenhado progressivamente | Linhas orgânicas, mapas, assinatura visual |
-| M-22 | Organic SVG Divider | Linha SVG decorativa conecta seções | Narrativa editorial; não apenas ornamento |
-| M-23 | Shape Morph | Forma SVG muda de contorno | Identidade visual que justifique |
-| M-24 | Cursor-follow Media | Mídia reage ao cursor | Desktop criativo; desativar em touch |
+## Timing and composition
+| ID | Pattern | Purpose / caution |
+|---|---|---|
+| M-41 | Stagger Timeline | Orchestrate related elements; preserve sensible reading order. |
+| M-42 | Easing System | Coherent acceleration/deceleration across product. |
+| M-43 | Micro Feedback | Response to action/loading/success; never communicate state only through motion. |
+| M-44 | Counter/Number Transition | Animate verified changing values only; do not invent statistics. |
+| M-45 | Scroll Progress Reveal | Progress line/indicator linked to actual progress. |
 
-## 4. Componentes e transições
-
-| ID | Padrão | Comportamento | Uso recomendado |
-|---|---|---|---|
-| M-25 | Card Slide Transition | Card atual sai e próximo entra lateralmente | Quiz, decks, etapas |
-| M-26 | Content Crossfade | Painel antigo desaparece e novo aparece | Tabs e filtros |
-| M-27 | Accordion Expansion | Resposta expande/recolhe; indicador pode girar | FAQ, detalhes |
-| M-28 | Modal/Drawer Transition | Modal ou painel entra/sai com transição | Galeria, formulário, menu |
-| M-29 | Navigation State Transition | Estado ativo do menu muda com feedback | Navegação por âncoras |
-| M-30 | Page/Route Transition | Transição entre rotas/páginas | Sites multi-page; manter navegação rápida |
-| M-31 | CTA Hover/Focus | Cor, seta, fundo ou posição responde ao estado | Botões e links de ação |
-| M-32 | Card/Image Hover | Imagem, overlay ou card responde ao ponteiro | Desktop; equivalente acessível em foco/toque |
-| M-33 | Magnetic Interaction | Elemento segue levemente o cursor | Uso raro; nunca essencial à ação |
-| M-34 | Custom Cursor | Cursor contextual acompanha ponteiro | Portfólios criativos; fornecer fallback |
-
-## 5. Movimento contínuo e audiovisual
-
-| ID | Padrão | Comportamento | Uso recomendado |
-|---|---|---|---|
-| M-35 | Infinite Marquee | Trilha horizontal em loop contínuo | Logos, fotos, palavras, trabalhos |
-| M-36 | Auto Carousel | Slides avançam em intervalos | Conteúdo curto; oferecer pausa |
-| M-37 | Video Autoplay Loop | Vídeo silencioso reproduz em loop quando visível | Bastidores, atmosfera |
-| M-38 | Video Scrub | Frames do vídeo respondem ao scroll | Narrativa de campanha; peso e acessibilidade avaliados |
-| M-39 | Gallery Crossfade | Galeria alterna imagens com transição | Portfólios e produtos |
-| M-40 | Ambient Motion | Movimento lento de fundo/forma | Somente quando não competir com conteúdo |
-
-## 6. Timing, composição e acabamento
-
-| ID | Padrão | Comportamento | Uso |
-|---|---|---|---|
-| M-41 | Stagger Timeline | Sequência de elementos com intervalos | Hero, listas, cards |
-| M-42 | Easing System | Curvas coerentes para entrada, saída e feedback | Sistema de movimento consistente |
-| M-43 | Micro Feedback | Pequena resposta a ação, carregamento ou sucesso | Formulários e controles |
-| M-44 | Counter/Number Transition | Número muda com animação | Dados reais, estatísticas verificadas |
-| M-45 | Scroll Progress Reveal | Progresso de leitura anima linha/indicador | Etapas e conteúdo longo |
-
-## Baseline obrigatório de landing page
-
-Planejar e implementar uma seleção coerente, em geral:
-- M-02 ou M-03 para entrada de headline/hero;
-- M-04 ou M-05 para tratamento da mídia principal;
-- M-08 e/ou M-09 em várias seções;
-- M-31 para CTAs e controles, com estados hover/focus/active;
-- pelo menos um padrão adicional adequado à história da marca, por exemplo M-11, M-13, M-14, M-21, M-22, M-35 ou M-39.
-
-Para landing page profissional, o mínimo de aceite é **6 tratamentos distintos**; a faixa recomendada é 6–10. Não contar repetição de um mesmo reveal como um efeito diferente. Para todo projeto, adaptar ao conteúdo/dispositivos, mas ficar abaixo do mínimo em landing pages exige exceção documentada e aprovada.
-
-## Relação com a auditoria Ana Marques
-
-Os padrões do relatório recebido do usuário estão listados em `CASE-STUDY-ANA-MARQUES.md`. Os IDs relacionados são M-01, M-02, M-04, M-21/M-22, M-25, M-26, M-27, M-31, M-35 e M-37, sujeitos à ressalva de proveniência do caso.
+## Selection rules
+1. Define the user/business purpose before selecting a pattern.
+2. Prefer a coherent small set over a high count.
+3. Consider content, assets, viewport, performance, reduced motion and maintainability.
+4. Do not count repeated instances of one pattern as different patterns.
+5. Record chosen IDs in Motion Brief only when a brief is warranted.
+6. Keep the pattern IDs stable; add new IDs only with documented behavior, use, fallback and QA.

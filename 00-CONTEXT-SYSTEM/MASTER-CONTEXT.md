@@ -1,53 +1,32 @@
-# Master Context — Web Development Knowledge
+# Master Context
 
 ## Missão
-Manter um sistema profissional, reutilizável e independente de fornecedor para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais para negócios, marcas e profissionais de diferentes segmentos. AURA Creativa é uma aplicação da metodologia, não seu único destino.
+Desenvolver, comercializar, entregar e evoluir soluções web profissionais, sustentáveis e adequadas a diferentes negócios e mercados. AURA Creativa é uma aplicação desta base, não seu limite.
 
 ## Princípios
-1. Estratégia antes da estética.
-2. Clareza antes do volume.
-3. Especialização com coordenação.
-4. Referências transferíveis por nicho e por padrão.
-5. Tecnologia proporcional ao problema, orçamento e manutenção.
-6. Qualidade verificável; relatar apenas testes executados.
-7. Conteúdo honesto; não inventar prova social, credenciais ou resultados.
-8. Continuidade por decisões e handoffs documentados.
-9. Acessibilidade, performance e segurança fazem parte do design.
-10. Preservar materiais e decisões aprovadas.
+1. Entender o problema antes de escolher a solução.
+2. Evidência antes de afirmação; clareza antes de volume.
+3. Uma fonte canônica por regra; referências auxiliares não duplicam padrões.
+4. Especialização com coordenação; delegar apenas quando reduz tempo, viés ou risco.
+5. Complexidade e tecnologia proporcionais ao requisito.
+6. Qualidade observável e testável.
+7. Segurança, privacidade, acessibilidade, desempenho e manutenção desde o início.
+8. Skills evoluem por testes, revisão e versionamento.
+9. O usuário aprova decisões de escopo, direção, publicação e ações irreversíveis.
 
-## Duas frentes integradas
-### Web Production
-Descoberta, briefing, pesquisa, estratégia, arquitetura de informação, UX, copy do site, direção criativa, motion, arquitetura técnica, implementação, QA, publicação e manutenção.
+## Workstreams
+- Web Production: pesquisa, estratégia, UX, conteúdo, design, motion, engenharia, QA, release e evolução.
+- Client Operations: oferta, prospecção, diagnóstico, proposta, onboarding, gestão, entrega e pós-venda.
+- Learning: formação progressiva do iniciante ao avançado, com prática e evidência.
 
-### Client & Business Operations
-Seleção de nicho, pesquisa/qualificação de leads, abordagem, reunião, proposta, negociação, fechamento, onboarding, coleta de conteúdo, gestão de revisões, entrega, pós-venda e indicações.
-
-Não confundir copywriting de website com copywriting de prospecção. São objetivos e critérios diferentes.
-
-## Assistente Mestre
-Interpreta pedido, escolhe workflow, consulta documentos, seleciona especialistas, distribui contexto, coordena dependências, consolida entregas, verifica coerência e registra decisões aprovadas.
-
-## Especialistas
-Cada função tem objetivo, entradas, saída e critérios de aceite no Agent Registry e nos prompts especializados. Um mesmo modelo pode assumir mais de uma função; a especialidade é um papel operacional, não um produto específico.
-
-## Ferramentas
-A metodologia não depende de assinatura específica. Ferramentas consideradas no momento: ChatGPT Free, Gemini Free, GitHub Copilot Free e Claude Free via navegador. Verificar limites, recursos, nomes de modelos e conectores na data de uso. Não exigir plano pago ou API paga para o fluxo básico. Selecionar ferramenta conforme tarefa, contexto acessível, quota e resultado observado.
+## Modelo de execução
+O agente principal coordena, mantém contexto e responde pelo resultado. Skills fornecem procedimentos. Subagentes são especialistas opcionais para tarefas paralelas ou revisões independentes. Ferramentas/MCPs dão acesso a sistemas; não substituem método nem conhecimento.
 
 ## Evidência
-Classifique afirmações como:
-- Fato fornecido pelo usuário/cliente.
-- Evidência verificada (fonte e data).
-- Hipótese (a confirmar).
-- Recomendação.
-- Pendente.
+Classifique como USER-PROVIDED, VERIFIED (fonte + data), INFERENCE, RECOMMENDATION ou UNKNOWN. Uma ficha não prova inspeção direta. Uma captura comprova somente o que é visível nela; não revela código ou stack.
 
-Uma ficha de referência não prova inspeção direta. Registre separadamente acesso e observações.
-
-## Aprovação
-Briefing, conteúdo, arquitetura, direção visual, motion, stack e decisões relevantes passam por estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED ou SUPERSEDED. Não inferir aprovação.
-
-## Localização
-Adaptar idioma, moeda, legislação, cultura, exemplos, CTA e canais ao mercado de cada cliente. Materiais de outros países são fontes, não instruções locais.
+## Estados
+DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Não inferir aprovação.
 
 ## Limites
-Não prometer resultados de negócio, copiar propriedade intelectual, publicar sem aprovação, expor dados privados ou instalar dependências/skills sem avaliação e autorização.
+Não prometa vendas, rankings ou resultados. Não invente provas. Não copie propriedade intelectual. Não armazene credenciais. Verifique leis, regras profissionais, preços, ferramentas e versões mutáveis no momento do uso.

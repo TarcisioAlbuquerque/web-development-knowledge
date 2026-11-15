@@ -1,61 +1,37 @@
 # Web Development Knowledge
 
-Base central de conhecimento para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais profissionais para diferentes clientes, segmentos e tecnologias.
+Sistema de conhecimento e operação para criar, vender, entregar e evoluir experiências web profissionais. A metodologia é universal; AURA Creativa é uma aplicação.
 
-## Princípio central
-Este repositório é a fonte oficial do conhecimento aprovado. Conversas com ChatGPT, Gemini, Claude e GitHub Copilot são ambientes de execução; decisões, metodologias, referências e padrões duradouros devem ser documentados aqui. A metodologia é universal e reutilizável; AURA é uma aplicação, não o único destino.
+## Comece por aqui
+1. Leia AGENTS.md e 00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md.
+2. Para Claude Code, consulte CLAUDE.md (curto por design).
+3. Classifique a tarefa: Web Production, Client Operations ou Learning.
+4. Carregue somente as Skills e documentos necessários à etapa atual.
+5. Use o projeto/brief aprovado como fonte de fatos; registre hipóteses e decisões.
+6. Verifique o trabalho antes de declarar concluído.
 
-## Como começar
-1. Leia `AGENTS.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md` e `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`.
-2. Identifique se a tarefa é Web Production, Client & Business Operations ou ambas.
-3. Consulte o workflow, o especialista e o prompt relevantes.
-4. Envie a cada IA apenas o pacote de contexto necessário.
-5. Consulte referências por nicho e por padrão/experiência, inclusive entre segmentos.
-6. Registre decisões aprovadas, entregas e handoffs.
-7. Preserve material existente. Peça autorização para mudanças de escopo, ações destrutivas ou publicação.
+## Arquitetura
+- 00-CONTEXT-SYSTEM/ — princípios, índice, governança e handoffs.
+- 00-METHODOLOGY/ — workflows e trilha do zero ao avançado.
+- 01-REFERENCE-LIBRARY/ — referências, guias e Motion & Interaction.
+- 02-DESIGN-LIBRARY/ — padrões visuais reutilizáveis.
+- 03-AGENT-SKILLS/ — registro, avaliação e governança das Skills.
+- .claude/skills/ — Skills executáveis no Claude Code.
+- .claude/agents/ — especialistas delegáveis.
+- 04-PROMPTS/ — brief de tarefa; não duplicar o conteúdo das Skills.
+- 05-PROJECTS/ — contexto específico de cada cliente.
+- 06-DEVELOPMENT-STANDARDS/ — padrões de engenharia e starter kits.
+- 07-QUALITY-CONTROL/ — critérios de aceite e release.
 
-## Estrutura
-- `00-CONTEXT-SYSTEM/` — contexto, índice, decisões, governança e handoff.
-- `00-METHODOLOGY/` — metodologia universal e workflows.
-- `01-REFERENCE-LIBRARY/` — sites, motion, interações, ferramentas, guias e playbooks.
-- `02-DESIGN-LIBRARY/` — padrões visuais e de experiência.
-- `03-AGENT-SKILLS/` — especialistas, ferramentas, skills e avaliação de modelos.
-- `04-PROMPTS/` — prompts mestres, especializados e workflows.
-- `05-PROJECTS/` — contexto e entregas de cada cliente.
-- `06-DEVELOPMENT-STANDARDS/` — padrões técnicos.
-- `07-QUALITY-CONTROL/` — critérios de aceite e liberação.
-- `.github/copilot-instructions.md` — instruções do Copilot no VS Code.
+## Economia de contexto
+Claude carrega o núcleo curto, consulta o índice e invoca somente Skills relevantes. Não deve ler toda a biblioteca por padrão. Documentos longos são fontes sob demanda; Skills contêm o processo, não cópias integrais da biblioteca.
 
-## Dois fluxos integrados
-**Web Production:** descoberta → briefing → estratégia → arquitetura/UX → copy → direção visual → motion → arquitetura técnica → desenvolvimento → QA → publicação.
+## Dois fluxos
+Web Production: descoberta → estratégia → arquitetura/UX → conteúdo → direção visual → motion → arquitetura técnica → implementação → QA → entrega/evolução.
+Client Operations: oferta/nicho → pesquisa de leads → abordagem → diagnóstico → proposta → onboarding → gestão → entrega → pós-venda.
 
-**Client & Business Operations:** seleção de nicho → pesquisa e qualificação de leads → abordagem → reunião → proposta → fechamento → onboarding → coleta de conteúdo → gestão → entrega → pós-venda.
+## Invariantes
+Fatos verificáveis; nenhuma invenção de prova social/credenciais/resultados; nenhuma cópia de propriedade intelectual; segurança, acessibilidade, desempenho e responsividade desde o início; nenhuma publicação, ação destrutiva ou instalação de terceiros sem autorização; relatar somente verificações realmente executadas.
 
-Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente Mestre seleciona especialistas conforme o escopo.
-
-## Regras
-- Diferencie fatos fornecidos, evidências pesquisadas, hipóteses e recomendações.
-- Registre URL, segmento, data e status de verificação de cada referência.
-- Inspiração não autoriza copiar marca, textos, imagens, depoimentos ou código.
-- Não invente dados, credenciais, avaliações, preços ou resultados.
-- Exemplos comerciais de materiais de referência não são preços atuais.
-- Avalie ferramentas, bibliotecas e skills por necessidade, compatibilidade, licença, manutenção e segurança.
-- Priorize acessibilidade, desempenho, segurança, responsividade e manutenção.
-- Não afirme testes ou instalações não realizados.
-- Não armazene senhas, tokens ou dados pessoais desnecessários.
-- O repositório é privado; não altere visibilidade ou permissões sem autorização.
-
-## Governança
-GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
-
-Documentação principal em português brasileiro.
-
-
-## Motion & Interaction — padrão obrigatório
-Toda landing page deve ter um Motion & Interaction Brief, consultar o catálogo universal e entregar motion/interações implementados e testados — não apenas planejados. Baseline, biblioteca, starter kit e critérios de aceite estão em:
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PATTERN-CATALOG.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/INTERACTIVE-COMPONENTS.md`
-- `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md`
-
-A seleção é transversal e obrigatória; o uso de cada efeito deve ser adaptado ao cliente, com acessibilidade, reduced-motion, mobile e performance verificados.
+## Segurança do repositório
+A intenção documentada é manter esta base privada. Na auditoria de 15/11/2026, a API do GitHub reportou visibility: public. Confirme/corrija a visibilidade em GitHub Settings antes de adicionar informações comerciais confidenciais ou dados de clientes. Não armazene credenciais, tokens ou arquivos .env.

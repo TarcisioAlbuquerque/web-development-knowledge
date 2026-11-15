@@ -1,0 +1,22 @@
+# Claude local state
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+*.pem
+*.key
+
+# Build/runtime
+node_modules/
+dist/
+build/
+coverage/
+.playwright/
+test-results/
+playwright-report/
+.DS_Store

@@ -1,86 +1,57 @@
-# Motion & Interaction Brief — Template de Projeto
+# Motion & Interaction Brief
 
-> Duplicar esta ficha em cada projeto web e preencher antes da implementação.
+Use when motion or custom interactions are material to the experience. A small static site may use a short note instead.
 
-## 1. Identificação
-- Projeto/cliente:
-- Segmento:
-- URL/branch:
-- Responsável:
-- Data:
-- Estado: DRAFT / IN_REVIEW / APPROVED / BLOCKED
+## 1. Context
+- Project / URL / branch:
+- Audience and main task:
+- Brand feeling / narrative:
+- Devices / constraints:
+- Status: DRAFT / IN_REVIEW / APPROVED / BLOCKED
 
-## 2. Objetivo da experiência
-- Que sensação a marca precisa transmitir?
-- Que informação deve receber atenção primeiro?
-- O que o movimento ajuda o visitante a entender?
-- Quais ações devem ficar mais claras?
-- Que restrições de conteúdo, mídia, orçamento, dispositivo ou prazo existem?
+## 2. Motion profile
+- Essential / Standard / Signature:
+- Why this intensity fits:
+- Content/actions that must never be delayed or obscured:
 
-## 3. Referências consultadas
-| Referência | Padrões consultados | Verificação | Selecionado/adaptado/descartado | Motivo |
+## 3. References
+| Reference | Evidence status | Pattern considered | Adapted/rejected | Reason |
 |---|---|---|---|---|
 
-## 4. Motion selecionado
-| ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Reduced motion/fallback | Estado |
+## 4. Selected motion
+| ID | Element | Purpose | Trigger/state | Timing/easing | Desktop/mobile | Reduced-motion/fallback | Acceptance test |
 |---|---|---|---|---|---|---|---|
 
-**Mínimo obrigatório para landing pages:** 6 tratamentos de motion distintos e 3 padrões de interação úteis. Incluir entrada de hero, scroll reveals em múltiplas seções, movimento/revelação de mídia, feedback consistente nos CTAs/controles e componentes interativos que ajudem a entender, escolher, explorar ou converter. Faixa recomendada: 6–10 tratamentos e 3–5 padrões. Exceções abaixo do mínimo precisam de aprovação explícita do usuário/cliente.
+## 5. Selected interactions
+| ID | User task | States/data/events | Keyboard/touch/semantics | Feedback/error | Destination | Acceptance test |
+|---|---|---|---|---|---|---|
 
-## 5. Componentes interativos selecionados
-| ID | Componente | Conteúdo/dados necessários | Estados | Conversão/tarefa apoiada | Testes |
-|---|---|---|---|---|---|
+## 6. Technical plan
+- Existing stack:
+- CSS / WAAPI / IntersectionObserver:
+- Library (if needed) and rationale:
+- Starter Kit components reused/adapted:
+- Cleanup/lifecycle plan:
+- Performance/accessibility risk:
 
-## 6. Sistema de timing e movimento
-- Duração de microinteração:
-- Duração de transição:
-- Duração de entrada:
-- Easing principal:
-- Distância/escala:
-- Regras de stagger:
-- Regras de repetição:
-- Propriedades animadas prioritariamente:
-- Elementos que não devem se mover:
-
-## 7. Stack e implementação
-- Stack já adotada:
-- CSS / Web Animations API / IntersectionObserver:
-- GSAP / ScrollTrigger (justificativa):
-- Outras dependências (justificativa/licença):
-- Componentes do Motion Starter Kit aproveitados:
-- Componentes customizados:
-
-## 8. Responsividade e acessibilidade
-- Breakpoints testados:
-- Comportamento touch:
-- Operação por teclado:
-- Focus-visible:
-- prefers-reduced-motion:
-- Pausa de marquee/autoplay:
-- Fallback sem JS:
-- Conteúdo continua disponível sem motion?:
-
-## 9. Exceções ao baseline
-| Item não implementado | Motivo concreto | Alternativa | Impacto | Aprovação |
+## 7. Exceptions / rejected patterns
+| Pattern | Reason | Alternative | Approval required? | Status |
 |---|---|---|---|---|
 
-## 10. Plano de QA — evidências obrigatórias
-- [ ] Captura/gravação do hero carregando.
-- [ ] Capturas/gravação de pelo menos duas seções com scroll reveal.
-- [ ] Vídeo/registro dos efeitos de mídia selecionados.
-- [ ] Teste dos estados hover, focus-visible e active.
-- [ ] Teste de cada componente interativo.
-- [ ] Teste em desktop e mobile.
-- [ ] Teste com reduced-motion.
-- [ ] Teste de teclado e toque.
-- [ ] Console/build sem erros conhecidos, quando verificável.
-- [ ] Evidência ligada aos IDs do catálogo.
+## 8. QA evidence
+- Browser/device/viewports:
+- Reduced-motion:
+- Keyboard/focus/touch:
+- JS failure/fallback:
+- Console/build:
+- Selected IDs verified:
+- Evidence links/files:
+- Findings and corrections:
 
-## 11. Handoff final
-- IDs implementados:
-- Arquivos/componentes:
-- Testes executados:
-- Problemas corrigidos:
-- Pendências:
-- Exceções aprovadas:
-- Estado final: APPROVED / APPROVED WITH LIMITATIONS / REJECTED
+## 9. Handoff
+- Implemented IDs:
+- Files/components:
+- Tests actually run:
+- Untested areas:
+- Remaining risks:
+- Final state: APPROVED / APPROVED WITH LIMITATIONS / REJECTED

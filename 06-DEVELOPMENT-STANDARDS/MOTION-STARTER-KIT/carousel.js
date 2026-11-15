@@ -1,65 +1,83 @@
-/* Motion Starter Kit — native scroll-snap carousel controls, no dependencies.
-   Swipe and native scrolling remain available; buttons are an additional input method. */
+/* Native scroll-snap carousel controls. Swipe/native scroll remain available. */
 (() => {
-  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+  const activeRoots = new WeakMap();
 
-  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
-    const track = carousel.querySelector("[data-carousel-track]");
-    const previous = carousel.querySelector("[data-carousel-prev]");
-    const next = carousel.querySelector("[data-carousel-next]");
-    const status = carousel.querySelector("[data-carousel-status]");
-    if (!track) return;
+  function initCarousels(root = document) {
+    activeRoots.get(root)?.();
+    const cleanups = [];
+    const addListener = (target, type, fn, options) => {
+      target.addEventListener(type, fn, options);
+      cleanups.push(() => target.removeEventListener(type, fn, options));
+    };
+    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 
-    const slides = [...track.querySelectorAll(".motion-carousel__slide, [data-carousel-slide]")];
-    if (!slides.length) return;
+    root.querySelectorAll("[data-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector("[data-carousel-track]");
+      const previous = carousel.querySelector("[data-carousel-prev]");
+      const next = carousel.querySelector("[data-carousel-next]");
+      const status = carousel.querySelector("[data-carousel-status]");
+      if (!track) return;
 
-    let frameRequested = false;
-    let currentIndex = 0;
+      const slides = Array.from(track.querySelectorAll(".motion-carousel__slide, [data-carousel-slide]"));
+      if (!slides.length) return;
 
-    const getNearestIndex = () => {
-      const trackLeft = track.getBoundingClientRect().left;
-      let nearest = 0;
-      let smallestDistance = Number.POSITIVE_INFINITY;
+      let frameRequested = false;
+      let currentIndex = -1;
 
-      slides.forEach((slide, index) => {
-        const distance = Math.abs(slide.getBoundingClientRect().left - trackLeft);
-        if (distance < smallestDistance) {
-          smallestDistance = distance;
-          nearest = index;
+      const nearestIndex = () => {
+        const edge = track.getBoundingClientRect().left;
+        let nearest = 0;
+        let distance = Number.POSITIVE_INFINITY;
+        slides.forEach((slide, index) => {
+          const current = Math.abs(slide.getBoundingClientRect().left - edge);
+          if (current < distance) { distance = current; nearest = index; }
+        });
+        return nearest;
+      };
+
+      const update = () => {
+        const nextIndex = nearestIndex();
+        if (nextIndex !== currentIndex) {
+          currentIndex = nextIndex;
+          if (status) status.textContent = "Item " + (currentIndex + 1) + " de " + slides.length;
         }
-      });
-      return nearest;
+        if (previous) previous.disabled = currentIndex <= 0;
+        if (next) next.disabled = currentIndex >= slides.length - 1;
+        frameRequested = false;
+      };
+
+      const scheduleUpdate = () => {
+        if (frameRequested) return;
+        frameRequested = true;
+        window.requestAnimationFrame(update);
+      };
+
+      const goTo = (index) => {
+        const safeIndex = Math.max(0, Math.min(index, slides.length - 1));
+        const left = slides[safeIndex].getBoundingClientRect().left
+          - track.getBoundingClientRect().left + track.scrollLeft;
+        track.scrollTo({ left, behavior: reduceMotion ? "auto" : "smooth" });
+        scheduleUpdate();
+      };
+
+      addListener(track, "scroll", scheduleUpdate, { passive: true });
+      addListener(window, "resize", scheduleUpdate, { passive: true });
+      if (previous) addListener(previous, "click", () => goTo(nearestIndex() - 1));
+      if (next) addListener(next, "click", () => goTo(nearestIndex() + 1));
+      update();
+    });
+
+    const cleanup = () => {
+      cleanups.forEach((remove) => remove());
+      if (activeRoots.get(root) === cleanup) activeRoots.delete(root);
     };
+    activeRoots.set(root, cleanup);
+    return cleanup;
+  }
 
-    const update = () => {
-      currentIndex = getNearestIndex();
-      if (previous) previous.disabled = currentIndex <= 0;
-      if (next) next.disabled = currentIndex >= slides.length - 1;
-      if (status) status.textContent = `Item ${currentIndex + 1} de ${slides.length}`;
-      frameRequested = false;
-    };
-
-    const scheduleUpdate = () => {
-      if (frameRequested) return;
-      frameRequested = true;
-      window.requestAnimationFrame(update);
-    };
-
-    const goTo = (index) => {
-      const safeIndex = Math.max(0, Math.min(index, slides.length - 1));
-      const left = slides[safeIndex].getBoundingClientRect().left
-        - track.getBoundingClientRect().left
-        + track.scrollLeft;
-      track.scrollTo({ left, behavior: reduceMotion ? "auto" : "smooth" });
-      currentIndex = safeIndex;
-      scheduleUpdate();
-    };
-
-    previous?.addEventListener("click", () => goTo(getNearestIndex() - 1));
-    next?.addEventListener("click", () => goTo(getNearestIndex() + 1));
-    track.addEventListener("scroll", scheduleUpdate, { passive: true });
-    window.addEventListener("resize", scheduleUpdate, { passive: true });
-
-    update();
-  });
+  window.MotionCarousel = {
+    init: initCarousels,
+    destroy(root = document) { activeRoots.get(root)?.(); }
+  };
+  initCarousels(document);
 })();

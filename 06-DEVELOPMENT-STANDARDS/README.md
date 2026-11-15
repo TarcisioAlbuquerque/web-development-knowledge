@@ -1,63 +1,39 @@
 # Development Standards
 
-Padrões reutilizáveis sem stack única obrigatória.
+Stack-agnostic engineering standards. Detailed procedures should live in the relevant Skill or official technology documentation, not be duplicated here.
 
-## Seleção de stack
-Escolher a menor complexidade que atende requisitos. Avaliar tipo de site, conteúdo, integrações, SEO, acessibilidade, performance, capacidade do executor, ambiente, hospedagem, custo e manutenção. HTML/CSS/JS pode bastar para landing/institucional simples; avaliar Astro/CMS para conteúdo e React ou equivalente para interfaces com estado complexo; e-commerce deve usar solução apropriada para catálogo/pagamentos/estoque. Motion: começar com CSS/Web Animations API; adicionar GSAP/ScrollTrigger quando timeline, pin ou scroll orchestration justificarem. Comparar opção principal e alternativa.
+## 1. Architecture and stack
+Choose the smallest architecture that meets requirements and can be maintained by the actual owner. Evaluate content/editing, rendering/SEO, integrations, data, authentication, hosting, budget, security and operational capability. Compare one viable alternative and record expensive-to-reverse decisions.
 
-## Front-end
-- Inspecionar antes de refatorar.
-- Usar HTML semântico, headings e landmarks.
-- Componentizar proporcionalmente à complexidade.
-- Tratar hover, focus-visible, active, disabled, loading, error e success.
-- Rotular campos e validar formulários.
-- Não expor chaves ou secrets.
-- Otimizar imagens, dimensões, fontes e carregamento.
-- Manter dependências enxutas e documentar build/test.
-- Testar browsers/larguras do público.
+Common fit (not mandates):
+- Static/simple landing: semantic HTML/CSS/JS or static generator.
+- Content-heavy/multipage: static/SSR framework plus suitable CMS when editing needs justify it.
+- Rich client interactions: framework only when state/reuse justify it.
+- Transactions: established commerce/payment platform where suitable.
+- Authenticated product: explicit backend/data/auth architecture and more rigorous testing.
 
-## Motion Engineering
-- Motion deve comunicar hierarquia, continuidade, feedback ou narrativa.
-- O conteúdo deve funcionar sem animação.
-- Evitar intro longa, scroll hijacking e bloqueio de ação.
-- CSS para transições simples; Web Animations API para controle nativo; IntersectionObserver para entrada na viewport; GSAP/ScrollTrigger para timelines/pin/scroll complexos quando justificável.
-- Respeitar `prefers-reduced-motion`; não comunicar só por movimento; manter fallback se JS falhar.
-- Testar mobile, toque, teclado, resize e carregamento tardio.
-- Handoff de cada efeito deve indicar objetivo, elemento, trigger, propriedades, duration, easing, dependência, fallback e validação.
+## 2. Frontend
+Semantic HTML; accessible native controls; responsive layout; clear states; validated forms; scoped styles; small reusable components; optimized images/fonts; no exposed secrets; deterministic build/test instructions. Inspect existing architecture before refactoring.
 
-## Acessibilidade
-HTML semântico, teclado, foco visível, labels, erros associados, contraste, texto alternativo e reduced-motion. Componentes customizados precisam nome, função, estado e operação acessíveis.
+## 3. Quality engineering
+Use automated tests proportionate to risk: unit tests for pure logic, integration tests for service/component boundaries, e2e for critical journeys. TDD is useful for complex logic and defect-prone behavior, not mandatory ceremony for every visual change. Use systematic root-cause debugging. Review diffs for unrelated edits and regressions.
 
-## Performance
-Medir antes/depois; não declarar otimização sem medir. Otimizar imagem/fontes, lazy-load de conteúdo fora da primeira viewport quando adequado, reduzir scripts/dependências e evitar trabalho excessivo na main thread. Considerar Core Web Vitals e rede/dispositivo do público.
+## 4. Accessibility
+Target WCAG 2.2 AA when required by scope/contract. Check semantic structure, keyboard, focus-visible/not obscured, labels, error associations, contrast, target sizes, alternatives, zoom/reflow and reduced motion. Automated scanners complement human review; they do not prove conformance.
 
-## SEO
-Titles/descriptions únicos, headings semânticos, conteúdo útil, URLs legíveis, canonical/sitemap/robots quando aplicáveis, Open Graph, alt e structured data somente se correta. Não prometer ranking nem usar keyword stuffing.
+## 5. Performance
+Measure before claiming optimization. Reserve media dimensions, use suitable formats/sizes, optimize fonts, minimize render-blocking assets and third-party scripts, avoid excessive JavaScript and main-thread work. Use field Core Web Vitals when available; lab results are diagnostic, not substitutes for field data.
 
-## Segurança e privacidade
-HTTPS, dependências confiáveis, proteção de formulários, minimização de dados e revisão de scripts/embeds. Nunca colocar secrets ou dados privados no repositório.
+Good field thresholds at the 75th percentile: LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1. Adapt goals to audience/device/network, and record actual measurement conditions.
 
+## 6. SEO and content
+Unique useful page content, correct titles/descriptions, semantic headings, crawlability/indexability, canonical/sitemap/robots where relevant, internal links, Open Graph and structured data only when accurate. Do not promise rankings or invent schema facts.
 
-## Motion Engineering — padrão de implementação
+## 7. Security and privacy
+Use OWASP Top 10:2025 as an awareness baseline. Protect secrets, validate server-side, authorize every protected operation, minimize personal data, review dependencies and third-party scripts, use HTTPS and safe error handling. Do not treat a checklist as a security certification; consult a specialist for high-risk systems.
 
-Consultar o sistema completo em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` e o starter kit em `MOTION-STARTER-KIT/`.
+## 8. Motion
+Canonical system: 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/. Select motion by purpose, not a numeric quota. Use CSS/native APIs first and advanced libraries only when justified.
 
-### Obrigatório em landing pages
-- Hero com sequência intencional de entrada.
-- Reveal de conteúdo ao longo de múltiplas seções.
-- Pelo menos um tratamento de imagem ou vídeo.
-- Hover/focus-visible/active consistentes em CTAs e controles.
-- Pelo menos um componente interativo contextual, além de links estáticos.
-- Mínimo de aceite: 6 tratamentos de motion distintos e 3 padrões de interação úteis por landing page; faixa recomendada de 6–10 e 3–5. Abaixo disso, exigir exceção documentada e aprovação explícita.
-
-### Implementação
-- Reutilizar tokens e primitives do starter kit quando aplicáveis.
-- Entregar os efeitos do Motion Brief em código funcional.
-- Preferir CSS e APIs nativas para movimentos simples; adicionar GSAP/ScrollTrigger ou outra biblioteca apenas com justificativa.
-- Evitar animação de propriedades que causam layout/reflow quando transform e opacity bastarem.
-- Não ocultar conteúdo por dependência de JavaScript.
-- Implementar pausa para marquee e mídia contínua, quando aplicável.
-- Respeitar `prefers-reduced-motion`, teclado, touch e foco visível.
-
-### Definição de pronto
-O efeito só conta como implementado quando funciona no navegador, nos breakpoints previstos, com estados de fallback e sem erros conhecidos. Código não executado, placeholder ou proposta visual não conta.
+## 9. Deployment and operations
+Separate dev/preview/production; use version control, backups, controlled secrets, migration/rollback plan, HTTPS, monitoring, error visibility, ownership and maintenance instructions. Deploy only with approval.

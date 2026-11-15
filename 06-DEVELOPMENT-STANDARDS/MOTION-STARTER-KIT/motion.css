@@ -1,4 +1,4 @@
-/* Motion Starter Kit — adapt tokens to each client project. */
+/* Motion Starter Kit — adapt tokens and selectors to each project. */
 html { scroll-behavior: smooth; }
 
 :root {
@@ -10,25 +10,22 @@ html { scroll-behavior: smooth; }
   --motion-distance: 1.5rem;
 }
 
-/* Progressive enhancement: JS adds .motion-ready.
-   If JS fails, content remains visible and text is not clipped. */
+/* Progressive enhancement: JS adds .motion-ready only after setup begins. */
 .motion-ready [data-motion] {
   opacity: 0;
   transition:
     opacity var(--motion-reveal) var(--motion-ease-out),
     transform var(--motion-reveal) var(--motion-ease-out);
-  will-change: opacity, transform;
 }
 
 .motion-ready [data-motion="reveal-up"] { transform: translate3d(0, var(--motion-distance), 0); }
-.motion-ready [data-motion="reveal-left"] { transform: translate3d(-var(--motion-distance), 0, 0); }
+.motion-ready [data-motion="reveal-left"] { transform: translate3d(calc(-1 * var(--motion-distance)), 0, 0); }
 .motion-ready [data-motion="reveal-right"] { transform: translate3d(var(--motion-distance), 0, 0); }
 .motion-ready [data-motion="fade"] { transform: none; }
 
 .motion-ready [data-motion].is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  will-change: auto;
 }
 
 .motion-ready [data-motion-delay="1"] { transition-delay: 80ms; }
@@ -36,7 +33,6 @@ html { scroll-behavior: smooth; }
 .motion-ready [data-motion-delay="3"] { transition-delay: 240ms; }
 .motion-ready [data-motion-delay="4"] { transition-delay: 320ms; }
 
-/* Image reveal: put data-motion on the .motion-image wrapper too. */
 .motion-image {
   position: relative;
   overflow: hidden;
@@ -52,8 +48,6 @@ html { scroll-behavior: smooth; }
 }
 .motion-image.is-visible img { transform: scale(1.035); }
 
-/* Text-mask primitive: JS-dependent clipping is scoped to .motion-ready.
-   Without JS, the text remains visible. Preserve semantic text in the DOM. */
 .motion-ready .motion-mask { display: block; overflow: hidden; }
 .motion-ready .motion-mask__inner {
   display: inline-block;
@@ -65,7 +59,6 @@ html { scroll-behavior: smooth; }
 .motion-ready .motion-mask:nth-child(3) .motion-mask__inner { transition-delay: 200ms; }
 .motion-ready .motion-mask:nth-child(4) .motion-mask__inner { transition-delay: 300ms; }
 
-/* SVG stroke draw only activates after JS has prepared path lengths. */
 .motion-ready [data-motion-svg-draw] path,
 .motion-ready [data-motion-svg-draw] line,
 .motion-ready [data-motion-svg-draw] polyline {
@@ -78,7 +71,6 @@ html { scroll-behavior: smooth; }
   stroke-dashoffset: 0 !important;
 }
 
-/* CTA interaction: provide equivalent focus and active feedback. */
 [data-motion-hover="lift"] {
   transition:
     transform var(--motion-medium) var(--motion-ease-out),
@@ -87,9 +79,7 @@ html { scroll-behavior: smooth; }
     border-color var(--motion-medium) ease;
 }
 [data-motion-hover="lift"]:hover,
-[data-motion-hover="lift"]:focus-visible {
-  transform: translateY(-2px);
-}
+[data-motion-hover="lift"]:focus-visible { transform: translateY(-2px); }
 [data-motion-hover="lift"]:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
@@ -103,11 +93,8 @@ html { scroll-behavior: smooth; }
 [data-motion-arrow]:hover svg,
 [data-motion-arrow]:focus-visible svg,
 [data-motion-arrow]:hover .motion-arrow,
-[data-motion-arrow]:focus-visible .motion-arrow {
-  transform: translateX(4px);
-}
+[data-motion-arrow]:focus-visible .motion-arrow { transform: translateX(4px); }
 
-/* Scroll-snap carousel primitive; native touch scrolling remains available. */
 .motion-carousel__track {
   display: grid;
   grid-auto-flow: column;
@@ -122,11 +109,7 @@ html { scroll-behavior: smooth; }
 }
 .motion-carousel__slide { scroll-snap-align: start; min-width: 0; }
 
-/* Marquee: duplicate two equal visual groups for a seamless -50% loop. */
-.motion-marquee {
-  overflow: hidden;
-  width: 100%;
-}
+.motion-marquee { overflow: hidden; width: 100%; }
 .motion-marquee__track {
   display: flex;
   width: max-content;
@@ -134,9 +117,7 @@ html { scroll-behavior: smooth; }
 }
 .motion-marquee.is-paused .motion-marquee__track,
 .motion-marquee:focus-within .motion-marquee__track,
-.motion-marquee:hover .motion-marquee__track {
-  animation-play-state: paused;
-}
+.motion-marquee:hover .motion-marquee__track { animation-play-state: paused; }
 .motion-marquee__group {
   display: flex;
   flex: 0 0 auto;
@@ -161,7 +142,6 @@ html { scroll-behavior: smooth; }
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
-    will-change: auto !important;
   }
   .motion-marquee__track { animation: none !important; transform: none !important; }
 }

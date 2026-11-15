@@ -1,149 +1,194 @@
-/* Motion Starter Kit — vanilla JS, no dependencies.
-   Load with defer. In frameworks, initialize/cleanup within the component lifecycle. */
+/* Motion Starter Kit — vanilla JS with cleanup support.
+   Classic script: auto-initializes document. Frameworks may call MotionStarterKit.init(root). */
 (() => {
-  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+  const activeRoots = new WeakMap();
 
-  // Progressive enhancement only after this script executes.
-  document.documentElement.classList.add("motion-ready");
+  function initMotion(root = document) {
+    const previousCleanup = activeRoots.get(root);
+    if (previousCleanup) previousCleanup();
 
-  const revealItems = [...document.querySelectorAll("[data-motion]")];
-  const svgItems = [...document.querySelectorAll("[data-motion-svg-draw]")];
+    const doc = root.nodeType === 9 ? root : root.ownerDocument;
+    const view = doc.defaultView || window;
+    const scope = root.nodeType === 9 ? doc.documentElement : root;
+    const cleanups = [];
+    const observers = [];
+    const addListener = (target, eventName, handler, options) => {
+      target.addEventListener(eventName, handler, options);
+      cleanups.push(() => target.removeEventListener(eventName, handler, options));
+    };
+    const all = (selector) => Array.from(root.querySelectorAll(selector));
+    const motionQuery = view.matchMedia?.("(prefers-reduced-motion: reduce)");
+    const reducedMotion = () => motionQuery?.matches ?? false;
 
-  const showAll = () => {
-    revealItems.forEach((item) => item.classList.add("is-visible"));
-    svgItems.forEach((item) => item.classList.add("is-drawn"));
-  };
+    scope.classList.add("motion-ready");
 
-  if (reduceMotion || !("IntersectionObserver" in window)) {
-    showAll();
-  } else {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
-
-    revealItems.forEach((item) => revealObserver.observe(item));
-
-    const svgObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-drawn");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.2 });
-
-    svgItems.forEach((svg) => {
-      const paths = svg.querySelectorAll("path, line, polyline");
-      paths.forEach((path) => {
-        try {
-          const length = path.getTotalLength();
-          path.style.strokeDasharray = String(length);
-          path.style.strokeDashoffset = String(length);
-        } catch {
-          // Unsupported SVG geometry: keep the graphic visible without drawing animation.
-        }
-      });
-      svgObserver.observe(svg);
-    });
-  }
-
-  // Accessible tabs: each root [data-tabs] owns its tabs and panels.
-  document.querySelectorAll("[data-tabs]").forEach((root) => {
-    const tabs = [...root.querySelectorAll('[role="tab"][data-tab]')];
-    const panels = [...root.querySelectorAll('[role="tabpanel"][data-tab-panel]')];
-    if (!tabs.length || !panels.length) return;
-
-    const activate = (tab, moveFocus = false) => {
-      const selectedId = tab.dataset.tab;
-      tabs.forEach((item) => {
-        const selected = item === tab;
-        item.setAttribute("aria-selected", String(selected));
-        item.tabIndex = selected ? 0 : -1;
-      });
-      panels.forEach((panel) => {
-        panel.hidden = panel.dataset.tabPanel !== selectedId;
-      });
-      if (moveFocus) tab.focus();
+    const revealItems = all("[data-motion]");
+    const svgItems = all("[data-motion-svg-draw]");
+    const showAll = () => {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+      svgItems.forEach((item) => item.classList.add("is-drawn"));
     };
 
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => activate(tab));
-      tab.addEventListener("keydown", (event) => {
-        const currentIndex = tabs.indexOf(tab);
-        let nextIndex = currentIndex;
-        if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (currentIndex + 1) % tabs.length;
-        else if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-        else if (event.key === "Home") nextIndex = 0;
-        else if (event.key === "End") nextIndex = tabs.length - 1;
-        else return;
-        event.preventDefault();
-        activate(tabs[nextIndex], true);
-      });
-    });
+    if (reducedMotion() || !("IntersectionObserver" in view)) {
+      showAll();
+    } else {
+      const revealObserver = new view.IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+      observers.push(revealObserver);
+      revealItems.forEach((item) => revealObserver.observe(item));
 
-    const initiallySelected = tabs.find((tab) => tab.getAttribute("aria-selected") === "true") || tabs[0];
-    activate(initiallySelected);
-  });
-
-  // Explicit marquee pause/resume control. Reduced-motion users get a static track.
-  document.querySelectorAll("[data-marquee]").forEach((marquee) => {
-    const toggle = marquee.querySelector("[data-marquee-toggle]");
-    if (!toggle) return;
-
-    if (reduceMotion) {
-      marquee.classList.add("is-paused");
-      toggle.setAttribute("aria-pressed", "true");
-      toggle.textContent = "Movimento reduzido";
-      toggle.disabled = true;
-      return;
-    }
-
-    toggle.addEventListener("click", () => {
-      const paused = marquee.classList.toggle("is-paused");
-      toggle.setAttribute("aria-pressed", String(paused));
-      toggle.textContent = paused
-        ? (toggle.dataset.resumeLabel || "Retomar movimento")
-        : (toggle.dataset.pauseLabel || "Pausar movimento");
-    });
-  });
-
-  // Viewport video: autoplay is muted, pauses offscreen, and never auto-starts for reduced motion.
-  document.querySelectorAll("video[data-viewport-video]").forEach((video) => {
-    video.muted = true;
-    video.playsInline = true;
-
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      video.pause();
-      video.controls = true;
-      return;
-    }
-
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const playAttempt = video.play();
-          if (playAttempt && typeof playAttempt.catch === "function") {
-            playAttempt.catch(() => { video.controls = true; });
+      const svgObserver = new view.IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-drawn");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+      observers.push(svgObserver);
+      svgItems.forEach((svg) => {
+        svg.querySelectorAll("path, line, polyline").forEach((path) => {
+          try {
+            const length = path.getTotalLength();
+            path.style.strokeDasharray = String(length);
+            path.style.strokeDashoffset = String(length);
+          } catch {
+            // Unsupported geometry remains visible without draw animation.
           }
-        } else {
-          video.pause();
-        }
+        });
+        svgObserver.observe(svg);
       });
-    }, { threshold: 0.35 });
+    }
 
-    videoObserver.observe(video);
-  });
+    all("[data-tabs]").forEach((tabsRoot) => {
+      const tabs = Array.from(tabsRoot.querySelectorAll('[role="tab"][data-tab]'));
+      const panels = Array.from(tabsRoot.querySelectorAll('[role="tabpanel"][data-tab-panel]'));
+      if (!tabs.length || !panels.length) return;
 
-  // Contextual WhatsApp links. Use only client-approved phone/message values.
-  document.querySelectorAll("a[data-whatsapp-cta]").forEach((link) => {
-    const phone = (link.dataset.phone || "").replace(/\D/g, "");
-    const message = link.dataset.message || "";
-    if (!phone) return; // Keep original href if no approved number is supplied.
-    link.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-  });
+      const activate = (tab, moveFocus = false) => {
+        const selectedId = tab.dataset.tab;
+        tabs.forEach((item) => {
+          const selected = item === tab;
+          item.setAttribute("aria-selected", String(selected));
+          item.tabIndex = selected ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.dataset.tabPanel !== selectedId;
+        });
+        if (moveFocus) tab.focus();
+      };
+
+      tabs.forEach((tab) => {
+        addListener(tab, "click", () => activate(tab));
+        addListener(tab, "keydown", (event) => {
+          const index = tabs.indexOf(tab);
+          let nextIndex = index;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+          else if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+          else if (event.key === "Home") nextIndex = 0;
+          else if (event.key === "End") nextIndex = tabs.length - 1;
+          else return;
+          event.preventDefault();
+          activate(tabs[nextIndex], true);
+        });
+      });
+      activate(tabs.find((tab) => tab.getAttribute("aria-selected") === "true") || tabs[0]);
+    });
+
+    all("[data-marquee]").forEach((marquee) => {
+      const toggle = marquee.querySelector("[data-marquee-toggle]");
+      if (!toggle) return;
+
+      const setPaused = (paused) => {
+        marquee.classList.toggle("is-paused", paused);
+        toggle.setAttribute("aria-pressed", String(paused));
+        toggle.textContent = paused
+          ? (toggle.dataset.resumeLabel || "Retomar movimento")
+          : (toggle.dataset.pauseLabel || "Pausar movimento");
+      };
+      if (reducedMotion()) {
+        setPaused(true);
+        toggle.disabled = true;
+        toggle.textContent = "Movimento reduzido";
+      } else {
+        addListener(toggle, "click", () => setPaused(!marquee.classList.contains("is-paused")));
+      }
+    });
+
+    const videos = all("video[data-viewport-video]");
+    const videoStates = new Map();
+    videos.forEach((video) => {
+      video.muted = true;
+      video.playsInline = true;
+      video.controls = true;
+      videoStates.set(video, false);
+    });
+
+    if (videos.length && !reducedMotion() && "IntersectionObserver" in view) {
+      const videoObserver = new view.IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+          videoStates.set(video, entry.isIntersecting);
+          if (entry.isIntersecting && !reducedMotion()) {
+            const attempt = video.play();
+            if (attempt && typeof attempt.catch === "function") {
+              attempt.catch(() => { video.controls = true; });
+            }
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.35 });
+      observers.push(videoObserver);
+      videos.forEach((video) => videoObserver.observe(video));
+    }
+
+    if (motionQuery) {
+      addListener(motionQuery, "change", (event) => {
+        if (!event.matches) return;
+        showAll();
+        videos.forEach((video) => video.pause());
+        all("[data-marquee]").forEach((marquee) => {
+          marquee.classList.add("is-paused");
+          const toggle = marquee.querySelector("[data-marquee-toggle]");
+          if (toggle) {
+            toggle.disabled = true;
+            toggle.textContent = "Movimento reduzido";
+            toggle.setAttribute("aria-pressed", "true");
+          }
+        });
+      });
+    }
+
+    all("a[data-whatsapp-cta]").forEach((link) => {
+      const phone = (link.dataset.phone || "").replace(/\D/g, "");
+      const message = link.dataset.message || "";
+      if (!phone) return;
+      link.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+
+    const cleanup = () => {
+      observers.forEach((observer) => observer.disconnect());
+      cleanups.forEach((remove) => remove());
+      scope.classList.remove("motion-ready");
+      if (activeRoots.get(root) === cleanup) activeRoots.delete(root);
+    };
+    activeRoots.set(root, cleanup);
+    return cleanup;
+  }
+
+  window.MotionStarterKit = {
+    init: initMotion,
+    destroy(root = document) {
+      activeRoots.get(root)?.();
+    }
+  };
+
+  initMotion(document);
 })();

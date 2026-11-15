@@ -1,34 +1,30 @@
-# Biblioteca de referências
+# Reference Library
 
-Cada referência deve ter uma ficha com URL, segmento, data/status da análise, arquitetura, direção visual, UX, motion, conversão, padrões transferíveis e ressalvas.
+Biblioteca de referências visuais, funcionais, comerciais e técnicas. Use como repertório para resolver uma necessidade concreta, não como catálogo de templates prontos.
+
+## Como pesquisar
+1. Defina o problema a resolver (hero, navegação, catálogo, booking, storytelling, conversão, motion, etc.).
+2. Selecione poucas referências por nicho e por padrão/experiência transferível.
+3. Leia a ficha e verifique o site original quando possível.
+4. Registre o que foi observado, inferido, adaptado, rejeitado ou não verificado.
+5. Adapte o princípio ao público, identidade, conteúdo, acessibilidade, orçamento e stack do projeto.
 
 ## Referências registradas
-- [Rosimeire — site de prévia](ROSIMEIRE.md) — segmento e análise visual pendentes.
-- [J&J Advogados Associados](JJ-ADVOGADOS-ASSOCIADOS.md) — advocacia; ideia de entrada/primeira impressão.
-- [Nexo AGC](NEXO-AGC.md) — agência de desenvolvimento web; referência estratégica para a oferta de sites institucionais e landing pages.
-- [DesEngs](DESENGS.md) — diretório de descoberta de recursos para Design Engineers; não é uma skill por si só.
-- [Land-book](LAND-BOOK.md) — galeria de inspiração para websites e landing pages.
-- [Refero Styles](REFERO-STYLES.md) — biblioteca de sistemas visuais em DESIGN.md para orientar agentes.
-- [Refero](REFERO.md) — pesquisa de interfaces reais, padrões de UI/UX e fluxos.
-- [SAMURAI Tech](SAMURAI-TECNOLOGIA.md) — estratégia comercial, diagnóstico, demonstrações conceituais e apresentação de soluções digitais.
-- [Paulo Victor — Portfolio](PORTFOLIO-PV.md) — abertura/intro indicada pelo usuário; inspeção visual ainda pendente.
-- [Técnicas de interação e referências visuais](INTERACTION-AND-VISUAL-TECHNIQUES.md) — scroll-linked, GSAP ScrollTrigger, parallax, sticky, horizontal scroll, glassmorphism e recursos aguardando identificação.
+- ROSIMEIRE.md — site de prévia; segmento/inspeção pendentes.
+- JJ-ADVOGADOS-ASSOCIADOS.md — advocacia; abertura/primeira impressão, inspeção pendente.
+- NEXO-AGC.md — agência web; apresentação de oferta e serviços, inspeção pendente.
+- SAMURAI-TECNOLOGIA.md — oferta, diagnóstico interativo e demonstrações.
+- PORTFOLIO-PV.md — abertura observada por gravação enviada pelo usuário; técnica não confirmada.
+- LAND-BOOK.md — galeria de websites e landing pages.
+- REFERO.md — UI/UX e fluxos de produto.
+- REFERO-STYLES.md — sistemas visuais em formato DESIGN.md.
+- DESENGS.md — diretório para descoberta de recursos.
+- MOTION-AND-INTERACTION-SYSTEM/ — padrões, componentes, playbook e caso Ana Marques.
+- GUIDES-AND-PLAYBOOKS/ — materiais de apoio para produção web e aquisição de clientes.
+- TOOLS-AND-TECHNIQUES-TO-VERIFY.md — termos e ferramentas ainda sem identificação completa.
 
-## Regra
-Não classificar um site por suposição. Se não for possível inspecioná-lo, registrar como pendente até receber evidência suficiente.
+## Evidência e direitos
+Ficha não equivale a inspeção. Não alegue análise direta sem ter aberto/observado a fonte. Captura ou gravação não revela implementação interna. Não copie marca, código, texto, imagem, depoimento ou design proprietário; extraia princípios e crie solução própria.
 
-## Como consultar a biblioteca durante projetos
-A consulta é transversal: pesquisar tanto referências do mesmo segmento quanto referências de outros segmentos que tenham padrões relevantes para a necessidade atual. Exemplo: uma abertura/intro de um escritório de advocacia pode inspirar um site de nutrição, se a experiência combinar com a estratégia e a identidade da profissional.
-
-O agente deve tentar acessar os sites originais, não depender somente das fichas. Deve distinguir claramente entre referência registrada, site efetivamente inspecionado e análise pendente por bloqueio ou falha de acesso. Relatar limitações ao final e pedir material alternativo apenas quando necessário.
-
-
-## Sistema obrigatório de Motion & Interaction
-Consulte `MOTION-AND-INTERACTION-SYSTEM/README.md` antes de qualquer novo projeto web. Ele contém:
-- catálogo universal de animações e técnicas;
-- catálogo de componentes interativos;
-- playbook de implementação;
-- case study Ana Marques;
-- template obrigatório de Motion Brief.
-
-A auditoria Ana Marques foi convertida em padrões de referência, sem copiar conteúdo/identidade. O sistema deve ser consultado transversalmente por função e não apenas por nicho.
+## Atualização
+Use REFERENCE-TEMPLATE.md. Registre URL, segmento, objetivo, data/status de verificação, padrões úteis, evidências, limitações, direitos/permissões e próxima revisão.

@@ -1,45 +1,35 @@
-# Metodologia universal de desenvolvimento web
+# Metodologia Universal de Produção Web
 
-1. **Descoberta:** entender negócio, público, oferta, objetivos, restrições, orçamento e prazo.
-2. **Pesquisa:** analisar concorrentes, linguagem do público e referências relevantes. Separar fatos, hipóteses e oportunidades.
-3. **Estratégia:** definir proposta de valor, mensagem principal, conversão e indicadores.
-4. **Arquitetura:** organizar sitemap, navegação, hierarquia e jornada do usuário.
-5. **UX e conteúdo:** planejar tarefas, formulários, estados, acessibilidade e copy específica e verificável.
-6. **Direção visual:** definir conceito, tipografia, cores, grid, imagens, componentes e comportamento responsivo.
-7. **Motion:** animar com propósito, respeitando desempenho, dispositivos móveis e `prefers-reduced-motion`.
-8. **Arquitetura técnica:** escolher stack proporcional à complexidade, custo, manutenção e integrações.
-9. **Implementação:** construir incrementalmente, com semântica, componentes coerentes e dependências justificadas.
-10. **QA:** testar fluxos, links, formulários, responsividade, acessibilidade, SEO, segurança e performance.
-11. **Entrega:** publicar, documentar acessos por canal seguro, pendências, limitações e manutenção.
-12. **Evolução:** usar feedback e dados para priorizar melhorias.
+As fases são gates de decisão, não burocracia fixa. Simplifique conforme risco e escopo; registre a razão quando omitir uma etapa.
 
-## Princípios
-- Estratégia e estética devem trabalhar juntas.
-- Mobile, acessibilidade, segurança e performance fazem parte da qualidade.
-- Referências inspiram padrões; não autorizam cópia.
-- Não inventar informações, depoimentos, credenciais ou garantias.
-- Não alterar decisões aprovadas sem autorização.
-- A IA deve inspecionar antes de editar e relatar apenas testes realmente executados.
+## Fases
+0. **Intake/classificação:** objetivo, tipo de entrega, mercado/idioma, usuário, prazo, orçamento, ativos, integrações e riscos. Classifique: landing, multipágina, portfólio, catálogo, CMS/editorial, e-commerce, portal ou aplicação.
+1. **Descoberta/briefing:** modelo de negócio, oferta, público, problema, jornada, diferenciais verificáveis, concorrência, canais e restrições. Marque confirmado/hipótese/pendente.
+2. **Pesquisa/evidências:** mercado, concorrentes, perguntas do público e referências. Registre fonte, URL, data, observação e confiança. Não confunda padrão observado com inferência técnica.
+3. **Estratégia:** objetivo, público prioritário, posicionamento, valor, mensagens, prova, objeções, jornada, conversão e KPI mensurável quando existir dado.
+4. **Arquitetura/UX:** sitemap, tarefas, fluxos, hierarquia, navegação, formulários, estados, acessibilidade e mobile. Não use seções-padrão sem justificar.
+5. **Conteúdo/copy:** headline, oferta, serviços, prova real, processo, FAQ, CTA e microcopy. Validar claims; localizar idioma, tom, moeda, terminologia e regras.
+6. **Direção criativa/sistema visual:** conceito ligado ao posicionamento; tipografia, escala, cores/contraste, grid, espaçamento, imagens, ícones, componentes, estados e tokens responsivos.
+7. **Motion/interaction:** escolher intensidade Essential, Standard ou Signature. Motion Brief quando relevante/complexo. Movimento não é quota de efeitos: cada tratamento tem propósito; preservar leitura e operação sem animação.
+8. **Arquitetura técnica:** comparar opções conforme requisito, mantenedor, hospedagem, CMS, integrações, dados, SEO, segurança, custo e manutenção. Menor complexidade que atende; registrar trade-offs e dependências.
+9. **Planejamento/implementação:** dividir em fatias verificáveis. Definir aceite e testes antes de funcionalidades com lógica; usar TDD quando risco/lógica justificarem. Implementar semântica, responsividade, conteúdo aprovado, estados, motion e integrações.
+10. **QA independente:** verificar brief, fluxos, browsers/dispositivos, teclado, formulários, erros, acessibilidade, SEO, segurança e performance conforme escopo. Automação complementa inspeção humana.
+11. **Aprovação/release:** registrar limitações aceitas, URL, configuração, domínio, analytics, CMS, instruções, backup, manutenção e responsáveis. Publicar somente autorizado.
+12. **Evolução:** usar analytics/feedback consentidos, erros, conteúdo e dados reais; priorizar por impacto, confiança, esforço e risco.
 
+## Gates
+G1 Brief — objetivo, público, oferta e restrições compreendidos.
+G2 Strategy/UX — jornada, arquitetura e conteúdo necessários aprovados.
+G3 Creative — direção visual aprovada antes de produção em escala quando requerido.
+G4 Technical — stack, dados, segurança e integrações compreendidos.
+G5 Build — tarefas, aceite e plano de teste definidos.
+G6 QA — nenhum blocker/critical aberto; limitações explicitadas.
+G7 Release — autorização, backup, domínio e handoff confirmados.
 
-## Pesquisa transversal de referências
-A pesquisa de referências deve acontecer em dois eixos complementares:
-- **Por segmento:** soluções recorrentes e necessidades específicas do setor do cliente.
-- **Por padrão/experiência:** elementos úteis independentemente do segmento, como abertura cinematográfica, hero, storytelling, navegação, microinterações, motion, catálogo, apresentação de serviços e conversão.
+## Modos
+- Quick change: tarefa pequena, leitura mínima e teste local.
+- Standard production: briefing, pesquisa, direção, implementação e QA.
+- Complex product: discovery ampliado, arquitetura, riscos, segurança, testes, observabilidade e manutenção.
 
-Não trate a biblioteca como coleção de modelos prontos. Cada site é uma fonte de padrões que devem ser avaliados no contexto do projeto. A seleção final deve considerar objetivo, público, posicionamento, identidade, conteúdo, acessibilidade, desempenho e viabilidade técnica.
-
-
-## Motion & Interaction: gate obrigatório de produção
-
-A etapa 7 (Motion) não é opcional nem pode terminar apenas em recomendações. Em toda landing page, antes da implementação:
-1. Consultar o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`.
-2. Preencher o `MOTION-BRIEF-TEMPLATE.md`, selecionando IDs de motion e componentes interativos.
-3. Definir uma composição de movimento adequada à estratégia, conteúdo e direção de arte.
-4. Implementar os efeitos no código e conectar cada controle à sua função real.
-5. Testar no navegador desktop/mobile, com teclado, toque e `prefers-reduced-motion`.
-6. Registrar evidências e IDs no QA.
-
-Baseline de landing page: sequência animada de hero, reveals em várias seções, movimento/revelação de mídia, feedback de hover/focus/active nos CTAs e controles, e pelo menos uma interação contextual útil. Como mínimo de aceite, implementar pelo menos 6 tratamentos distintos de motion e 3 padrões interativos úteis por landing page; a faixa recomendada é 6–10 e 3–5. Exceção abaixo do mínimo exige justificativa e aprovação explícita do usuário/cliente no Motion Brief.
-
-Não inserir todos os efeitos em todos os sites. O catálogo completo é universal e obrigatório para consulta; a seleção é contextual. O que não é aceitável é entregar uma landing page estática por esquecimento, falta de planejamento ou ausência de handoff.
+## Qualidade transversal
+Verdade, utilidade, coerência, acessibilidade, performance, segurança, compatibilidade, manutenção, clareza e mensuração. Não substitua qualidade por checklist de volume.
