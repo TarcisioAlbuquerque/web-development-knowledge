@@ -71,7 +71,7 @@ Forms/integrações, SEO, performance e Three.js eram citados genericamente, sem
 
 ## 6. Arquivos modificados
 
-README.md; AGENTS.md; .github/copilot-instructions.md; 00-CONTEXT-SYSTEM/GOVERNANCE-DECISIONS-AND-HANDOFFS.md; 00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md; 00-METHODOLOGY/MASTER-METHODOLOGY.md; 01-REFERENCE-LIBRARY/README.md; 02-DESIGN-LIBRARY/README.md; 03-AGENT-SKILLS/README.md; 04-PROMPTS/MASTER-PROMPT.md; 04-PROMPTS/SPECIALISTS/MASTER-SPECIALIST-PROMPTS.md; 05-PROJECTS/PROJECT-TEMPLATE.md; 06-DEVELOPMENT-STANDARDS/README.md.
+README.md; AGENTS.md; .github/copilot-instructions.md; 00-CONTEXT-SYSTEM/MASTER-CONTEXT.md; 00-CONTEXT-SYSTEM/GOVERNANCE-DECISIONS-AND-HANDOFFS.md; 00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md; 00-METHODOLOGY/MASTER-METHODOLOGY.md; 01-REFERENCE-LIBRARY/README.md; 02-DESIGN-LIBRARY/README.md; 03-AGENT-SKILLS/README.md; 04-PROMPTS/MASTER-PROMPT.md; 04-PROMPTS/SPECIALISTS/MASTER-SPECIALIST-PROMPTS.md; 05-PROJECTS/PROJECT-TEMPLATE.md; 06-DEVELOPMENT-STANDARDS/README.md.
 
 ## 7. Arquivos novos
 
@@ -114,6 +114,15 @@ Nenhuma skill/dependência foi instalada.
 - Ferramentas de QA podem exigir Node, browsers e CI; selecionar por projeto.
 - Skills externas mudam; revalidar versão, fonte, licença e scripts antes da adoção.
 
-## 10. Validação e limites
+## 10. Validação realizada
 
-Validar árvore, paths, links internos, headings, arquivos na branch, commit, head e PR. Não há testes de aplicação no root. Nenhum benchmark de skill, Playwright, axe, Lighthouse ou inspeção de navegador é declarado como executado nesta auditoria documental.
+- Branch feat/landing-page-engine-2.0 criada a partir de main; branch main não recebeu commits.
+- Um commit de implementação foi criado e a branch foi conferida contra main.
+- 31 arquivos da primeira versão do commit foram listados pelo GitHub; revisão adicional de alinhamento do contexto central foi incorporada em commit separado.
+- README, Master Context, Governance, Skill Adoption Register, Landing Page Engine README e este audit report foram lidos novamente da branch.
+- Comparação com main, lista de arquivos alterados e status da PR foram consultados.
+- Validação de conteúdo/paths e links internos concluída por inspeção documental; sem lint/CI automatizado configurado.
+- Nenhum teste de navegador, Playwright, axe, Lighthouse ou benchmark de skills foi executado.
+- Pull request aberto em draft; não mesclado.
+
+Não há testes de aplicação no root. Não declarar teste de navegador, benchmark ou automação não executados.
