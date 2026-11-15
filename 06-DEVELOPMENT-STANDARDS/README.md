@@ -1,63 +1,59 @@
 # Development Standards
 
-Padrões reutilizáveis sem stack única obrigatória.
+Padrões técnicos reutilizáveis, sem stack única obrigatória. Escolha a menor complexidade capaz de atender aos requisitos presentes e futuros.
 
 ## Seleção de stack
-Escolher a menor complexidade que atende requisitos. Avaliar tipo de site, conteúdo, integrações, SEO, acessibilidade, performance, capacidade do executor, ambiente, hospedagem, custo e manutenção. HTML/CSS/JS pode bastar para landing/institucional simples; avaliar Astro/CMS para conteúdo e React ou equivalente para interfaces com estado complexo; e-commerce deve usar solução apropriada para catálogo/pagamentos/estoque. Motion: começar com CSS/Web Animations API; adicionar GSAP/ScrollTrigger quando timeline, pin ou scroll orchestration justificarem. Comparar opção principal e alternativa.
+
+Avalie tipo de site, conteúdo, integrações, SEO, acessibilidade, performance, complexidade, experiência da equipe, ambiente, hospedagem, custo e manutenção.
+
+- HTML/CSS/JS: sites estáticos e landing pages simples quando suficientes.
+- Astro ou CMS: conteúdo editorial e páginas que se beneficiam de renderização estática/gerenciamento.
+- React/Next.js ou equivalente: interfaces com estado/ecossistema/requisitos comprovados.
+- E-commerce: plataforma apropriada a catálogo, pagamentos, estoque, pedidos e segurança.
+- TypeScript, Tailwind e bibliotecas: somente quando justificadas.
+
+Compare opção principal e alternativa. Não force frameworks por preferência.
 
 ## Front-end
-- Inspecionar antes de refatorar.
-- Usar HTML semântico, headings e landmarks.
-- Componentizar proporcionalmente à complexidade.
-- Tratar hover, focus-visible, active, disabled, loading, error e success.
-- Rotular campos e validar formulários.
-- Não expor chaves ou secrets.
-- Otimizar imagens, dimensões, fontes e carregamento.
-- Manter dependências enxutas e documentar build/test.
-- Testar browsers/larguras do público.
 
-## Motion Engineering
-- Motion deve comunicar hierarquia, continuidade, feedback ou narrativa.
-- O conteúdo deve funcionar sem animação.
-- Evitar intro longa, scroll hijacking e bloqueio de ação.
-- CSS para transições simples; Web Animations API para controle nativo; IntersectionObserver para entrada na viewport; GSAP/ScrollTrigger para timelines/pin/scroll complexos quando justificável.
-- Respeitar `prefers-reduced-motion`; não comunicar só por movimento; manter fallback se JS falhar.
-- Testar mobile, toque, teclado, resize e carregamento tardio.
-- Handoff de cada efeito deve indicar objetivo, elemento, trigger, propriedades, duration, easing, dependência, fallback e validação.
+- Inspecione antes de refatorar.
+- Use HTML semântico, landmarks e hierarquia de headings.
+- Componentize proporcionalmente à complexidade.
+- Trate hover, focus-visible, active, disabled, loading, error e success.
+- Rotule campos e valide no cliente e no servidor quando aplicável.
+- Não confie apenas na validação do browser para segurança.
+- Otimize imagens, dimensões, fontes e carregamento.
+- Mantenha dependências enxutas e documente build/test.
+- Teste browsers e larguras relevantes ao público.
 
 ## Acessibilidade
-HTML semântico, teclado, foco visível, labels, erros associados, contraste, texto alternativo e reduced-motion. Componentes customizados precisam nome, função, estado e operação acessíveis.
+
+HTML semântico, teclado, foco visível, labels, erros associados, contraste, alt text e reduced-motion. Componentes customizados precisam nome, função, estado e comportamento acessíveis. Ferramentas automatizadas ajudam, mas não substituem revisão manual.
 
 ## Performance
-Medir antes/depois; não declarar otimização sem medir. Otimizar imagem/fontes, lazy-load de conteúdo fora da primeira viewport quando adequado, reduzir scripts/dependências e evitar trabalho excessivo na main thread. Considerar Core Web Vitals e rede/dispositivo do público.
+
+Meça antes/depois; não declare otimização sem medição. Otimize imagens/fontes, lazy-load quando adequado, reduza scripts/dependências e evite trabalho excessivo na main thread. Considere Core Web Vitals e dispositivos/rede do público.
 
 ## SEO
-Titles/descriptions únicos, headings semânticos, conteúdo útil, URLs legíveis, canonical/sitemap/robots quando aplicáveis, Open Graph, alt e structured data somente se correta. Não prometer ranking nem usar keyword stuffing.
+
+Titles/descriptions únicos, headings semânticos, conteúdo útil, URLs legíveis, canonical/sitemap/robots quando aplicáveis, Open Graph, alt e structured data somente quando corretas. Não prometa ranking nem use keyword stuffing.
 
 ## Segurança e privacidade
-HTTPS, dependências confiáveis, proteção de formulários, minimização de dados e revisão de scripts/embeds. Nunca colocar secrets ou dados privados no repositório.
 
+HTTPS, dependências confiáveis, validação server-side, proteção de forms, minimização de dados e revisão de scripts/embeds. Nunca coloque secrets/dados privados no repositório; não confie em valores enviados pelo navegador.
 
-## Motion Engineering — padrão de implementação
+## Motion Engineering
 
-Consultar o sistema completo em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` e o starter kit em `MOTION-STARTER-KIT/`.
+Fonte normativa: 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/. Starter Kit: MOTION-STARTER-KIT/.
 
-### Obrigatório em landing pages
-- Hero com sequência intencional de entrada.
-- Reveal de conteúdo ao longo de múltiplas seções.
-- Pelo menos um tratamento de imagem ou vídeo.
-- Hover/focus-visible/active consistentes em CTAs e controles.
-- Pelo menos um componente interativo contextual, além de links estáticos.
-- Mínimo de aceite: 6 tratamentos de motion distintos e 3 padrões de interação úteis por landing page; faixa recomendada de 6–10 e 3–5. Abaixo disso, exigir exceção documentada e aprovação explícita.
+- CSS para transições simples; Web Animations API/IntersectionObserver para controle nativo; GSAP/ScrollTrigger para timeline/pin/scroll complexos quando justificável.
+- Reutilize tokens/primitives quando adequados.
+- Não oculte conteúdo por dependência de JS.
+- Evite animações que forçam layout; prefira transform/opacity quando apropriado.
+- Limpe observers, listeners e timelines ao desmontar componentes/SPAs.
+- Preserve fallback, teclado, toque, mobile e reduced-motion.
+- Não adicione dependências sem justificativa e revisão.
 
-### Implementação
-- Reutilizar tokens e primitives do starter kit quando aplicáveis.
-- Entregar os efeitos do Motion Brief em código funcional.
-- Preferir CSS e APIs nativas para movimentos simples; adicionar GSAP/ScrollTrigger ou outra biblioteca apenas com justificativa.
-- Evitar animação de propriedades que causam layout/reflow quando transform e opacity bastarem.
-- Não ocultar conteúdo por dependência de JavaScript.
-- Implementar pausa para marquee e mídia contínua, quando aplicável.
-- Respeitar `prefers-reduced-motion`, teclado, touch e foco visível.
+## Definition of Done
 
-### Definição de pronto
-O efeito só conta como implementado quando funciona no navegador, nos breakpoints previstos, com estados de fallback e sem erros conhecidos. Código não executado, placeholder ou proposta visual não conta.
+Recurso só é concluído quando implementado, executado e testado nos contextos previstos. Código não executado, placeholder ou proposta visual não é validação. Consulte 07-QUALITY-CONTROL e o checklist do Landing Page Engine.
