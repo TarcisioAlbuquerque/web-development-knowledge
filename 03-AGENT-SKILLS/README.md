@@ -1,22 +1,30 @@
 # Skills e ferramentas
 
-Avalie recursos antes de adotar: origem, mantenedor, documentação, compatibilidade, dependências, permissões, scripts, riscos e ganho concreto. Descobrir uma skill não significa que esteja instalada ou ativa. Não executar scripts desconhecidos nem fornecer segredos a ferramentas de terceiros.
+Avalie recursos antes de adotar: origem, mantenedor, documentação, compatibilidade, dependências, permissões, scripts, riscos e ganho concreto. Descobrir uma skill não significa que esteja instalada ou ativa.
 
+## Fluxo de adoção
 
-## Fluxo de recomendação por projeto
-1. Identificar a tarefa e avaliar se alguma skill oferece benefício real.
-2. Consultar a fonte e inspecionar todos os arquivos relevantes antes de confiar nela.
-3. Verificar compatibilidade com a versão/host do VS Code e Copilot, localização de instalação, dependências e permissões.
-4. Recomendar de forma explícita ou informar que nenhuma skill adicional é necessária.
-5. Pedir autorização antes de instalar ou executar scripts de terceiros.
-6. Instalar pela via suportada (Marketplace, CLI ou cópia integral da pasta para o diretório suportado).
-7. Verificar que o VS Code detecta a skill. Instalação de dependências externas é uma etapa separada.
+1. Identificar a tarefa e benefício esperado.
+2. Consultar primeiro biblioteca de skills e recursos já disponíveis.
+3. Inspecionar fonte, conteúdo, licença, dependências, scripts e permissões.
+4. Verificar compatibilidade com agente/IDE e escopo.
+5. Recomendar somente quando houver ganho concreto.
+6. Pedir autorização antes de instalar, executar ou configurar terceiros.
+7. Instalar pela via suportada e validar reconhecimento pelo agente.
+8. Separar instalação da skill da instalação de dependências externas.
 
-### Escopos usuais do VS Code / Copilot
-- Projeto: `.github/skills/<nome-da-skill>/`
-- Pessoal/global: `~/.copilot/skills/<nome-da-skill>/`
+## Escopos usuais
 
-A skill deve manter sua pasta completa, incluindo `SKILL.md`, scripts, referências e recursos necessários. Não copiar apenas o `SKILL.md` quando existirem arquivos auxiliares.
+- Projeto: .github/skills/nome-da-skill, se suportado pelo agente.
+- Pessoal/global: ~/.copilot/skills/nome-da-skill, se suportado.
+- Outros ecossistemas usam convenções/CLIs próprios; validar antes do comando.
 
-### Comunicação com o usuário
-Quando uma skill for útil, explicar o benefício e indicar claramente se o passo é automático ou manual. Se o ambiente não permitir a instalação, fornecer o comando/caminho exato e marcar a tarefa como pendente. Nunca alegar instalação ou ativação sem verificação.
+Preserve pasta completa, scripts, referências e recursos. Não copie apenas SKILL.md quando houver arquivos auxiliares.
+
+## Registro
+
+Consultar SKILL-ADOPTION-REGISTER.md para Frontend Design, UI UX Pro Max, Web Design Guidelines, React Best Practices e Caveman. O documento diferencia avaliação, recomendação, instalação e validação.
+
+## Comunicação
+
+Informar nome/fonte, benefício, compatibilidade, método, dependências e ações manuais. Nunca alegar instalação ou ativação sem verificação.

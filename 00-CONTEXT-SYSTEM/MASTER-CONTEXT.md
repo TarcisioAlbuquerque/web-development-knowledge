@@ -16,6 +16,7 @@ Manter um sistema profissional, reutilizável e independente de fornecedor para 
 10. Preservar materiais e decisões aprovadas.
 
 ## Duas frentes integradas
+
 ### Web Production
 Descoberta, briefing, pesquisa, estratégia, arquitetura de informação, UX, copy do site, direção criativa, motion, arquitetura técnica, implementação, QA, publicação e manutenção.
 
@@ -24,14 +25,18 @@ Seleção de nicho, pesquisa/qualificação de leads, abordagem, reunião, propo
 
 Não confundir copywriting de website com copywriting de prospecção. São objetivos e critérios diferentes.
 
+## Landing Page Engine
+
+O diretório 08-LANDING-PAGE-ENGINE/ contém o pipeline especializado para estratégia, arquitetura de seções, direção visual, hero, componentes, conversão, responsividade, motion, formulários/integrações, SEO, performance, recursos 3D opcionais, starters e aceite. Ele complementa a metodologia universal; não substitui a base nem impõe um template ou stack único.
+
 ## Assistente Mestre
 Interpreta pedido, escolhe workflow, consulta documentos, seleciona especialistas, distribui contexto, coordena dependências, consolida entregas, verifica coerência e registra decisões aprovadas.
 
 ## Especialistas
-Cada função tem objetivo, entradas, saída e critérios de aceite no Agent Registry e nos prompts especializados. Um mesmo modelo pode assumir mais de uma função; a especialidade é um papel operacional, não um produto específico.
+Cada função tem objetivo, entradas, saída e critérios de aceite no Agent Registry e nos prompts especializados. Um mesmo modelo pode assumir mais de uma função; a especialidade é papel operacional, não produto específico.
 
 ## Ferramentas
-A metodologia não depende de assinatura específica. Ferramentas consideradas no momento: ChatGPT Free, Gemini Free, GitHub Copilot Free e Claude Free via navegador. Verificar limites, recursos, nomes de modelos e conectores na data de uso. Não exigir plano pago ou API paga para o fluxo básico. Selecionar ferramenta conforme tarefa, contexto acessível, quota e resultado observado.
+A metodologia não depende de assinatura específica. Ferramentas consideradas: ChatGPT Free, Gemini Free, GitHub Copilot Free e Claude Free via navegador. Verificar limites, recursos, nomes de modelos e conectores na data de uso. Não exigir plano pago ou API paga para fluxo básico. Selecionar ferramenta conforme tarefa, contexto acessível, quota e resultado observado.
 
 ## Evidência
 Classifique afirmações como:
