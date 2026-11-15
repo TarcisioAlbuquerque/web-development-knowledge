@@ -1,0 +1,31 @@
+name: Knowledge base quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate docs, Skills and starter scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate knowledge base
+        run: node scripts/validate-knowledge-base.mjs
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check 06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/motion.js
+          node --check 06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/carousel.js
+          node --check 06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/quiz.js
+          node --check scripts/validate-knowledge-base.mjs

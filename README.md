@@ -30,6 +30,9 @@ Claude carrega o núcleo curto, consulta o índice e invoca somente Skills relev
 Web Production: descoberta → estratégia → arquitetura/UX → conteúdo → direção visual → motion → arquitetura técnica → implementação → QA → entrega/evolução.
 Client Operations: oferta/nicho → pesquisa de leads → abordagem → diagnóstico → proposta → onboarding → gestão → entrega → pós-venda.
 
+## Qualidade contínua
+Execute `node scripts/validate-knowledge-base.mjs` para verificar arquivos essenciais, frontmatter das Skills, JSON, IDs de motion e links Markdown internos. O GitHub Actions executa essa validação e verificações de sintaxe JS em pushes e pull requests.
+
 ## Invariantes
 Fatos verificáveis; nenhuma invenção de prova social/credenciais/resultados; nenhuma cópia de propriedade intelectual; segurança, acessibilidade, desempenho e responsividade desde o início; nenhuma publicação, ação destrutiva ou instalação de terceiros sem autorização; relatar somente verificações realmente executadas.
 
