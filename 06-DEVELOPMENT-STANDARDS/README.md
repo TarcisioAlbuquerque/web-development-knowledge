@@ -36,28 +36,3 @@ Titles/descriptions únicos, headings semânticos, conteúdo útil, URLs legíve
 
 ## Segurança e privacidade
 HTTPS, dependências confiáveis, proteção de formulários, minimização de dados e revisão de scripts/embeds. Nunca colocar secrets ou dados privados no repositório.
-
-
-## Motion Engineering — padrão de implementação
-
-Consultar o sistema completo em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` e o starter kit em `MOTION-STARTER-KIT/`.
-
-### Obrigatório em landing pages
-- Hero com sequência intencional de entrada.
-- Reveal de conteúdo ao longo de múltiplas seções.
-- Pelo menos um tratamento de imagem ou vídeo.
-- Hover/focus-visible/active consistentes em CTAs e controles.
-- Pelo menos um componente interativo contextual, além de links estáticos.
-- Mínimo de aceite: 6 tratamentos de motion distintos e 3 padrões de interação úteis por landing page; faixa recomendada de 6–10 e 3–5. Abaixo disso, exigir exceção documentada e aprovação explícita.
-
-### Implementação
-- Reutilizar tokens e primitives do starter kit quando aplicáveis.
-- Entregar os efeitos do Motion Brief em código funcional.
-- Preferir CSS e APIs nativas para movimentos simples; adicionar GSAP/ScrollTrigger ou outra biblioteca apenas com justificativa.
-- Evitar animação de propriedades que causam layout/reflow quando transform e opacity bastarem.
-- Não ocultar conteúdo por dependência de JavaScript.
-- Implementar pausa para marquee e mídia contínua, quando aplicável.
-- Respeitar `prefers-reduced-motion`, teclado, touch e foco visível.
-
-### Definição de pronto
-O efeito só conta como implementado quando funciona no navegador, nos breakpoints previstos, com estados de fallback e sem erros conhecidos. Código não executado, placeholder ou proposta visual não conta.
