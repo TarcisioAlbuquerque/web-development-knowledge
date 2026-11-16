@@ -1,5 +1,13 @@
 # Master Context — Web Development Knowledge
 
+## Autoridade documental
+- `AGENTS.md`: autoridade única para regras operacionais e comportamento dos agentes.
+- Este documento: autoridade sobre missão, escopo, princípios e contexto estrutural.
+- `GOVERNANCE-DECISIONS-AND-HANDOFFS.md`: registro de decisões aprovadas e transferências.
+- `KNOWLEDGE-INDEX.md`: mapa de navegação, sem criar regras.
+- Metodologias, prompts e padrões: instruções especializadas subordinadas às fontes acima.
+
+
 ## Missão
 Manter um sistema profissional, reutilizável e independente de fornecedor para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais para negócios, marcas e profissionais de diferentes segmentos. AURA Creativa é uma aplicação da metodologia, não seu único destino.
 
