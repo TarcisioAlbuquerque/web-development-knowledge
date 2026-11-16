@@ -1,6 +1,6 @@
 # Sistema universal de Motion & Interaction
 
-**Status:** padrão operacional obrigatório para novos projetos web.  
+**Status:** sistema de referência e implementação para projetos web.  
 **Escopo:** landing pages, sites institucionais, portfólios, sites de profissionais, marcas, serviços, catálogos e experiências digitais.  
 **Referência de origem:** auditoria fornecida pelo usuário do site Ana Marques Nutricionista, incluindo relatório baseado em gravação de navegação.  
 **Princípio:** motion e interação fazem parte do produto digital; não são acabamento opcional de última hora.
@@ -18,33 +18,16 @@ O catálogo contém:
 
 **Importante:** registrar um padrão no catálogo não significa que ele foi observado no site de origem nem que deve ser aplicado indiscriminadamente. Consulte a classificação de evidência na ficha de cada referência.
 
-## Regra operacional para projetos
+## Uso por projeto
+1. Entenda objetivo, público, jornada, conteúdo, direção visual, dispositivos e restrições.
+2. Consulte catálogo e componentes apenas para necessidades relevantes.
+3. Crie um Motion & Interaction Brief proporcional ao escopo; projetos simples podem usar uma especificação curta.
+4. Selecione comportamentos por propósito: orientar, estabelecer hierarquia, narrar, dar feedback, facilitar exploração, explicar ou apoiar conversão.
+5. Defina trigger, estados, timing, desktop/mobile, teclado/toque, reduced-motion, fallback e critério de aceite conforme aplicável.
+6. Implemente apenas o que foi selecionado e aprovado.
+7. Teste os fluxos e dispositivos relevantes; registre evidências e limitações.
 
-Para toda landing page nova, é obrigatório:
-
-1. Consultar `PATTERN-CATALOG.md` e `INTERACTIVE-COMPONENTS.md`.
-2. Criar um Motion & Interaction Brief usando `MOTION-BRIEF-TEMPLATE.md`.
-3. Selecionar e implementar uma composição intencional de motion e interações — não apenas listar ideias.
-4. Incluir, como baseline de landing page, salvo exceção justificada no brief:
-   - uma sequência de entrada do hero (headline + mídia/elemento visual);
-   - revelações ao longo do scroll em mais de uma seção;
-   - tratamento de movimento/revelação de imagem ou vídeo;
-   - sistema consistente de hover, focus-visible e active para CTAs/controles;
-   - pelo menos um comportamento de navegação/interação contextual (tabs, seletor, quiz, galeria, carrossel, FAQ, formulário progressivo ou equivalente adequado);
-   - pelo menos uma interação que ajude o usuário a entender, escolher, explorar ou converter.
-5. Considerar pelo menos um recurso de Advanced Motion (parallax, sticky storytelling, SVG draw, marquee, horizontal scroll ou scroll-linked animation) quando acrescentar valor real. Se não for adequado, registrar a razão e usar uma alternativa mais apropriada.
-6. Para todo site, manter um sistema de movimento consistente nas páginas-chave e feedback funcional nos controles. Em landing pages, aplicar também o mínimo quantitativo abaixo.
-7. Implementar os efeitos efetivamente no código; um plano, placeholder ou comentário não conta como entrega.
-8. Testar no navegador desktop e mobile, incluindo teclado e `prefers-reduced-motion`.
-9. Registrar IDs dos padrões implementados e evidências de teste no relatório do projeto.
-
-### Quantidade e qualidade
-
-**Mínimo de aceite para landing pages:** pelo menos **6 tratamentos de motion distintos** e **3 padrões de interação úteis**, distribuídos ao longo da experiência. A faixa recomendada é 6–10 tratamentos e 3–5 padrões interativos. Repetições do mesmo reveal em cards diferentes contam como consistência, não como novos efeitos. Os padrões precisam ser perceptíveis e funcionais, não apenas classes CSS sem efeito visível.
-
-O catálogo inteiro fica disponível para seleção entre projetos; **não é obrigatório colocar todos os efeitos em uma única página**. Nunca adicionar movimento sem objetivo, quebrar a navegação, atrasar o acesso ao conteúdo ou prejudicar a identidade.
-
-Qualquer exceção ao mínimo precisa ser explícita no Motion Brief e aprovada pelo usuário/cliente: motivo, alternativa escolhida e impacto. Sem essa aprovação, ficar abaixo do mínimo bloqueia o aceite. "Não deu tempo" ou "não foi lembrado" não são justificativas aceitáveis.
+**Não existe mínimo universal de efeitos ou interações.** Não force padrões para atingir um número. Uma página pode precisar de várias interações ou de nenhuma além da navegação e do feedback básico. Não entregue uma experiência estática por omissão quando motion/interação fizerem parte do requisito aprovado.
 
 ## Mapa dos documentos
 
