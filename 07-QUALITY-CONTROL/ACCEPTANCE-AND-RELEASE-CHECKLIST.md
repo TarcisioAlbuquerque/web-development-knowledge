@@ -13,7 +13,7 @@
 - [ ] Layout funciona nos tamanhos-alvo.
 - [ ] Estados de interação e feedback previstos.
 
-## Motion & Interaction — gate obrigatório
+## Motion & Interaction — quando aplicável
 - [ ] Requisitos de motion/interação definidos para o escopo; brief disponível quando necessário.
 - [ ] Cada comportamento selecionado tem propósito claro e corresponde ao requisito aprovado.
 - [ ] Efeitos e componentes selecionados funcionam no navegador; não são placeholders.
