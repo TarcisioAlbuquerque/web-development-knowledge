@@ -6,7 +6,7 @@
 4. **Arquitetura:** organizar sitemap, navegação, hierarquia e jornada do usuário.
 5. **UX e conteúdo:** planejar tarefas, formulários, estados, acessibilidade e copy específica e verificável.
 6. **Direção visual:** definir conceito, tipografia, cores, grid, imagens, componentes e comportamento responsivo.
-7. **Motion:** animar com propósito, respeitando desempenho, dispositivos móveis e `prefers-reduced-motion`.
+7. **Experiência e interação:** especificar feedback, transições, motion e componentes interativos quando contribuírem para compreensão, orientação, narrativa ou conversão.
 8. **Arquitetura técnica:** escolher stack proporcional à complexidade, custo, manutenção e integrações.
 9. **Implementação:** construir incrementalmente, com semântica, componentes coerentes e dependências justificadas.
 10. **QA:** testar fluxos, links, formulários, responsividade, acessibilidade, SEO, segurança e performance.
@@ -30,16 +30,5 @@ A pesquisa de referências deve acontecer em dois eixos complementares:
 Não trate a biblioteca como coleção de modelos prontos. Cada site é uma fonte de padrões que devem ser avaliados no contexto do projeto. A seleção final deve considerar objetivo, público, posicionamento, identidade, conteúdo, acessibilidade, desempenho e viabilidade técnica.
 
 
-## Motion & Interaction: gate obrigatório de produção
-
-A etapa 7 (Motion) não é opcional nem pode terminar apenas em recomendações. Em toda landing page, antes da implementação:
-1. Consultar o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`.
-2. Preencher o `MOTION-BRIEF-TEMPLATE.md`, selecionando IDs de motion e componentes interativos.
-3. Definir uma composição de movimento adequada à estratégia, conteúdo e direção de arte.
-4. Implementar os efeitos no código e conectar cada controle à sua função real.
-5. Testar no navegador desktop/mobile, com teclado, toque e `prefers-reduced-motion`.
-6. Registrar evidências e IDs no QA.
-
-Baseline de landing page: sequência animada de hero, reveals em várias seções, movimento/revelação de mídia, feedback de hover/focus/active nos CTAs e controles, e pelo menos uma interação contextual útil. Como mínimo de aceite, implementar pelo menos 6 tratamentos distintos de motion e 3 padrões interativos úteis por landing page; a faixa recomendada é 6–10 e 3–5. Exceção abaixo do mínimo exige justificativa e aprovação explícita do usuário/cliente no Motion Brief.
-
-Não inserir todos os efeitos em todos os sites. O catálogo completo é universal e obrigatório para consulta; a seleção é contextual. O que não é aceitável é entregar uma landing page estática por esquecimento, falta de planejamento ou ausência de handoff.
+## Motion & Interaction
+Quando motion ou componentes interativos fizerem parte da experiência, consulte o sistema em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`. Defina intenção, comportamento, alternativa mobile, reduced-motion, fallback e critério de verificação conforme o escopo. A seleção é contextual: não existe quantidade mínima universal. O objetivo é melhorar a experiência, não preencher uma quota. Regras operacionais comuns estão em `AGENTS.md`; o sistema especializado detalha a implementação.

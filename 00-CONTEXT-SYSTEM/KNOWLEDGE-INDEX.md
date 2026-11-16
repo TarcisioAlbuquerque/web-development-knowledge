@@ -1,11 +1,11 @@
 # Knowledge Index
 
 ## Leitura inicial
-1. `README.md`
-2. `AGENTS.md`
-3. `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md`
-4. `00-METHODOLOGY/MASTER-METHODOLOGY.md`
-5. Este índice.
+1. `AGENTS.md` — regras operacionais.
+2. `MASTER-CONTEXT.md` — propósito e princípios.
+3. Este índice — localize apenas o contexto pertinente.
+
+Não carregue todos os documentos em toda conversa.
 
 ## Por tarefa
 | Tarefa | Documentos |
@@ -33,6 +33,3 @@ Comece por `01-REFERENCE-LIBRARY/README.md`, fichas específicas, técnicas de i
 ## Contexto eficiente
 Não carregue todos os documentos em toda conversa. Leia o contexto mestre e o índice; selecione os documentos relevantes para a função/projeto; amplie quando surgir dependência. Sempre confirme versão/branch quando possível. Nunca suponha sincronização automática entre plataformas.
 
-
-## Gate Motion & Interaction
-Toda landing page consulta o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`, preenche seu Motion Brief, implementa a seleção e registra evidências no QA. O starter kit está em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/`.

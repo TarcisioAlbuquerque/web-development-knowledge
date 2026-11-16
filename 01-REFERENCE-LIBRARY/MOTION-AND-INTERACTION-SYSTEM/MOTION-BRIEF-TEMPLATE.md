@@ -25,7 +25,7 @@
 | ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Reduced motion/fallback | Estado |
 |---|---|---|---|---|---|---|---|
 
-**Mínimo obrigatório para landing pages:** 6 tratamentos de motion distintos e 3 padrões de interação úteis. Incluir entrada de hero, scroll reveals em múltiplas seções, movimento/revelação de mídia, feedback consistente nos CTAs/controles e componentes interativos que ajudem a entender, escolher, explorar ou converter. Faixa recomendada: 6–10 tratamentos e 3–5 padrões. Exceções abaixo do mínimo precisam de aprovação explícita do usuário/cliente.
+Selecione somente o que serve ao objetivo, à marca e ao contexto. Não há quota mínima nem obrigação de usar um padrão específico. Explique escolhas relevantes e omissões quando afetarem requisitos aprovados.
 
 ## 5. Componentes interativos selecionados
 | ID | Componente | Conteúdo/dados necessários | Estados | Conversão/tarefa apoiada | Testes |

@@ -34,8 +34,4 @@
 - Não prometer resultados de SEO, vendas ou captação.
 
 
-## Gate obrigatório de Motion & Interaction — Web Production
-
-Na etapa 7, usar o Motion & Interaction System e entregar um Motion Brief aprovado antes do desenvolvimento. O handoff deve conter IDs do catálogo, intenção, trigger, elemento, estado inicial/final, sequência, timing/easing estimados, desktop/mobile, reduced-motion, fallback e critério de aceite.
-
-A etapa 9 deve implementar os efeitos e componentes escolhidos; a etapa 10 deve verificar cada um no navegador e registrar evidências. Para landing pages, aplicar o baseline descrito em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`. Não marcar Motion/QA como concluído se houver apenas descrições, placeholders ou animações sem função.
+Este documento descreve a sequência de trabalho. Regras operacionais comuns estão em `AGENTS.md`; especificações detalhadas permanecem nos prompts, padrões e checklists especializados.

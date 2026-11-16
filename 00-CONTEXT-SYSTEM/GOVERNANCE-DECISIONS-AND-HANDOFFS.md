@@ -1,7 +1,7 @@
 # Governance, Decisions & Handoffs
 
 ## Decisões aprovadas (2026-11-12)
-- O repositório `TarcisioAlbuquerque/web-development-knowledge` permanece privado.
+- A visibilidade do repositório deve ser confirmada nos metadados/configurações atuais do GitHub; não presumir estado privado ou público.
 - A metodologia é universal e serve clientes/nichos diversos; AURA é um caso de aplicação.
 - O fluxo básico deve funcionar com ferramentas gratuitas; não depender de Claude Code, API paga ou assinatura premium.
 - Referências devem ser consultadas transversalmente, por nicho e por padrões transferíveis.
@@ -14,18 +14,24 @@
 - Stack padrão por tipo de projeto: manter seleção contextual, não uma stack única.
 - Armazenamento dos PDFs originais: guias Markdown foram versionados; os binários originais permanecem anexados à conversa e não foram copiados para o GitHub nesta atualização.
 
+## Changelog
+
+### 2026-11-15 — Fase 1: simplificação e autoridade documental
+- Definido `AGENTS.md` como autoridade operacional única; `MASTER-CONTEXT.md` como fonte de missão/princípios; índice e README limitados à navegação.
+- Simplificados README, AGENTS e instruções do Copilot; removidas políticas duplicadas do arquivo específico do Copilot.
+- Reduzida redundância em metodologia, workflows, prompt mestre e prompts especializados; mantidas as responsabilidades próprias de cada documento.
+- Removidas quotas fixas de motion/interações da documentação operacional, dos padrões, do brief e do QA; substituídas por critérios de propósito, contexto, acessibilidade, performance e conversão.
+- Corrigida a afirmação de que o repositório é privado: a visibilidade deve ser confirmada nos metadados atuais do GitHub (que reportam público nesta execução).
+- Simplificado o protocolo de handoff para registrar somente contexto, resultado, decisões, verificação, pendências e próximo passo pertinentes.
+- Nenhuma pasta ou documento foi excluído; nenhuma nova pasta ou sistema foi criado.
+
+**Arquivos alterados nesta fase:** `README.md`, `AGENTS.md`, `.github/copilot-instructions.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md`, `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`, `00-CONTEXT-SYSTEM/GOVERNANCE-DECISIONS-AND-HANDOFFS.md`, `00-METHODOLOGY/MASTER-METHODOLOGY.md`, `00-METHODOLOGY/WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md`, `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`, `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/MOTION-BRIEF-TEMPLATE.md`, `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PROJECT-BOOTSTRAP-INSTRUCTIONS.md`, `04-PROMPTS/MASTER-PROMPT.md`, `04-PROMPTS/SPECIALISTS/MASTER-SPECIALIST-PROMPTS.md`, `06-DEVELOPMENT-STANDARDS/README.md`, `07-QUALITY-CONTROL/ACCEPTANCE-AND-RELEASE-CHECKLIST.md`.
+
 ## Changelog inicial — 2026-11-12
 Context System, workflows, guias derivados, cadastro de especialistas, prompts especializados, padrões técnicos, QA e template de projeto adicionados; README e AGENTS atualizados. Nenhum arquivo preexistente foi excluído.
 
 ## Protocolo de handoff
-Cada especialista encerra com:
-1. Projeto/etapa e objetivo recebido.
-2. Contexto consultado (caminhos, fontes e commit quando possível).
-3. Resultado e caminhos dos entregáveis.
-4. Decisões aprovadas, propostas e hipóteses separadas.
-5. Critérios atendidos e evidências.
-6. Pendências, riscos e validações não realizadas.
-7. Próximo especialista recomendado e tarefa.
+Cada transferência deve registrar, conforme pertinente: (1) objetivo e estado; (2) arquivos/fontes e branch/commit consultados; (3) resultado e caminhos; (4) decisões aprovadas separadas de propostas/hipóteses; (5) critérios e testes realmente verificados; (6) riscos, pendências e validações não realizadas; (7) próximo passo concreto. Não repetir contexto já disponível nem preencher campos irrelevantes.
 
 Estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Nunca marcar como APPROVED por inferência. Não alterar etapa aprovada silenciosamente. Solicitações de mudança precisam indicar impacto.
 
