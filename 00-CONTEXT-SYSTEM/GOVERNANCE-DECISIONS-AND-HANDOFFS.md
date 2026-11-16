@@ -1,7 +1,7 @@
 # Governance, Decisions & Handoffs
 
 ## Decisões aprovadas (2026-11-12)
-- O repositório `TarcisioAlbuquerque/web-development-knowledge` permanece privado.
+- A visibilidade do repositório deve ser confirmada nos metadados/configurações atuais do GitHub; não presumir estado privado ou público.
 - A metodologia é universal e serve clientes/nichos diversos; AURA é um caso de aplicação.
 - O fluxo básico deve funcionar com ferramentas gratuitas; não depender de Claude Code, API paga ou assinatura premium.
 - Referências devem ser consultadas transversalmente, por nicho e por padrões transferíveis.
@@ -18,14 +18,7 @@
 Context System, workflows, guias derivados, cadastro de especialistas, prompts especializados, padrões técnicos, QA e template de projeto adicionados; README e AGENTS atualizados. Nenhum arquivo preexistente foi excluído.
 
 ## Protocolo de handoff
-Cada especialista encerra com:
-1. Projeto/etapa e objetivo recebido.
-2. Contexto consultado (caminhos, fontes e commit quando possível).
-3. Resultado e caminhos dos entregáveis.
-4. Decisões aprovadas, propostas e hipóteses separadas.
-5. Critérios atendidos e evidências.
-6. Pendências, riscos e validações não realizadas.
-7. Próximo especialista recomendado e tarefa.
+Cada transferência deve registrar, conforme pertinente: (1) objetivo e estado; (2) arquivos/fontes e branch/commit consultados; (3) resultado e caminhos; (4) decisões aprovadas separadas de propostas/hipóteses; (5) critérios e testes realmente verificados; (6) riscos, pendências e validações não realizadas; (7) próximo passo concreto. Não repetir contexto já disponível nem preencher campos irrelevantes.
 
 Estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Nunca marcar como APPROVED por inferência. Não alterar etapa aprovada silenciosamente. Solicitações de mudança precisam indicar impacto.
 
