@@ -7,7 +7,7 @@
 
 ## Objetivo
 
-Este sistema transforma referências e efeitos em padrões pesquisáveis, especificáveis, implementáveis e testáveis. Ele deve ser consultado em todo projeto web, independentemente do nicho. A seleção deve ser adaptada à marca, ao conteúdo, à jornada, ao dispositivo e à conversão.
+Este sistema transforma referências e efeitos em padrões pesquisáveis, especificáveis, implementáveis e testáveis. Consulte-o quando o projeto incluir motion ou interações que exijam especificação e QA. A seleção deve ser adaptada à marca, ao conteúdo, à jornada, ao dispositivo e à conversão.
 
 O catálogo contém:
 - padrões de motion observados/relatados na referência Ana Marques;
@@ -37,7 +37,7 @@ O catálogo contém:
 | `INTERACTIVE-COMPONENTS.md` | Catálogo de componentes e comportamentos interativos |
 | `IMPLEMENTATION-PLAYBOOK.md` | Escolha de tecnologia, arquitetura, receitas e integração |
 | `CASE-STUDY-ANA-MARQUES.md` | Padrões relacionados à auditoria Ana Marques e proveniência |
-| `MOTION-BRIEF-TEMPLATE.md` | Brief obrigatório para cada projeto |
+| `MOTION-BRIEF-TEMPLATE.md` | Brief adaptável ao escopo do projeto |
 | `PROJECT-BOOTSTRAP-INSTRUCTIONS.md` | Instruções para conectar o sistema a cada repositório de cliente |
 
 Starter kit inicial:
