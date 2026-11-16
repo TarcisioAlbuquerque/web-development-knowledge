@@ -11,38 +11,24 @@ Use este documento ao abrir/criar um repositório independente de cliente. O rep
 ## 2. Bloco para AGENTS.md / Copilot Instructions
 
 ```md
-## Mandatory Motion & Interaction Gate
+## Motion & Interaction (quando aplicável)
 
-Before designing or implementing any page, read the project's docs/MOTION-BRIEF.md and the shared Motion & Interaction System:
-- README.md
-- PATTERN-CATALOG.md
-- INTERACTIVE-COMPONENTS.md
-- IMPLEMENTATION-PLAYBOOK.md
-- the Motion Starter Kit README and source files.
+Consulte os documentos do sistema compartilhado que forem relevantes ao escopo. Crie um brief ou especificação proporcional quando motion ou componentes interativos fizerem parte dos requisitos.
 
-Motion and interaction are required product features, not optional polish.
+Escolha comportamentos conforme o briefing, a jornada, a marca, os dispositivos e o objetivo de conversão. Não há quantidade mínima nem conjunto obrigatório de efeitos. Não force hero sequence, reveals, animação de mídia ou componentes interativos se não resolverem uma necessidade real.
 
-For every landing page, plan and implement:
-- an intentional hero entrance sequence;
-- reveal motion across multiple content sections;
-- at least one image/video motion treatment;
-- consistent hover, focus-visible and active feedback for CTAs and controls;
-- at least one contextual interactive component that helps visitors understand, choose, explore or convert.
+Mapeie os comportamentos implementados aos IDs do catálogo quando aplicável. Um conceito, TODO, placeholder ou botão sem ação funcional não conta como implementação.
 
-Select motion and interactions according to the brief, user journey, brand and conversion goal. There is no universal minimum count. Do not force effects to satisfy a quota; document the purpose, fallback and validation of selected behaviors.
+Implemente os comportamentos aprovados e verifique-os no navegador nos dispositivos e estados relevantes, incluindo teclado/toque e prefers-reduced-motion conforme aplicável. Não declare QA concluído sem evidência suficiente.
 
-Map every implemented effect/component to a stable catalog ID. A concept, TODO, placeholder or button without a working action does not count as implementation.
-
-The frontend agent must implement the approved brief. QA must verify every selected ID in a real browser on desktop and mobile, with keyboard/touch and prefers-reduced-motion. Do not mark the page ready until the motion and interaction checklist is complete.
-
-Never sacrifice content clarity, accessibility, performance, responsive behavior or conversion just to increase animation count. Preserve progressive enhancement and a usable experience when motion is disabled.
+Preserve conteúdo e ações essenciais quando motion estiver desativado. Não sacrifique clareza, acessibilidade, performance, responsividade ou conversão.
 ```
 
 ## 3. Prompt de arranque para el agente
 
 Copie este texto en el primer encargo de cada sitio:
 
- > Antes de diseñar o codificar, consulta el Motion & Interaction System cuando seja relevante para o projeto, revisa o briefing e cria uma especificação proporcional com os IDs selecionados. Escolhe comportamentos por propósito e intensidade adequada à marca; não uses contagens mínimas nem imponhas motion de intensidade alta. Implementa apenas o que foi aprovado e testa navegador, desktop/mobile, teclado/toque e reduced-motion conforme aplicável. Usa o Motion Starter Kit quando adequado e justifica dependências adicionais. Ao finalizar, informa IDs, arquivos, testes, evidências e limitações.
+> Antes de diseñar o codificar, consulta el Motion & Interaction System cuando sea relevante para el proyecto, revisa el briefing y crea una especificación proporcional con los IDs seleccionados. Elige comportamientos según su propósito y la identidad de la marca; no uses cantidades mínimas ni impongas motion de alta intensidad. Implementa solo lo aprobado y prueba en navegador, desktop/mobile, teclado/touch y reduced-motion cuando corresponda. Usa el Motion Starter Kit cuando sea adecuado y justifica dependencias adicionales. Al finalizar, informa IDs, archivos, pruebas, evidencias y limitaciones.
 
 ## 4. Regra de sincronização entre agentes
 
