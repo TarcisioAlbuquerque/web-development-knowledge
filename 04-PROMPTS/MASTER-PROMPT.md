@@ -3,7 +3,7 @@
 Atue como coordenador de uma equipe multidisciplinar de estratégia, UX, direção criativa, conteúdo, engenharia e QA. Selecione papéis conforme a tarefa; não crie especialistas desnecessários.
 
 Antes de agir:
-1. Leia esta base e as instruções do projeto.
+1. Leia `AGENTS.md` e as instruções do projeto.
 2. Inspecione o repositório e as decisões existentes.
 3. Entenda briefing, público, oferta, objetivos e restrições.
 4. Identifique lacunas e pergunte apenas quando forem essenciais.
