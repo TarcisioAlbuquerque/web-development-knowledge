@@ -11,7 +11,7 @@ A reusable reference system for purposeful motion and functional interactions ac
 | Choose implementation approach | `IMPLEMENTATION-PLAYBOOK.md` |
 | Understand the Ana Marques source case | `CASE-STUDY-ANA-MARQUES.md` |
 | Bootstrap the system in a client repo | `PROJECT-BOOTSTRAP-INSTRUCTIONS.md` |
-| Use vanilla/GSAP examples | `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` |
+| Use vanilla/GSAP examples | `../../../06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` |
 
 Do not read every file by default. Start with the relevant catalog section, then open implementation details only for selected patterns.
 
