@@ -1,50 +1,40 @@
 # Governance, Decisions & Handoffs
 
-## Decisões aprovadas (2026-11-12)
-- O repositório `TarcisioAlbuquerque/web-development-knowledge` permanece privado.
-- A metodologia é universal e serve clientes/nichos diversos; AURA é um caso de aplicação.
-- O fluxo básico deve funcionar com ferramentas gratuitas; não depender de Claude Code, API paga ou assinatura premium.
-- Referências devem ser consultadas transversalmente, por nicho e por padrões transferíveis.
-- Materiais já existentes devem ser preservados e mudanças incrementais.
-- O sistema integra duas frentes: Web Production e Client & Business Operations.
-- Os PDFs “Roteiro Prático do Aluno — Sites com IA do Zero” e “Guia de abordagem de clientes” são fontes complementares, não substituem a metodologia central.
+## Approved decisions
+- Repository `TarcisioAlbuquerque/web-development-knowledge` is **intentionally public** so AI agents without private account access can consult reusable knowledge.
+- The methodology is universal; AURA is one application.
+- The basic workflow should work with free tools and must not depend on paid APIs/subscriptions.
+- References are reusable across niches when the pattern fits; never copy identity or protected assets.
+- Select technology contextually; there is no universal stack.
+- Preserve unique knowledge while removing verified duplication and unnecessary context overhead.
+- Client-specific confidential information belongs in private project workspaces, never in this public repository.
+- Guides derived from user-provided PDFs are secondary sources, not replacements for the methodology.
 
-## Decisões pendentes
-- Preferência final de modelos por especialidade: decidir após testes reais comparáveis.
-- Stack padrão por tipo de projeto: manter seleção contextual, não uma stack única.
-- Armazenamento dos PDFs originais: guias Markdown foram versionados; os binários originais permanecem anexados à conversa e não foram copiados para o GitHub nesta atualização.
+## Decisions pending
+- Model preference by specialty: decide only after comparable tests.
+- Default stack by project type: keep contextual.
+- Original PDFs: Markdown summaries are versioned; source binaries are not necessarily stored here.
 
-## Changelog inicial — 2026-11-12
-Context System, workflows, guias derivados, cadastro de especialistas, prompts especializados, padrões técnicos, QA e template de projeto adicionados; README e AGENTS atualizados. Nenhum arquivo preexistente foi excluído.
+## Handoff format
+1. Task/stage and objective.
+2. Files/sources actually consulted.
+3. Result and changed paths.
+4. Approved decisions vs proposals/hypotheses.
+5. Checks actually run and evidence.
+6. Risks, limitations and pending validation.
+7. Recommended next action.
 
-## Protocolo de handoff
-Cada especialista encerra com:
-1. Projeto/etapa e objetivo recebido.
-2. Contexto consultado (caminhos, fontes e commit quando possível).
-3. Resultado e caminhos dos entregáveis.
-4. Decisões aprovadas, propostas e hipóteses separadas.
-5. Critérios atendidos e evidências.
-6. Pendências, riscos e validações não realizadas.
-7. Próximo especialista recomendado e tarefa.
+States: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Never mark approved by inference.
 
-Estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Nunca marcar como APPROVED por inferência. Não alterar etapa aprovada silenciosamente. Solicitações de mudança precisam indicar impacto.
+## Context packages
+Provide only what the receiving role needs:
+- Strategy: market, audience, offer, evidence, constraints.
+- Briefing: confirmed business data, services, goals, assets/permissions and unknowns.
+- UX/copy: brief, audience, journey, approved claims and content.
+- Visual/motion: brief, approved copy, references, identity and device constraints.
+- Engineering: requirements, stack, environment, integrations, budget and maintenance.
+- QA: acceptance criteria, build/version, target devices and known risks.
+- Commercial: verified lead context, offer, channel, locale and contact preferences.
 
-## Pacotes de contexto
-### Base comum
-README, AGENTS.md, MASTER-CONTEXT, KNOWLEDGE-INDEX, briefing e decisões aprovadas do projeto.
-
-### Pacotes especializados
-- Estratégia: segmento, mercado, oferta, evidências e restrições.
-- Briefing: dados do negócio, serviços, público, contatos autorizados, conteúdo e pendências.
-- UX: objetivo, público, sitemap, conteúdo e critérios.
-- Copy do site: briefing, posicionamento, oferta, arquitetura e tom.
-- Copy comercial/prospecção: lead/contexto verificado, oferta, canal, mercado e preferências de contato.
-- Direção visual: briefing, copy aprovada, referências e tokens.
-- Motion: arquitetura, direção visual, conteúdo, dispositivos e restrições.
-- Arquitetura técnica: requisitos, ambiente, orçamento, manutenção e integrações.
-- Front-end: specs aprovadas, arquivos, padrões e instruções.
-- QA: critérios de aceite, versão/build e dispositivos/navegadores.
-- Project Manager/Customer Success: escopo, prazos acordados, responsáveis, aceite, pendências e histórico permitido.
-
-## Regras de atualização
-GitHub é fonte canônica; conversas e memórias podem auxiliar, mas não substituem documentação aprovada. Fornecer pacote de contexto se plataforma não conseguir ler repositório privado. Não enviar todos os documentos a todo agente. Não expor segredos ou dados pessoais desnecessários.
+## Rules
+GitHub is the canonical source for approved reusable knowledge. Conversation memory is not automatically synchronized across agents. Never send every document to every agent. Do not expose secrets or unnecessary personal data. Keep public records free of private client material. Structural changes should use a branch and review.
