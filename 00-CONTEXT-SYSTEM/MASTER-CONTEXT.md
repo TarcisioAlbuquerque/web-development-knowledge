@@ -1,53 +1,32 @@
-# Master Context — Web Development Knowledge
+# Master Context
 
-## Missão
-Manter um sistema profissional, reutilizável e independente de fornecedor para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais para negócios, marcas e profissionais de diferentes segmentos. AURA Creativa é uma aplicação da metodologia, não seu único destino.
+## Mission
+Universal, vendor-independent knowledge system for planning, designing, building, selling, delivering and improving professional websites and digital experiences across industries. AURA is one application, not the system's boundary.
 
-## Princípios
-1. Estratégia antes da estética.
-2. Clareza antes do volume.
-3. Especialização com coordenação.
-4. Referências transferíveis por nicho e por padrão.
-5. Tecnologia proporcional ao problema, orçamento e manutenção.
-6. Qualidade verificável; relatar apenas testes executados.
-7. Conteúdo honesto; não inventar prova social, credenciais ou resultados.
-8. Continuidade por decisões e handoffs documentados.
-9. Acessibilidade, performance e segurança fazem parte do design.
-10. Preservar materiais e decisões aprovadas.
+## Operating model
+Two connected domains:
+- **Web Production:** discovery, research, strategy, information architecture, UX, website copy, creative direction, motion/interaction, technical architecture, implementation, QA, release and maintenance.
+- **Client & Business Operations:** niche/offer selection, lead research, outreach, discovery, proposal, onboarding, project management, delivery and aftercare.
 
-## Duas frentes integradas
-### Web Production
-Descoberta, briefing, pesquisa, estratégia, arquitetura de informação, UX, copy do site, direção criativa, motion, arquitetura técnica, implementação, QA, publicação e manutenção.
+Website copy and commercial/prospecting copy are separate tasks.
 
-### Client & Business Operations
-Seleção de nicho, pesquisa/qualificação de leads, abordagem, reunião, proposta, negociação, fechamento, onboarding, coleta de conteúdo, gestão de revisões, entrega, pós-venda e indicações.
+## Principles
+Strategy before execution; clarity before volume; evidence over assumptions; reusable patterns over copied templates; technology proportional to need; accessibility, performance, security and maintainability built in; no fabricated claims or test results.
 
-Não confundir copywriting de website com copywriting de prospecção. São objetivos e critérios diferentes.
+## Agent model
+Roles are responsibilities, not fixed AI products. One model may perform several roles. The coordinator selects a workflow and gives each agent the smallest sufficient context package. Use the registry only when delegation/model choice matters; use specialist prompts only for the selected role.
 
-## Assistente Mestre
-Interpreta pedido, escolhe workflow, consulta documentos, seleciona especialistas, distribui contexto, coordena dependências, consolida entregas, verifica coerência e registra decisões aprovadas.
+## Tools and cost
+The basic workflow must not require paid subscriptions or APIs. Verify current tool limits at time of use. Prefer existing capabilities and lightweight dependencies; justify new tools by concrete benefit, total cost and maintenance burden.
 
-## Especialistas
-Cada função tem objetivo, entradas, saída e critérios de aceite no Agent Registry e nos prompts especializados. Um mesmo modelo pode assumir mais de uma função; a especialidade é um papel operacional, não um produto específico.
+## Evidence states
+Mark information as user/client-provided, verified with source/date, hypothesis, recommendation or pending. A reference record does not prove direct inspection. Never claim a site, codebase or feature was inspected unless it was.
 
-## Ferramentas
-A metodologia não depende de assinatura específica. Ferramentas consideradas no momento: ChatGPT Free, Gemini Free, GitHub Copilot Free e Claude Free via navegador. Verificar limites, recursos, nomes de modelos e conectores na data de uso. Não exigir plano pago ou API paga para o fluxo básico. Selecionar ferramenta conforme tarefa, contexto acessível, quota e resultado observado.
+## Approval states
+DRAFT, IN_REVIEW, APPROVED, BLOCKED, SUPERSEDED. Do not infer approval or silently change an approved decision.
 
-## Evidência
-Classifique afirmações como:
-- Fato fornecido pelo usuário/cliente.
-- Evidência verificada (fonte e data).
-- Hipótese (a confirmar).
-- Recomendação.
-- Pendente.
+## Public repository
+This repository is intentionally public so external AI agents can read the reusable knowledge. Never store secrets, credentials, private client briefs, personal data or unpublished client assets here. Keep client-specific context in the client's own private workspace.
 
-Uma ficha de referência não prova inspeção direta. Registre separadamente acesso e observações.
-
-## Aprovação
-Briefing, conteúdo, arquitetura, direção visual, motion, stack e decisões relevantes passam por estados: DRAFT, IN_REVIEW, APPROVED, BLOCKED ou SUPERSEDED. Não inferir aprovação.
-
-## Localização
-Adaptar idioma, moeda, legislação, cultura, exemplos, CTA e canais ao mercado de cada cliente. Materiais de outros países são fontes, não instruções locais.
-
-## Limites
-Não prometer resultados de negócio, copiar propriedade intelectual, publicar sem aprovação, expor dados privados ou instalar dependências/skills sem avaliação e autorização.
+## Source of truth
+GitHub stores approved reusable knowledge and durable decisions. Chat histories and model memories are not automatically synchronized. See `KNOWLEDGE-INDEX.md` for task routing and `GOVERNANCE-DECISIONS-AND-HANDOFFS.md` for decision history.
