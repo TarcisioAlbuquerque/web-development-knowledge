@@ -10,7 +10,7 @@
 | Plan/build a website | `00-METHODOLOGY/MASTER-METHODOLOGY.md` | relevant workflow, project brief, standards |
 | Run a full client workflow | `00-METHODOLOGY/WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md` | only the relevant business or web section |
 | Research a niche/site | `01-REFERENCE-LIBRARY/README.md` | matching reference cards; cross-niche patterns only when relevant |
-| Visual direction | `02-DESIGN-LIBRARY/README.md` | selected reference cards and project tokens |
+| Visual direction | `01-REFERENCE-LIBRARY/README.md` | selected visual references, approved brief and project-specific design tokens |
 | Motion/interaction design | `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md` | catalog, component catalog, brief template, implementation playbook as needed |
 | Implement motion | `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` | only required JS/CSS recipe files |
 | Choose agents/models | `03-AGENT-SKILLS/AGENT-REGISTRY-AND-MODEL-ROUTING.md` | only the chosen specialist prompt |
