@@ -1,53 +1,39 @@
-# Project Template
+# Client Project Template
 
-Duplique este arquivo/pasta para cada cliente e mantenha dados privados apenas quando necessários.
+Duplicate into the client's own workspace. Do not put private client data in this public knowledge repository.
 
-## Briefing
-- Project ID:
-- Cliente/negócio:
-- Segmento/região/idioma:
-- Objetivo principal:
-- Público:
-- Serviços/produtos:
-- Diferenciais comprováveis:
-- CTA/conversão:
-- Tipo de site e páginas:
-- Funcionalidades/integrações:
-- Identidade, imagens e permissões:
-- Referências:
-- Prazo/orçamento/hosting:
-- Responsáveis/aprovadores:
-- Restrições e fora de escopo:
-- Dúvidas e pendências:
-- Status: DRAFT / IN_REVIEW / APPROVED
+## Brief
+- Project/client:
+- Segment, market and language:
+- Business and offer:
+- Audience and user needs:
+- Primary goal/conversion:
+- Pages/site type:
+- Verified differentiators/proof:
+- Approved assets and permissions:
+- Required functions/integrations:
+- Budget, timeline and approvers:
+- Constraints and open questions:
 
-## Decisões
-Registrar data, tema, decisão, motivo, status, aprovador e arquivos afetados.
+## Decisions
+| Decision | Status (DRAFT/IN_REVIEW/APPROVED/BLOCKED/SUPERSEDED) | Owner/date | Evidence/reason |
+|---|---|---|---|
 
-## Entregas e handoffs
-| Etapa | Especialista | Arquivo/link | Status | Pendências |
-|---|---|---|---|---|
+## References
+| Source | Pattern considered | Evidence status | Adapted/rejected and why |
+|---|---|---|---|
 
-## Mudanças de escopo
-Registrar pedido, impacto em prazo/custo/entrega e aprovação antes de implementar.
+## Experience brief (as needed)
+- UX/journey:
+- Visual direction/tokens:
+- Motion/interactions: selected patterns and purpose, or reason for restrained/static approach.
+- Technical stack/integrations:
+- Accessibility/performance constraints:
 
-## Aceite e entrega
-Registrar testes realizados, limitações aceitas, URL, instruções, suporte e pós-venda.
-
-
-## Motion & Interaction (obrigatório para projetos web)
-- Motion Brief: `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/MOTION-BRIEF-TEMPLATE.md`
-- IDs de motion selecionados:
-- IDs de componentes interativos:
-- Referências consultadas:
-- Componentes do Motion Starter Kit adaptados:
-- Stack/dependências e justificativa:
-- Comportamento desktop/mobile:
-- Reduced-motion/fallback:
-- Exceções ao baseline e aprovação:
-- Evidências de QA (capturas/gravações):
-- Estado: DRAFT / IN_REVIEW / APPROVED / BLOCKED
-
-
-## Bootstrap do agente
-Antes de iniciar desenvolvimento em um repositório de cliente, seguir `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PROJECT-BOOTSTRAP-INSTRUCTIONS.md`. Garantir que AGENTS.md ou Copilot Instructions do projeto cliente apontem para o sistema canônico ou para uma cópia disponível no workspace.
+## Delivery
+- Milestones and owners:
+- Acceptance criteria:
+- QA performed and evidence:
+- Known limitations:
+- Publication authorization and URL:
+- Handoff/support boundaries:

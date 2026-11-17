@@ -1,38 +1,42 @@
-# Knowledge Index
+# Knowledge Index — task router
 
-## Leitura inicial
-1. `README.md`
-2. `AGENTS.md`
-3. `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md`
-4. `00-METHODOLOGY/MASTER-METHODOLOGY.md`
-5. Este índice.
+**Purpose:** route an agent to the smallest useful context package. Start here after `AGENTS.md`. Do not read every folder or every specialist prompt.
 
-## Por tarefa
-| Tarefa | Documentos |
-|---|---|
-| Entender sistema | `MASTER-CONTEXT.md` + `MASTER-METHODOLOGY.md` |
-| Briefing/descoberta | `WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md` + seção 02 do prompt especializado |
-| Estratégia/nicho | Workflow + seção 01 do prompt especializado |
-| UX/estrutura | Workflow + seção 03 do prompt especializado |
-| Copy do site | Workflow + seção 04 do prompt especializado |
-| Direção visual | Design Library + seção 05 do prompt especializado |
-| Animações e interações | `MOTION-AND-INTERACTION-SYSTEM/README.md`, `PATTERN-CATALOG.md`, `INTERACTIVE-COMPONENTS.md`, `IMPLEMENTATION-PLAYBOOK.md`, Motion Starter Kit + Development Standards + seção 06 do prompt |
-| Stack/integrações | Development Standards + seção 07 do prompt |
-| Código | `AGENTS.md` + Development Standards + seção 08 do prompt |
-| Auditoria/publicação | `ACCEPTANCE-AND-RELEASE-CHECKLIST.md` + seção 09 do prompt |
-| Pesquisar leads | Workflow comercial + `SITES-COM-IA-18-AULAS.md` + seção 10 do prompt |
-| Abordagem comercial | `CLIENT-OUTREACH.md` + seção 10 do prompt |
-| Proposta/fechamento | Workflow comercial + seção 11 do prompt |
-| Entrega/pós-venda | Project Template + seção 12 do prompt |
-| Seleção de IA | `AGENT-REGISTRY-AND-MODEL-ROUTING.md` |
-| Transferência | `GOVERNANCE-DECISIONS-AND-HANDOFFS.md` |
+## Route by task
 
-## Referências
-Comece por `01-REFERENCE-LIBRARY/README.md`, fichas específicas, técnicas de interação e `01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/`. Consulte transversalmente.
+| If the task is… | Read first | Load only if needed |
+|---|---|---|
+| Understand the system | `MASTER-CONTEXT.md` | `GOVERNANCE-DECISIONS-AND-HANDOFFS.md` |
+| Plan/build a website | `00-METHODOLOGY/MASTER-METHODOLOGY.md` | relevant workflow, project brief, standards |
+| Run a full client workflow | `00-METHODOLOGY/WEB-AND-CLIENT-OPERATIONS-WORKFLOWS.md` | only the relevant business or web section |
+| Research a niche/site | `01-REFERENCE-LIBRARY/README.md` | matching reference cards; cross-niche patterns only when relevant |
+| Visual direction | `02-DESIGN-LIBRARY/README.md` | selected reference cards and project tokens |
+| Motion/interaction design | `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md` | catalog, component catalog, brief template, implementation playbook as needed |
+| Implement motion | `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` | only required JS/CSS recipe files |
+| Choose agents/models | `03-AGENT-SKILLS/AGENT-REGISTRY-AND-MODEL-ROUTING.md` | only the chosen specialist prompt |
+| Write a project prompt | `04-PROMPTS/MASTER-PROMPT.md` | one relevant specialist prompt |
+| Create/update project brief | `05-PROJECTS/PROJECT-TEMPLATE.md` | client-owned project files |
+| Choose stack/engineering | `06-DEVELOPMENT-STANDARDS/README.md` | relevant technology documentation |
+| QA/release | `07-QUALITY-CONTROL/ACCEPTANCE-AND-RELEASE-CHECKLIST.md` | test-specific standards |
+| Find leads/outreach | `01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/CLIENT-ACQUISITION/CLIENT-OUTREACH.md` | business workflow |
+| Learn basic site delivery | `01-REFERENCE-LIBRARY/GUIDES-AND-PLAYBOOKS/WEB-PRODUCTION/SITES-COM-IA-18-AULAS.md` | methodology for professional depth |
 
-## Contexto eficiente
-Não carregue todos os documentos em toda conversa. Leia o contexto mestre e o índice; selecione os documentos relevantes para a função/projeto; amplie quando surgir dependência. Sempre confirme versão/branch quando possível. Nunca suponha sincronização automática entre plataformas.
+## Specialist prompt routing
+`04-PROMPTS/SPECIALISTS/MASTER-SPECIALIST-PROMPTS.md` contains role prompts. Search within it for the one role needed; do not paste the entire library into every agent. If the role is obvious and the task is small, use the role description in your own instructions without loading a prompt.
 
+## Reference routing
+`01-REFERENCE-LIBRARY/README.md` is the index. Open only relevant cards. Each card states its evidence status; pending/unverified references must not be described as inspected. Transfer principles across niches only when the brief supports the transfer.
 
-## Gate Motion & Interaction
-Toda landing page consulta o sistema `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`, preenche seu Motion Brief, implementa a seleção e registra evidências no QA. O starter kit está em `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/`.
+## Motion routing
+Motion is a capability, not a mandatory effect count. For projects where motion/interactions matter, read the Motion System overview and select only relevant catalog entries. Open the implementation playbook and starter-kit files only after choosing patterns. Always account for reduced motion, keyboard/touch, fallback and performance.
+
+## Context budget protocol
+1. Identify task type and deliverable.
+2. Read this index and the one primary document.
+3. Load only referenced sections/files needed for the next decision.
+4. Stop retrieving once the task can be completed reliably.
+5. In handoff, list files actually consulted.
+6. Never paste entire catalogs, specialist libraries or all references unless the task explicitly requires a full audit.
+
+## Maintenance
+When adding a durable document, add one route here. Avoid duplicating its full instructions in README, AGENTS or Copilot rules.
