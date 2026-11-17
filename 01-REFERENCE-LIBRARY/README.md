@@ -15,7 +15,7 @@ Open only the cards relevant to the current task. References may transfer across
 - [Land-book](LAND-BOOK.md) — website/landing-page inspiration.
 - [Refero](REFERO.md) — UI/UX patterns and product flows.
 - [Refero Styles](REFERO-STYLES.md) — design-system references.
-- [Interaction and visual techniques](INTERACTION-AND-VISUAL-TECHNIQUES.md) — scroll-linked motion, parallax, sticky, horizontal scroll, glassmorphism and unidentified resources.
+- [Motion & Interaction System](MOTION-AND-INTERACTION-SYSTEM/README.md) — scroll-linked motion, parallax, sticky, horizontal scroll, glassmorphism, catalogs and implementation guidance.
 
 ## Guides and playbooks
 - [Guides index](GUIDES-AND-PLAYBOOKS/README.md) — source-derived learning and operational guides.
