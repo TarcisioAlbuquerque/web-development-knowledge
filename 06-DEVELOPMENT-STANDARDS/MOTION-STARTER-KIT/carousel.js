@@ -31,6 +31,7 @@
     };
 
     const update = () => {
+      const currentIndex = getNearestIndex();
       if (previous) previous.disabled = currentIndex <= 0;
       if (next) next.disabled = currentIndex >= slides.length - 1;
       if (status) status.textContent = `Item ${currentIndex + 1} de ${slides.length}`;
