@@ -52,8 +52,11 @@
 
   // Accessible tabs: each root [data-tabs] owns its tabs and panels.
   document.querySelectorAll("[data-tabs]").forEach((root) => {
-    const tabs = [...root.querySelectorAll('[role="tab"][data-tab]')];
-    const panels = [...root.querySelectorAll('[role="tabpanel"][data-tab-panel]')];
+    // A nested tab system must be isolated from its parent system.
+    const tabs = [...root.querySelectorAll('[role="tab"][data-tab]')]
+      .filter((tab) => tab.closest("[data-tabs]") === root);
+    const panels = [...root.querySelectorAll('[role="tabpanel"][data-tab-panel]')]
+      .filter((panel) => panel.closest("[data-tabs]") === root);
     if (!tabs.length || !panels.length) return;
 
     const activate = (tab, moveFocus = false) => {
