@@ -14,7 +14,6 @@
     if (!slides.length) return;
 
     let frameRequested = false;
-    let currentIndex = 0;
 
     const getNearestIndex = () => {
       const trackLeft = track.getBoundingClientRect().left;
@@ -32,7 +31,6 @@
     };
 
     const update = () => {
-      currentIndex = getNearestIndex();
       if (previous) previous.disabled = currentIndex <= 0;
       if (next) next.disabled = currentIndex >= slides.length - 1;
       if (status) status.textContent = `Item ${currentIndex + 1} de ${slides.length}`;
@@ -51,7 +49,6 @@
         - track.getBoundingClientRect().left
         + track.scrollLeft;
       track.scrollTo({ left, behavior: reduceMotion ? "auto" : "smooth" });
-      currentIndex = safeIndex;
       scheduleUpdate();
     };
 
