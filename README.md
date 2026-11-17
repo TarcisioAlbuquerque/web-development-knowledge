@@ -1,61 +1,39 @@
 # Web Development Knowledge
 
-Base central de conhecimento para planejar, criar, comercializar, entregar e evoluir websites e experiências digitais profissionais para diferentes clientes, segmentos e tecnologias.
+Base pública e independente de fornecedor para estratégia, design, engenharia, operação e QA de experiências web em qualquer nicho. AURA é uma aplicação, não o escopo da metodologia.
 
-## Princípio central
-Este repositório é a fonte oficial do conhecimento aprovado. Conversas com ChatGPT, Gemini, Claude e GitHub Copilot são ambientes de execução; decisões, metodologias, referências e padrões duradouros devem ser documentados aqui. A metodologia é universal e reutilizável; AURA é uma aplicação, não o único destino.
+## Comece aqui
+1. Leia `AGENTS.md` (regras globais curtas).
+2. Abra `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md` e selecione somente o pacote da tarefa.
+3. Leia o documento indicado; siga links adicionais apenas quando necessário.
+4. Se houver projeto, leia primeiro o briefing e as decisões desse projeto.
+5. Registre decisões duradouras e evidências no local apropriado.
 
-## Como começar
-1. Leia `AGENTS.md`, `00-CONTEXT-SYSTEM/MASTER-CONTEXT.md` e `00-CONTEXT-SYSTEM/KNOWLEDGE-INDEX.md`.
-2. Identifique se a tarefa é Web Production, Client & Business Operations ou ambas.
-3. Consulte o workflow, o especialista e o prompt relevantes.
-4. Envie a cada IA apenas o pacote de contexto necessário.
-5. Consulte referências por nicho e por padrão/experiência, inclusive entre segmentos.
-6. Registre decisões aprovadas, entregas e handoffs.
-7. Preserve material existente. Peça autorização para mudanças de escopo, ações destrutivas ou publicação.
+**Não leia o repositório inteiro por padrão.** O índice é o roteador. Não carregue prompts, catálogos, referências ou padrões que não sejam necessários à tarefa.
 
-## Estrutura
-- `00-CONTEXT-SYSTEM/` — contexto, índice, decisões, governança e handoff.
-- `00-METHODOLOGY/` — metodologia universal e workflows.
-- `01-REFERENCE-LIBRARY/` — sites, motion, interações, ferramentas, guias e playbooks.
-- `02-DESIGN-LIBRARY/` — padrões visuais e de experiência.
-- `03-AGENT-SKILLS/` — especialistas, ferramentas, skills e avaliação de modelos.
-- `04-PROMPTS/` — prompts mestres, especializados e workflows.
-- `05-PROJECTS/` — contexto e entregas de cada cliente.
-- `06-DEVELOPMENT-STANDARDS/` — padrões técnicos.
-- `07-QUALITY-CONTROL/` — critérios de aceite e liberação.
-- `.github/copilot-instructions.md` — instruções do Copilot no VS Code.
+## Mapa
+| Área | Conteúdo |
+|---|---|
+| `00-CONTEXT-SYSTEM/` | contexto mínimo, roteamento, governança e handoffs |
+| `00-METHODOLOGY/` | processo universal e workflows |
+| `01-REFERENCE-LIBRARY/` | fichas de sites, fontes, guias, motion e interação |
+| `02-DESIGN-LIBRARY/` | padrões visuais reutilizáveis |
+| `03-AGENT-SKILLS/` | papéis, roteamento de agentes e política de skills |
+| `04-PROMPTS/` | prompts reutilizáveis |
+| `05-PROJECTS/` | templates e contextos de clientes |
+| `06-DEVELOPMENT-STANDARDS/` | padrões técnicos e starter kits |
+| `07-QUALITY-CONTROL/` | critérios de QA e release |
 
-## Dois fluxos integrados
-**Web Production:** descoberta → briefing → estratégia → arquitetura/UX → copy → direção visual → motion → arquitetura técnica → desenvolvimento → QA → publicação.
+## Princípios
+- Contexto sob demanda; menor pacote suficiente para a tarefa.
+- Estratégia antes da execução; clareza antes do volume.
+- Stack e ferramentas escolhidas pelo problema, custo, manutenção e capacidade disponível.
+- Referências podem ser transferidas entre nichos, nunca copiadas literalmente.
+- Separar fato, evidência, hipótese, recomendação e pendência.
+- Acessibilidade, responsividade, segurança e performance são requisitos de qualidade.
+- Não inventar conteúdo, credenciais, resultados ou testes.
+- Não exigir assinatura ou API paga para o fluxo básico.
+- Não incluir segredos, credenciais ou dados privados de clientes.
 
-**Client & Business Operations:** seleção de nicho → pesquisa e qualificação de leads → abordagem → reunião → proposta → fechamento → onboarding → coleta de conteúdo → gestão → entrega → pós-venda.
-
-Nem todo projeto precisa de todas as etapas na mesma profundidade. O Assistente Mestre seleciona especialistas conforme o escopo.
-
-## Regras
-- Diferencie fatos fornecidos, evidências pesquisadas, hipóteses e recomendações.
-- Registre URL, segmento, data e status de verificação de cada referência.
-- Inspiração não autoriza copiar marca, textos, imagens, depoimentos ou código.
-- Não invente dados, credenciais, avaliações, preços ou resultados.
-- Exemplos comerciais de materiais de referência não são preços atuais.
-- Avalie ferramentas, bibliotecas e skills por necessidade, compatibilidade, licença, manutenção e segurança.
-- Priorize acessibilidade, desempenho, segurança, responsividade e manutenção.
-- Não afirme testes ou instalações não realizados.
-- Não armazene senhas, tokens ou dados pessoais desnecessários.
-- O repositório é privado; não altere visibilidade ou permissões sem autorização.
-
-## Governança
-GitHub é a fonte canônica. Só decisões aprovadas entram no registro. Mudanças importantes devem aparecer no changelog e entregas entre agentes seguem o protocolo de handoff. Consulte `00-CONTEXT-SYSTEM/`.
-
-Documentação principal em português brasileiro.
-
-
-## Motion & Interaction — padrão obrigatório
-Toda landing page deve ter um Motion & Interaction Brief, consultar o catálogo universal e entregar motion/interações implementados e testados — não apenas planejados. Baseline, biblioteca, starter kit e critérios de aceite estão em:
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/README.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/PATTERN-CATALOG.md`
-- `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/INTERACTIVE-COMPONENTS.md`
-- `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md`
-
-A seleção é transversal e obrigatória; o uso de cada efeito deve ser adaptado ao cliente, com acessibilidade, reduced-motion, mobile e performance verificados.
+## Fonte e manutenção
+Este repositório público é a fonte canônica do conhecimento reutilizável. Não deve conter dados confidenciais de projetos. Mudanças estruturais devem ser feitas em branch, com histórico e revisão. Consulte `00-CONTEXT-SYSTEM/GOVERNANCE-DECISIONS-AND-HANDOFFS.md` para decisões e handoffs.
