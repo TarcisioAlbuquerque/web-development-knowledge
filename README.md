@@ -17,10 +17,9 @@ Base pública e independente de fornecedor para estratégia, design, engenharia,
 | `00-CONTEXT-SYSTEM/` | contexto mínimo, roteamento, governança e handoffs |
 | `00-METHODOLOGY/` | processo universal e workflows |
 | `01-REFERENCE-LIBRARY/` | fichas de sites, fontes, guias, motion e interação |
-| `02-DESIGN-LIBRARY/` | padrões visuais reutilizáveis |
 | `03-AGENT-SKILLS/` | papéis, roteamento de agentes e política de skills |
 | `04-PROMPTS/` | prompts reutilizáveis |
-| `05-PROJECTS/` | templates e contextos de clientes |
+| `05-PROJECTS/` | templates para contextos de clientes |
 | `06-DEVELOPMENT-STANDARDS/` | padrões técnicos e starter kits |
 | `07-QUALITY-CONTROL/` | critérios de QA e release |
 

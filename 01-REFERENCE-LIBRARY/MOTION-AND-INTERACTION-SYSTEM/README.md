@@ -11,9 +11,25 @@ A reusable reference system for purposeful motion and functional interactions ac
 | Choose implementation approach | `IMPLEMENTATION-PLAYBOOK.md` |
 | Understand the Ana Marques source case | `CASE-STUDY-ANA-MARQUES.md` |
 | Bootstrap the system in a client repo | `PROJECT-BOOTSTRAP-INSTRUCTIONS.md` |
-| Use vanilla/GSAP examples | `06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` |
+| Use vanilla/GSAP examples | `../../06-DEVELOPMENT-STANDARDS/MOTION-STARTER-KIT/README.md` |
 
 Do not read every file by default. Start with the relevant catalog section, then open implementation details only for selected patterns.
+
+## Technique quick reference
+- **Scroll-linked animation:** progress is tied to scroll position; distinct from an entrance merely triggered by viewport visibility.
+- **GSAP ScrollTrigger:** orchestration tool for scroll triggers, pinning, scrubbing and timelines; not a visual style by itself.
+- **Parallax:** layers move at different rates to suggest depth; use sparingly and validate mobile and reduced-motion behavior.
+- **Sticky:** an element remains in view during a bounded portion of normal document scrolling.
+- **Horizontal scroll scene:** vertical scrolling controls a horizontal track; preserve predictable navigation and a touch/vertical fallback.
+- **Glassmorphism:** translucent, blurred layered surfaces; use selectively, with contrast and a fallback when backdrop blur is unavailable.
+
+These are options, not a checklist. Prefer native CSS/APIs when they meet the requirement; use the implementation playbook only after selecting a pattern.
+
+## Unidentified discovery terms
+The following names were supplied as future research leads. Their exact identity, URL and category remain unverified; do not recommend or describe them as tools until identified:
+- **Details Vault**
+- **Microkit**
+- **Bencho** (spelling and URL also pending)
 
 ## Workflow
 1. Decide whether motion/interactivity improves communication, identity, navigation or task completion.
