@@ -6,7 +6,7 @@
 4. **Arquitetura:** organizar sitemap, navegação, hierarquia e jornada do usuário.
 5. **UX e conteúdo:** planejar tarefas, formulários, estados, acessibilidade e copy específica e verificável.
 6. **Direção visual:** definir conceito, tipografia, cores, grid, imagens, componentes e comportamento responsivo.
-7. **Motion:** animar com propósito, respeitando desempenho, dispositivos móveis e `prefers-reduced-motion`.
+7. **Motion:** animar com propósito, respeitando desempenho, dispositivos móveis e ``.
 8. **Arquitetura técnica:** escolher stack proporcional à complexidade, custo, manutenção e integrações.
 9. **Implementação:** construir incrementalmente, com semântica, componentes coerentes e dependências justificadas.
 10. **QA:** testar fluxos, links, formulários, responsividade, acessibilidade, SEO, segurança e performance.
