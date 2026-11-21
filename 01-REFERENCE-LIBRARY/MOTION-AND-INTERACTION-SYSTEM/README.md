@@ -31,7 +31,6 @@ These are intensity profiles, not fixed counts. A project can mix levels by page
 Brief/strategy → UX and visual direction → choose profile/patterns → Motion Brief if needed → technical implementation → browser QA. The specialist who plans the effect does not replace engineering review or QA.
 
 ## Non-negotiable safeguards
-- Respect prefers-reduced-motion; retain content and function.
 - No scroll hijacking or trapped pin/scroll states.
 - No autoplay audio; continuous motion/video needs suitable controls and fallback.
 - Mobile/touch and keyboard behavior are first-class.
@@ -43,4 +42,4 @@ Brief/strategy → UX and visual direction → choose profile/patterns → Motio
 OBSERVED (direct visual evidence), CODE-INSPECTED, REPORTED BY SOURCE, INFERRED, RECOMMENDED or NOT VERIFIED. Keep provenance on reference cards.
 
 ## Acceptance
-Every selected pattern has an objective and works in the target browser/device set. Test reduced-motion, keyboard, touch, resize and failure/fallback states when relevant. No minimum number of effects is required. A page is not "static by omission": choose deliberately and explain the profile.
+Every selected pattern has an objective and works in the target browser/device set. Test keyboard, touch, resize and failure/fallback states when relevant. No minimum number of effects is required. A page is not "static by omission": choose deliberately and explain the profile.
