@@ -16,7 +16,6 @@ This is starter code: adapt tokens, content, semantics, media, state, framework 
 
 ## Core behavior
 - Content remains visible without JavaScript; motion-ready states activate only after JS.
-- Reduced motion disables nonessential movement, auto-started video and marquee animation.
 - Tabs support arrow navigation, Home and End.
 - Carousel controls complement native touch/scroll; swipe is not the only mechanism.
 - Marquee has explicit pause/resume.
@@ -37,10 +36,10 @@ Use two equal visual groups; mark the duplicate aria-hidden and never place focu
 Use a region with aria-roledescription="carousel", a labelled track, previous/next buttons, slide labels and a polite status. Add visible focus styles. Prefer native scroll-snap.
 
 ## Video
-Use muted, playsinline, loop only when appropriate, preload metadata or none, poster and controls. Reduced-motion users must not be forced into autoplay.
+Use muted, playsinline, loop only when appropriate, preload metadata or none, poster and controls. 
 
 ## Quiz
 Each question has answer buttons, data-correct and optional data-feedback. Provide progress/feedback/result status and a restart button. Do not use quizzes for medical/legal/financial decision-making without appropriate review.
 
 ## Optional GSAP
-gsap-recipes.js is an ESM module. Install GSAP only when selected patterns justify it, read the current official docs, test mobile/reduced-motion and call cleanup on route/component unmount. Pin/horizontal scenes have desktop-only defaults and need a usable mobile alternative.
+gsap-recipes.js is an ESM module. Install GSAP only when selected patterns justify it, read the current official docs, test mobile and call cleanup on route/component unmount. Pin/horizontal scenes have desktop-only defaults and need a usable mobile alternative.
