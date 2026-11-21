@@ -63,7 +63,6 @@ Motion é movimento; interação é comportamento. Um componente pode ser intera
 - não usar movimento contínuo como único meio de comunicar informação;
 - oferecer controle explícito de pausa/retomar;
 - pausar em hover/focus quando apropriado, sem depender disso como único controle;
-- reduzir ou interromper em `prefers-reduced-motion`;
 - duplicações visuais marcadas como decorativas (`aria-hidden`) para evitar leitura repetida;
 - garantir que foco de teclado não fique preso em conteúdo duplicado.
 
