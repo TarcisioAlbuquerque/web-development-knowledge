@@ -23,7 +23,7 @@ O catálogo contém:
 2. Consulte catálogo e componentes apenas para necessidades relevantes.
 3. Crie um Motion & Interaction Brief proporcional ao escopo; projetos simples podem usar uma especificação curta.
 4. Selecione comportamentos por propósito: orientar, estabelecer hierarquia, narrar, dar feedback, facilitar exploração, explicar ou apoiar conversão.
-5. Defina trigger, estados, timing, desktop/mobile, teclado/toque, reduced-motion, fallback e critério de aceite conforme aplicável.
+5. Defina trigger, estados, timing, desktop/mobile, teclado/toque, fallback e critério de aceite conforme aplicável.
 6. Implemente apenas o que foi selecionado e aprovado.
 7. Teste os fluxos e dispositivos relevantes; registre evidências e limitações.
 
@@ -61,7 +61,7 @@ Não inferir GSAP, Framer Motion, React, IntersectionObserver ou qualquer biblio
 ## Critérios que nunca podem ser sacrificados
 
 - conteúdo utilizável sem depender da animação;
-- respeito a `prefers-reduced-motion`;
+- respeito a ``;
 - navegação por teclado e foco visível;
 - controles claros para mídia/marquee contínuo;
 - sem scroll hijacking ou pinning que aprisione o usuário;
