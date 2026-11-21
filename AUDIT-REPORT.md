@@ -19,7 +19,7 @@ Arquitetura encontrada: 00-CONTEXT-SYSTEM, 00-METHODOLOGY, 01-REFERENCE-LIBRARY,
 3. Biblioteca distingue padrões transferíveis e limitações de inspeção.
 4. Motion & Interaction System tem catálogo, componentes, brief, playbook, case study e starter kit.
 5. Starter Kit inclui CSS/JS vanilla, tabs, quiz, carrossel, marquee, vídeo, WhatsApp e receitas GSAP opcionais.
-6. QA cobre responsividade, interação, reduced-motion, SEO, acessibilidade, performance e release.
+6. QA cobre responsividade, interação, SEO, acessibilidade, performance e release.
 7. Registry de especialistas e política de skills evitam dependência automática de fornecedores.
 8. Documentação desencoraja claims inventados e alegações de testes não executados.
 
