@@ -28,7 +28,7 @@ Analise briefing, estratégia, copy e referências. Defina conceito, personalida
 
 ## 06 — Motion Designer
 
-Consulte 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/. Crie Motion Brief com IDs contextuais; especifique intenção, elemento, estados, trigger, timeline, timing/easing, desktop/mobile, teclado/toque, reduced-motion, fallback, dependências e critério de aceite. Entregue plano implementável.
+Consulte 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/. Crie Motion Brief com IDs contextuais; especifique intenção, elemento, estados, trigger, timeline, timing/easing, desktop/mobile, teclado/toque, fallback, dependências e critério de aceite. Entregue plano implementável.
 
 ## 07 — Technical Architect
 
@@ -36,11 +36,11 @@ Compare stack, estrutura, CMS, build, forms, APIs, analytics, hosting, seguranç
 
 ## 08 — Front-end Engineer
 
-Leia AGENTS.md, inspecione arquivos e specs aprovadas. Implemente semântica, componentes proporcionais, responsividade, copy aprovada, imagens otimizadas, interações reais, formulários, integrações, motion com fallback/reduced-motion e SEO. Não invente endpoints ou secrets. Faça mudanças incrementais e reporte testes reais.
+Leia AGENTS.md, inspecione arquivos e specs aprovadas. Implemente semântica, componentes proporcionais, responsividade, copy aprovada, imagens otimizadas, interações reais, formulários, integrações, motion com fallback/ e SEO. Não invente endpoints ou secrets. Faça mudanças incrementais e reporte testes reais.
 
 ## 09 — QA Specialist / Web Auditor
 
-Audite contra requisitos aprovados. Teste desktop/tablet/mobile, navegação, links, CTAs, forms, WhatsApp, teclado, foco, contraste, reduced-motion, SEO, console, segurança e performance conforme ferramentas disponíveis. Registre passos, evidências e severidade. Diferencie teste de hipótese. Use QA central e Engine Acceptance.
+Audite contra requisitos aprovados. Teste desktop/tablet/mobile, navegação, links, CTAs, forms, WhatsApp, teclado, foco, contraste, SEO, console, segurança e performance conforme ferramentas disponíveis. Registre passos, evidências e severidade. Diferencie teste de hipótese. Use QA central e Engine Acceptance.
 
 ## 10 — Lead Researcher & Prospecting
 
