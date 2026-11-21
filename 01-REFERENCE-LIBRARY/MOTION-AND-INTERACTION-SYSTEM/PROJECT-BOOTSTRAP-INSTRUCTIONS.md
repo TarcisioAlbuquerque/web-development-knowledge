@@ -19,9 +19,9 @@ Adapte este bloco ao `AGENTS.md` do projeto. Os arquivos de contexto específico
 - Consulte seletivamente o Motion & Interaction System compartilhado, por necessidade e objetivo.
 - Não há quotas de efeitos. Escolha soluções coerentes com marca, conteúdo, jornada e conversão.
 - Considere CSS, APIs nativas, GSAP/ScrollTrigger, Motion/Framer, Lenis, SVG, WebGL/3D ou outras ferramentas quando fizerem sentido e forem compatíveis.
-- Registre intenção, triggers, estados, comportamento mobile e reduced-motion no Experience Blueprint ou Motion Brief.
+- Registre intenção, triggers, estados, comportamento mobile e no Experience Blueprint ou Motion Brief.
 - Implemente os comportamentos selecionados de verdade; não deixe placeholders nem controles sem ação.
-- Teste no navegador: desktop/mobile, teclado/toque, foco, reduced-motion, performance e fallback.
+- Teste no navegador: desktop/mobile, teclado/toque, foco, performance e fallback.
 - Nunca sacrifique clareza, acessibilidade, responsividade, segurança ou desempenho por efeitos visuais.
 ```
 
@@ -37,7 +37,7 @@ Adapte este bloco ao `AGENTS.md` do projeto. Os arquivos de contexto específico
 - O blueprint explica por que cada comportamento foi selecionado.
 - Os efeitos e componentes previstos estão implementados e funcionais.
 - Os controles têm estados, feedback e semântica adequados.
-- Reduced-motion e fallback preservam conteúdo e função.
+
 - Mobile, teclado e toque foram verificados quando aplicáveis.
 - QA registra testes reais, limitações e pendências.
 - O resultado é coerente com a identidade e melhora a experiência; não depende de cumprir uma quantidade de efeitos.
