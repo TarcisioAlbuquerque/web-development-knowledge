@@ -108,7 +108,7 @@
     video.muted = true;
     video.playsInline = true;
 
-    if (reduceMotion || !("IntersectionObserver" in window)) {
+    if (!("IntersectionObserver" in window)) {
       video.pause();
       video.controls = true;
       return;
