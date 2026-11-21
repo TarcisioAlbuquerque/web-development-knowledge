@@ -43,7 +43,7 @@ Registrar testes realizados, limitações aceitas, URL, instruções, suporte e 
 - Componentes do Motion Starter Kit adaptados:
 - Stack/dependências e justificativa:
 - Comportamento desktop/mobile:
-- Reduced-motion/fallback:
+
 - Exceções ao baseline e aprovação:
 - Evidências de QA (capturas/gravações):
 - Estado: DRAFT / IN_REVIEW / APPROVED / BLOCKED
