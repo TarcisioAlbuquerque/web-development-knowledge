@@ -18,7 +18,7 @@ Review against approved brief and observable behavior, not the implementer's con
 ## Audit dimensions
 - Functional: links, buttons, forms, validation, feedback, integrations and failure paths.
 - UX/visual: hierarchy, consistency, content accuracy, responsive layout, overflow, focus and touch targets.
-- Accessibility: semantic structure, keyboard, focus visibility/not obscured, labels, error associations, contrast, alt text, reduced motion and WCAG 2.2 AA target where required.
+- Accessibility: semantic structure, keyboard, focus visibility/not obscured, labels, error associations, contrast, alt text and WCAG 2.2 AA target where required.
 - Performance: image/font/script loading, layout stability, responsiveness and measured Core Web Vitals when field data exists.
 - SEO: indexability, metadata, canonical, sitemap/robots, headings, internal links and valid structured data where applicable.
 - Security/privacy: secrets, exposed data, unsafe dependencies/configuration, forms/uploads, auth/authorization and third-party scripts.
