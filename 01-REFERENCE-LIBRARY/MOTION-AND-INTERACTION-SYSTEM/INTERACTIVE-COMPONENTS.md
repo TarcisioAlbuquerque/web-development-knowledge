@@ -34,7 +34,7 @@ Motion is movement; interaction is behavior. A component may be interactive with
 - Prefer native `details/summary` for simple FAQ.
 - Gallery/lightbox has accessible controls, Escape close and focus restoration.
 - Swipe is never the only navigation method.
-- Autoplay/marquee has pause controls and reduced-motion behavior.
+- Autoplay/marquee has pause controls and behavior.
 - Video has poster, reserved dimensions, accessible controls and no unexpected audio.
 - WhatsApp/contact destinations use approved data, never placeholders.
 - Include empty/loading/error/success/disabled states where relevant.
