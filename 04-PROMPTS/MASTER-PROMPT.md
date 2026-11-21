@@ -15,7 +15,7 @@ Choose technology by requirements, budget, capability, compatibility, security a
 
 Research references by both segment and transferable pattern. Read only relevant cards; inspect original sources when current visual/functional evidence matters. Record what was verified and what could not be accessed. Adapt principles; do not copy identity, content, assets or code.
 
-Motion and interaction are contextual, not quotas. Specify and implement them when they improve the experience; a restrained/static result is valid when intentional. Functional controls, accessibility, reduced-motion, responsive behavior and performance are required.
+Motion and interaction are contextual, not quotas. Specify and implement them when they improve the experience; a restrained/static result is valid when intentional. Functional controls, accessibility, responsive behavior and performance are required.
 
 ## Integrity
 Do not invent business facts, claims, testimonials, credentials, endpoints, prices or results. Do not treat hypotheses as facts. Do not claim tests, inspections or installations that did not occur. Do not change approved decisions silently or publish without authorization.
