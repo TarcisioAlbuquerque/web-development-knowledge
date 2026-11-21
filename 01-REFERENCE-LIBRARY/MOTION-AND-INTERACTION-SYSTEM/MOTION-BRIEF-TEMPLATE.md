@@ -21,7 +21,7 @@
 |---|---|---|---|---|
 
 ## 4. Motion selecionado
-| Padrão/ID | Seção/elemento | Objetivo | Trigger | Comportamento | Desktop/mobile | Reduced motion/fallback | Critério de aceite |
+| Padrão/ID | Seção/elemento | Objetivo | Trigger | Comportamento | Desktop/mobile | Critério de aceite |
 |---|---|---|---|---|---|---|---|
 
 Não há mínimo ou máximo de efeitos. Registrar somente os movimentos que contribuam para a experiência. A ausência de motion avançado também pode ser uma decisão de design válida.
@@ -52,7 +52,7 @@ Não há mínimo ou máximo de efeitos. Registrar somente os movimentos que cont
 - Breakpoints:
 - Touch e orientação:
 - Teclado e foco:
-- `prefers-reduced-motion`:
+- ``:
 - Pausa de movimento contínuo:
 - Comportamento sem JavaScript:
 - Conteúdo e funções continuam disponíveis?:
@@ -62,7 +62,7 @@ Não há mínimo ou máximo de efeitos. Registrar somente os movimentos que cont
 - [ ] Cada interação funciona e tem feedback real.
 - [ ] Desktop e mobile testados.
 - [ ] Teclado, foco e toque testados quando aplicáveis.
-- [ ] Reduced-motion testado.
+- [ ] testado.
 - [ ] Sem conteúdo escondido ou bloqueio de navegação.
 - [ ] Sem erros conhecidos no console/build, quando verificável.
 - [ ] Evidências ligadas aos padrões selecionados.
