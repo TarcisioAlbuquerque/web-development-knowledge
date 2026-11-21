@@ -14,12 +14,12 @@ Choose the least complex stack that meets content, integration, SEO, accessibili
 - Test target browsers and viewport sizes.
 
 ## Motion engineering
-Motion should support hierarchy, continuity, feedback or narrative. Use CSS/native APIs for simple effects; IntersectionObserver for viewport entry; GSAP/ScrollTrigger only when advanced orchestration justifies its cost. Keep content usable without animation/JS, respect reduced motion, keyboard, focus, touch and mobile. Measure performance rather than claiming optimization without evidence.
+Motion should support hierarchy, continuity, feedback or narrative. Use CSS/native APIs for simple effects; IntersectionObserver for viewport entry; GSAP/ScrollTrigger only when advanced orchestration justifies its cost. Keep content usable without animation/JS, keyboard, focus, touch and mobile. Measure performance rather than claiming optimization without evidence.
 
 For selected patterns, specify purpose, trigger, properties, timing, dependency, fallback and validation in the project brief. See `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` and `MOTION-STARTER-KIT/` only when relevant. No universal motion or interaction quota applies.
 
 ## Accessibility
-Use semantic HTML, keyboard access, visible focus, labels, associated errors, contrast, alt text and reduced-motion support. Custom components must expose accessible name, role, state and operation.
+Use semantic HTML, keyboard access, visible focus, labels, associated errors, contrast, alt text. Custom components must expose accessible name, role, state and operation.
 
 ## Performance and SEO
 Measure before/after. Optimize images/fonts, avoid unnecessary scripts and main-thread work, and consider Core Web Vitals. Use unique metadata, semantic headings, useful content, readable URLs, sitemap/robots/canonical and structured data only when appropriate. Do not promise rankings.
