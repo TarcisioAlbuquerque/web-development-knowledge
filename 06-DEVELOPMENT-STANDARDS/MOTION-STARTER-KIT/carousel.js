@@ -1,8 +1,6 @@
 /* Motion Starter Kit — native scroll-snap carousel controls, no dependencies.
    Swipe and native scrolling remain available; buttons are an additional input method. */
 (() => {
-  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
-
   document.querySelectorAll("[data-carousel]").forEach((carousel) => {
     const track = carousel.querySelector("[data-carousel-track]");
     const previous = carousel.querySelector("[data-carousel-prev]");
@@ -50,7 +48,7 @@
       const left = slides[safeIndex].getBoundingClientRect().left
         - track.getBoundingClientRect().left
         + track.scrollLeft;
-      track.scrollTo({ left, behavior: reduceMotion ? "auto" : "smooth" });
+      track.scrollTo({ left, behavior: "smooth" });
       currentIndex = safeIndex;
       scheduleUpdate();
     };
