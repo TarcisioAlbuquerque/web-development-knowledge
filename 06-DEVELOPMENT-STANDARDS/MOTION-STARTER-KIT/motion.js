@@ -1,8 +1,6 @@
 /* Motion Starter Kit — vanilla JS, no dependencies.
    Load with defer. In frameworks, initialize/cleanup within the component lifecycle. */
 (() => {
-  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
-
   // Progressive enhancement only after this script executes.
   document.documentElement.classList.add("motion-ready");
 
@@ -14,7 +12,7 @@
     svgItems.forEach((item) => item.classList.add("is-drawn"));
   };
 
-  if (reduceMotion || !("IntersectionObserver" in window)) {
+  if (!("IntersectionObserver" in window)) {
     showAll();
   } else {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -88,18 +86,10 @@
     activate(initiallySelected);
   });
 
-  // Explicit marquee pause/resume control. Reduced-motion users get a static track.
+  // Explicit marquee pause/resume control.
   document.querySelectorAll("[data-marquee]").forEach((marquee) => {
     const toggle = marquee.querySelector("[data-marquee-toggle]");
     if (!toggle) return;
-
-    if (reduceMotion) {
-      marquee.classList.add("is-paused");
-      toggle.setAttribute("aria-pressed", "true");
-      toggle.textContent = "Movimento reduzido";
-      toggle.disabled = true;
-      return;
-    }
 
     toggle.addEventListener("click", () => {
       const paused = marquee.classList.toggle("is-paused");
@@ -110,7 +100,7 @@
     });
   });
 
-  // Viewport video: autoplay is muted, pauses offscreen, and never auto-starts for reduced motion.
+  // Viewport video: autoplay is muted and pauses offscreen.
   document.querySelectorAll("video[data-viewport-video]").forEach((video) => {
     video.muted = true;
     video.playsInline = true;
