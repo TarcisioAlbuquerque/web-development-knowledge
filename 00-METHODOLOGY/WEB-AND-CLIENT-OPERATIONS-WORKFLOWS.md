@@ -10,7 +10,7 @@ Use the stages that fit the scope; do not force irrelevant steps. Record omissio
 5. **Architecture/UX:** pages, sections, hierarchy, navigation, forms, states and mobile behavior; justify each section.
 6. **Website copy:** headlines, services, benefits, proof, process, FAQ, CTA and microcopy; never invent claims.
 7. **Creative direction:** concept, personality, typography, colors, grid, imagery, components and references.
-8. **Experience/motion:** select purposeful interactions and motion when useful; define reduced-motion, mobile, fallback and performance.
+8. **Experience/motion:** select purposeful interactions and motion when useful; define mobile, fallback and performance.
 9. **Technical architecture:** stack, integrations, hosting, cost, security, maintenance and dependencies.
 10. **Implementation:** build against approved specifications.
 11. **QA/release:** test design, responsive behavior, links, forms, content, accessibility, SEO, security and performance.
