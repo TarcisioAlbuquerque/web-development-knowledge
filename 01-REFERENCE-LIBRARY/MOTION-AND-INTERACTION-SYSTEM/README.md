@@ -18,7 +18,7 @@ Do not read every file by default. Start with the relevant catalog section, then
 ## Technique quick reference
 - **Scroll-linked animation:** progress is tied to scroll position; distinct from an entrance merely triggered by viewport visibility.
 - **GSAP ScrollTrigger:** orchestration tool for scroll triggers, pinning, scrubbing and timelines; not a visual style by itself.
-- **Parallax:** layers move at different rates to suggest depth; use sparingly and validate mobile and reduced-motion behavior.
+- **Parallax:** layers move at different rates to suggest depth; use sparingly and validate mobile.
 - **Sticky:** an element remains in view during a bounded portion of normal document scrolling.
 - **Horizontal scroll scene:** vertical scrolling controls a horizontal track; preserve predictable navigation and a touch/vertical fallback.
 - **Glassmorphism:** translucent, blurred layered surfaces; use selectively, with contrast and a fallback when backdrop blur is unavailable.
@@ -36,16 +36,16 @@ The following names were supplied as future research leads. Their exact identity
 2. Select only suitable patterns and record purpose, trigger, states, desktop/mobile behavior and fallback in the project brief.
 3. Choose the simplest suitable implementation; justify additional dependencies.
 4. Implement functional controls and progressive enhancement.
-5. Test the selected behaviors, keyboard/touch, responsive layouts, reduced motion and performance. Report checks actually run.
+5. Test the selected behaviors, keyboard/touch, responsive layouts, performance. Report checks actually run.
 
 ## Evidence
 Reference patterns may be OBSERVED, INSPECTED IN CODE, REPORTED BY SOURCE, INFERRED, RECOMMENDED or NOT VERIFIED. Never infer a library/framework from appearance alone. The Ana Marques case is reported from a supplied audit, not independent source-code inspection.
 
 ## Non-negotiable quality
 - Content remains available without animation.
-- Respect `prefers-reduced-motion`; provide accessible keyboard and focus behavior.
+- Provide accessible keyboard and focus behavior.
 - No scroll hijacking or motion that traps navigation.
-- Continuous motion/autoplay needs appropriate controls and reduced-motion behavior.
+- Continuous motion/autoplay needs appropriate controls behavior.
 - Mobile/touch and performance are first-class.
 - A plan, placeholder or inert button is not an implementation.
 
