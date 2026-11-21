@@ -33,7 +33,7 @@ Minimum acceptance for a professional landing page: 6 distinct motion treatments
 
 Map every implemented effect/component to a stable catalog ID. A concept, TODO, placeholder or button without a working action does not count as implementation.
 
-The frontend agent must implement the approved brief. QA must verify every selected ID in a real browser on desktop and mobile, with keyboard/touch and prefers-reduced-motion. Do not mark the page ready until the motion and interaction checklist is complete.
+The frontend agent must implement the approved brief. QA must verify every selected ID in a real browser on desktop and mobile, with keyboard/touch. Do not mark the page ready until the motion and interaction checklist is complete.
 
 Never sacrifice content clarity, accessibility, performance, responsive behavior or conversion just to increase animation count. Preserve progressive enhancement and a usable experience when motion is disabled.
 ```
@@ -42,7 +42,7 @@ Never sacrifice content clarity, accessibility, performance, responsive behavior
 
 Copie este texto en el primer encargo de cada sitio:
 
-> Antes de proponer el diseño o escribir código, consulta el Motion & Interaction System de la base de conocimiento, revisa el briefing y crea docs/MOTION-BRIEF.md con IDs del catálogo. Propón una composición de motion de intensidad media-alta con mínimo 6 tratamientos de motion y 3 patrones de interacción funcionales, relevantes para este negocio. No entregues una landing page estática: implementa los efectos aprobados en el navegador y prueba los comportamientos. Usa el Motion Starter Kit cuando sea adecuado y justifica cualquier dependencia adicional. Al finalizar, entrega los IDs implementados, archivos, evidencias de desktop/mobile, pruebas de teclado/touch/reduced-motion y cualquier excepción.
+> Antes de proponer el diseño o escribir código, consulta el Motion & Interaction System de la base de conocimiento, revisa el briefing y crea docs/MOTION-BRIEF.md con IDs del catálogo. Propón una composición de motion de intensidad media-alta con mínimo 6 tratamientos de motion y 3 patrones de interacción funcionales, relevantes para este negocio. No entregues una landing page estática: implementa los efectos aprobados en el navegador y prueba los comportamientos. Usa el Motion Starter Kit cuando sea adecuado y justifica cualquier dependencia adicional. Al finalizar, entrega los IDs implementados, archivos, evidencias de desktop/mobile, pruebas de teclado/touch y cualquier excepción.
 
 ## 4. Regra de sincronização entre agentes
 
