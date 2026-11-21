@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 
 ## 4. Motion selecionado
-| ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Reduced motion/fallback | Estado |
+| ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Estado |
 |---|---|---|---|---|---|---|---|
 
 **Mínimo obrigatório para landing pages:** 6 tratamentos de motion distintos e 3 padrões de interação úteis. Incluir entrada de hero, scroll reveals em múltiplas seções, movimento/revelação de mídia, feedback consistente nos CTAs/controles e componentes interativos que ajudem a entender, escolher, explorar ou converter. Faixa recomendada: 6–10 tratamentos e 3–5 padrões. Exceções abaixo do mínimo precisam de aprovação explícita do usuário/cliente.
@@ -55,7 +55,7 @@
 - Comportamento touch:
 - Operação por teclado:
 - Focus-visible:
-- prefers-reduced-motion:
+-:
 - Pausa de marquee/autoplay:
 - Fallback sem JS:
 - Conteúdo continua disponível sem motion?:
@@ -71,7 +71,7 @@
 - [ ] Teste dos estados hover, focus-visible e active.
 - [ ] Teste de cada componente interativo.
 - [ ] Teste em desktop e mobile.
-- [ ] Teste com reduced-motion.
+- [ ] Teste.
 - [ ] Teste de teclado e toque.
 - [ ] Console/build sem erros conhecidos, quando verificável.
 - [ ] Evidência ligada aos IDs do catálogo.
