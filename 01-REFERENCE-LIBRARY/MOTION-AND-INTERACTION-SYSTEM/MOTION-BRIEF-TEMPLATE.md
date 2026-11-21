@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 
 ## 4. Motion selecionado
-| ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Reduced motion/fallback | Estado |
+| ID do catálogo | Seção/elemento | Objetivo | Trigger | Desktop | Mobile | Estado |
 |---|---|---|---|---|---|---|---|
 
 Selecione somente o que serve ao objetivo, à marca e ao contexto. Não há quota mínima nem obrigação de usar um padrão específico. Explique escolhas relevantes e omissões quando afetarem requisitos aprovados.
@@ -55,7 +55,7 @@ Selecione somente o que serve ao objetivo, à marca e ao contexto. Não há quot
 - Comportamento touch:
 - Operação por teclado:
 - Focus-visible:
-- prefers-reduced-motion:
+-:
 - Pausa de marquee/autoplay:
 - Fallback sem JS:
 - Conteúdo continua disponível sem motion?:
@@ -71,7 +71,7 @@ Selecione somente o que serve ao objetivo, à marca e ao contexto. Não há quot
 - [ ] Teste dos estados hover, focus-visible e active.
 - [ ] Teste de cada componente interativo.
 - [ ] Teste em desktop e mobile.
-- [ ] Teste com reduced-motion.
+- [ ] Teste.
 - [ ] Teste de teclado e toque.
 - [ ] Console/build sem erros conhecidos, quando verificável.
 - [ ] Evidência ligada aos IDs do catálogo.
