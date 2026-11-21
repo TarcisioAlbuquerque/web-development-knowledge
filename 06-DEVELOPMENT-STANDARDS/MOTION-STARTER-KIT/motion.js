@@ -17,8 +17,6 @@
       cleanups.push(() => target.removeEventListener(eventName, handler, options));
     };
     const all = (selector) => Array.from(root.querySelectorAll(selector));
-    const motionQuery = view.matchMedia?.("(prefers-reduced-motion: reduce)");
-    const reducedMotion = () => motionQuery?.matches ?? false;
 
     scope.classList.add("motion-ready");
 
@@ -29,7 +27,7 @@
       svgItems.forEach((item) => item.classList.add("is-drawn"));
     };
 
-    if (reducedMotion() || !("IntersectionObserver" in view)) {
+    if (!("IntersectionObserver" in view)) {
       showAll();
     } else {
       const revealObserver = new view.IntersectionObserver((entries, observer) => {
@@ -110,13 +108,7 @@
           ? (toggle.dataset.resumeLabel || "Retomar movimento")
           : (toggle.dataset.pauseLabel || "Pausar movimento");
       };
-      if (reducedMotion()) {
-        setPaused(true);
-        toggle.disabled = true;
-        toggle.textContent = "Movimento reduzido";
-      } else {
-        addListener(toggle, "click", () => setPaused(!marquee.classList.contains("is-paused")));
-      }
+      addListener(toggle, "click", () => setPaused(!marquee.classList.contains("is-paused")));
     });
 
     const videos = all("video[data-viewport-video]");
@@ -128,12 +120,12 @@
       videoStates.set(video, false);
     });
 
-    if (videos.length && !reducedMotion() && "IntersectionObserver" in view) {
+    if (videos.length && "IntersectionObserver" in view) {
       const videoObserver = new view.IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           const video = entry.target;
           videoStates.set(video, entry.isIntersecting);
-          if (entry.isIntersecting && !reducedMotion()) {
+          if (entry.isIntersecting) {
             const attempt = video.play();
             if (attempt && typeof attempt.catch === "function") {
               attempt.catch(() => { video.controls = true; });
@@ -145,23 +137,6 @@
       }, { threshold: 0.35 });
       observers.push(videoObserver);
       videos.forEach((video) => videoObserver.observe(video));
-    }
-
-    if (motionQuery) {
-      addListener(motionQuery, "change", (event) => {
-        if (!event.matches) return;
-        showAll();
-        videos.forEach((video) => video.pause());
-        all("[data-marquee]").forEach((marquee) => {
-          marquee.classList.add("is-paused");
-          const toggle = marquee.querySelector("[data-marquee-toggle]");
-          if (toggle) {
-            toggle.disabled = true;
-            toggle.textContent = "Movimento reduzido";
-            toggle.setAttribute("aria-pressed", "true");
-          }
-        });
-      });
     }
 
     all("a[data-whatsapp-cta]").forEach((link) => {
