@@ -19,7 +19,7 @@ Escolha comportamentos conforme o briefing, a jornada, a marca, os dispositivos 
 
 Mapeie os comportamentos implementados aos IDs do catálogo quando aplicável. Um conceito, TODO, placeholder ou botão sem ação funcional não conta como implementação.
 
-Implemente os comportamentos aprovados e verifique-os no navegador nos dispositivos e estados relevantes, incluindo teclado/toque e prefers-reduced-motion conforme aplicável. Não declare QA concluído sem evidência suficiente.
+Implemente os comportamentos aprovados e verifique-os no navegador nos dispositivos e estados relevantes, incluindo teclado/toque e conforme aplicável. Não declare QA concluído sem evidência suficiente.
 
 Preserve conteúdo e ações essenciais quando motion estiver desativado. Não sacrifique clareza, acessibilidade, performance, responsividade ou conversão.
 ```
@@ -28,7 +28,7 @@ Preserve conteúdo e ações essenciais quando motion estiver desativado. Não s
 
 Copie este texto en el primer encargo de cada sitio:
 
-> Antes de diseñar o codificar, consulta el Motion & Interaction System cuando sea relevante para el proyecto, revisa el briefing y crea una especificación proporcional con los IDs seleccionados. Elige comportamientos según su propósito y la identidad de la marca; no uses cantidades mínimas ni impongas motion de alta intensidad. Implementa solo lo aprobado y prueba en navegador, desktop/mobile, teclado/touch y reduced-motion cuando corresponda. Usa el Motion Starter Kit cuando sea adecuado y justifica dependencias adicionales. Al finalizar, informa IDs, archivos, pruebas, evidencias y limitaciones.
+> Antes de diseñar o codificar, consulta el Motion & Interaction System cuando sea relevante para el proyecto, revisa el briefing y crea una especificación proporcional con los IDs seleccionados. Elige comportamientos según su propósito y la identidad de la marca; no uses cantidades mínimas ni impongas motion de alta intensidad. Implementa solo lo aprobado y prueba en navegador, desktop/mobile, teclado/touch y cuando corresponda. Usa el Motion Starter Kit cuando sea adecuado y justifica dependencias adicionales. Al finalizar, informa IDs, archivos, pruebas, evidencias y limitaciones.
 
 ## 4. Regra de sincronização entre agentes
 
@@ -46,5 +46,5 @@ Um site só pode ser considerado pronto quando:
 - cada interação executa a função prometida;
 - IDs estão mapeados para seções/componentes;
 - evidências de QA estão anexadas ao projeto;
-- mobile, teclado/toque e reduced-motion passaram;
+- mobile, teclado/toque e passaram;
 - exceções estão documentadas e aceitas.
