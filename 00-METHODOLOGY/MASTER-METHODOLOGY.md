@@ -79,7 +79,7 @@ Não tratar código gerado como concluído sem executar e verificar. Não substi
 - Visual: identidade, hierarquia, espaçamento, tipografia, mídia e consistência.
 - UX/funcionalidade: navegação, formulários, CTAs, integrações e estados.
 - Responsive: dispositivos e larguras relevantes, toque e orientação.
-- Motion: coerência, fluidez, reduced-motion, sem bloqueio de conteúdo ou navegação.
+- Motion: coerência, fluidez, sem bloqueio de conteúdo ou navegação.
 - Acessibilidade: teclado, foco, semântica, labels, contraste e textos alternativos.
 - Performance: imagens, scripts, fontes, Core Web Vitals quando mensurável.
 - Segurança/privacidade: HTTPS, permissões, dados e serviços externos.
@@ -130,7 +130,7 @@ Motion e interações são parte da experiência, da direção criativa e da imp
 
 O critério é adequação: propósito narrativo/funcional, coerência de marca, fluidez, legibilidade, responsividade, acessibilidade, performance, compatibilidade, manutenção e custo. Não adicionar efeito só para preencher uma quantidade nem evitar uma técnica útil por um limite arbitrário.
 
-Documentar a seleção no Experience Blueprint. Criar um Motion Brief separado quando a experiência for complexa, houver muitas sequências, múltiplos breakpoints ou handoff especializado. Testar efeitos e interações reais; reduced-motion e fallback não podem remover conteúdo ou função.
+Documentar a seleção no Experience Blueprint. Criar um Motion Brief separado quando a experiência for complexa, houver muitas sequências, múltiplos breakpoints ou handoff especializado. Testar efeitos e interações reais; e fallback não podem remover conteúdo ou função.
 
 ## Qualidade transversal
 
