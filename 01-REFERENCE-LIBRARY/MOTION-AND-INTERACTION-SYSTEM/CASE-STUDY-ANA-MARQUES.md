@@ -66,7 +66,7 @@
 - A simulação de WhatsApp deve ser identificada como ilustração, nunca apresentada como conversa real/testemunho.
 - Mensagens predefinidas dependem de número e fluxo aprovados pelo cliente.
 - Não inventar estatísticas, credenciais ou prova social.
-- Marquee contínuo precisa de pausa e suporte a reduced-motion.
+- Marquee contínuo precisa de pausa e.
 - Vídeo deve ter poster, dimensões reservadas, autoplay sem áudio e fallback.
 - Não reproduzir a identidade visual ou os textos da Ana; transferir apenas o princípio de interação.
 
