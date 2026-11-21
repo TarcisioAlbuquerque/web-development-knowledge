@@ -18,7 +18,7 @@
 - Plan UX, visual design, motion, interaction and engineering as one experience.
 - Motion is contextual, not a quota: select only effects that improve communication or usability. A restrained/static treatment is valid when justified by the brief.
 - Interactive controls must work; motion must not hide content or block navigation.
-- Respect keyboard, focus, touch, responsive layouts, `prefers-reduced-motion`, performance and progressive enhancement.
+- Respect keyboard, focus, touch, responsive layouts, ``, performance and progressive enhancement.
 - Run the relevant QA checklist; report what was and was not actually tested.
 
 ## Context and handoff
