@@ -16,7 +16,7 @@
 
 6. **Direção criativa:** conceito, personalidade, tipografia, cores, grid, imagens, componentes e referências aprovadas.
 
-7. **Motion:** propósito, gatilhos, sequência, duração, easing, fallback, mobile e reduced-motion.
+7. **Motion:** propósito, gatilhos, sequência, duração, easing, fallback, mobile e.
 
 8. **Arquitetura técnica e medição:** escolher stack, integrações, hospedagem, custo, segurança, manutenção e dependências. Definir, conforme o objetivo, eventos, acionadores, parâmetros não sensíveis, ferramenta, consentimento, atribuição de origem e responsável pela validação. Não instalar analytics sem necessidade ou autorização.
 
