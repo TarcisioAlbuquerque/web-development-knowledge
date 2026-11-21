@@ -21,12 +21,12 @@ Escolher a menor complexidade que atende requisitos. Avaliar tipo de site, conte
 - O conteúdo deve funcionar sem animação.
 - Evitar intro longa, scroll hijacking e bloqueio de ação.
 - CSS para transições simples; Web Animations API para controle nativo; IntersectionObserver para entrada na viewport; GSAP/ScrollTrigger para timelines/pin/scroll complexos quando justificável.
-- Respeitar `prefers-reduced-motion`; não comunicar só por movimento; manter fallback se JS falhar.
+-; não comunicar só por movimento; manter fallback se JS falhar.
 - Testar mobile, toque, teclado, resize e carregamento tardio.
 - Handoff de cada efeito deve indicar objetivo, elemento, trigger, propriedades, duration, easing, dependência, fallback e validação.
 
 ## Acessibilidade
-HTML semântico, teclado, foco visível, labels, erros associados, contraste, texto alternativo e reduced-motion. Componentes customizados precisam nome, função, estado e operação acessíveis.
+HTML semântico, teclado, foco visível, labels, erros associados, contraste, texto alternativo e. Componentes customizados precisam nome, função, estado e operação acessíveis.
 
 ## Performance
 Medir antes/depois; não declarar otimização sem medir. Otimizar imagem/fontes, lazy-load de conteúdo fora da primeira viewport quando adequado, reduzir scripts/dependências e evitar trabalho excessivo na main thread. Considerar Core Web Vitals e rede/dispositivo do público.
@@ -57,7 +57,7 @@ Consultar o sistema completo em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYS
 - Evitar animação de propriedades que causam layout/reflow quando transform e opacity bastarem.
 - Não ocultar conteúdo por dependência de JavaScript.
 - Implementar pausa para marquee e mídia contínua, quando aplicável.
-- Respeitar `prefers-reduced-motion`, teclado, touch e foco visível.
+-, teclado, touch e foco visível.
 
 ### Definição de pronto
 O efeito só conta como implementado quando funciona no navegador, nos breakpoints previstos, com estados de fallback e sem erros conhecidos. Código não executado, placeholder ou proposta visual não conta.
