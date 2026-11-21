@@ -31,4 +31,4 @@ Não trate a biblioteca como coleção de modelos prontos. Cada site é uma font
 
 
 ## Motion & Interaction
-Quando motion ou componentes interativos fizerem parte da experiência, consulte o sistema em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`. Defina intenção, comportamento, alternativa mobile, reduced-motion, fallback e critério de verificação conforme o escopo. A seleção é contextual: não existe quantidade mínima universal. O objetivo é melhorar a experiência, não preencher uma quota. Regras operacionais comuns estão em `AGENTS.md`; o sistema especializado detalha a implementação.
+Quando motion ou componentes interativos fizerem parte da experiência, consulte o sistema em `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/`. Defina intenção, comportamento, alternativa mobile, fallback e critério de verificação conforme o escopo. A seleção é contextual: não existe quantidade mínima universal. O objetivo é melhorar a experiência, não preencher uma quota. Regras operacionais comuns estão em `AGENTS.md`; o sistema especializado detalha a implementação.
