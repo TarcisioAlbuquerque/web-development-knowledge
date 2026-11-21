@@ -15,7 +15,7 @@ Reutilizar estrutura técnica/primitives sem repetir aparência, conteúdo ou ar
 
 ## Starter mínimo
 
-Estrutura clara; tokens alinhados à direção; HTML semântico; navegação/CTA real; somente componentes necessários; setup/scripts documentados; SEO básico; acessibilidade/reduced-motion; QA e deploy documentados.
+Estrutura clara; tokens alinhados à direção; HTML semântico; navegação/CTA real; somente componentes necessários; setup/scripts documentados; SEO básico; acessibilidade/; QA e deploy documentados.
 
 ## Não carregar por padrão
 
