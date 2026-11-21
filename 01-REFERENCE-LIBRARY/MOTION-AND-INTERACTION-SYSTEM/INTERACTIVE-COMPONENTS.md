@@ -88,7 +88,7 @@ Motion é movimento; interação é comportamento. Um componente pode ser intera
 4. Garantir estado vazio, loading, erro, sucesso e desabilitado quando aplicável.
 5. O componente continua compreensível sem animação.
 6. Documentar props/configuração, eventos e requisitos de conteúdo.
-7. Incluir testes de teclado, toque, foco e reduced-motion.
+7. Incluir testes de teclado, toque, foco.
 
 
 ## Mínimo de interação em landing pages
