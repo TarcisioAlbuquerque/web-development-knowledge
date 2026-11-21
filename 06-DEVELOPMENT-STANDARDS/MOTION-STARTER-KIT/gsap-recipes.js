@@ -11,7 +11,7 @@ export function initGSAPRecipes(root = document) {
   const select = (selector) => gsap.utils.toArray(selector, root);
 
   // General reveal, stagger, SVG draw and image-mask recipes.
-  media.add("(prefers-reduced-motion: no-preference)", () => {
+
     select("[data-gsap-reveal]").forEach((element) => {
       gsap.fromTo(element,
         { autoAlpha: 0, y: 28 },
@@ -85,11 +85,10 @@ export function initGSAPRecipes(root = document) {
         }
       );
     });
-  });
 
   // Pin, parallax and scroll-controlled horizontal scenes stay desktop-only.
   // Mobile retains the normal document flow / native horizontal scrolling.
-  media.add("(min-width: 900px) and (prefers-reduced-motion: no-preference)", () => {
+  media.add("(min-width: 900px)", () => {
     select("[data-gsap-parallax]").forEach((element) => {
       const amount = Number.parseFloat(element.dataset.gsapParallax) || -12;
       gsap.to(element, {
