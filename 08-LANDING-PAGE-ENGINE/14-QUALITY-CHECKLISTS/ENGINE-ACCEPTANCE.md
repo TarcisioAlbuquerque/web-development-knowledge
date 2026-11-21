@@ -35,7 +35,7 @@ Checklist de handoff do Engine. O QA de release continua em 07-QUALITY-CONTROL/A
 - [ ] Sem overflow acidental.
 - [ ] Navegação e controles funcionam em toque/teclado.
 - [ ] Foco, contraste, labels e semântica verificados.
-- [ ] Reduced-motion e fallback testados.
+- [ ] e fallback testados.
 
 ## Motion
 
