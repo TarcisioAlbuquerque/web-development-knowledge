@@ -15,12 +15,12 @@ Motion is communication and feedback, not a quota. A component may be interactiv
    - Standard: coordinated hero/section/media treatments and contextual interactions where useful.
    - Signature: editorial sequences, scroll storytelling or advanced interaction justified by brand and content.
 3. Consult Motion System README and only the catalog/component IDs needed for this project.
-4. Write/update the project Motion Brief when motion is significant. For every selected treatment specify purpose, element, trigger, initial/final state, timing/easing, desktop/mobile, reduced-motion, fallback, dependency and acceptance test.
+4. Write/update the project Motion Brief when motion is significant. For every selected treatment specify purpose, element, trigger, initial/final state, timing/easing, desktop/mobile, fallback, dependency and acceptance test.
 5. Choose the simplest implementation: CSS first; native Web Animations API / IntersectionObserver next; library/framework motion for complex state/timeline; GSAP/ScrollTrigger for complex orchestration, pinning or scroll-linked scenes when justified.
 6. Implement with progressive enhancement. Content and controls must work if animation is disabled or JS fails.
-7. Respect prefers-reduced-motion. Avoid forced scroll, focus traps, long intros, excessive movement, layout shifts and motion that blocks reading or action.
+7. Avoid forced scroll, focus traps, long intros, excessive movement, layout shifts and motion that blocks reading or action.
 8. Provide keyboard, touch and visible focus behavior. Continuous marquee/autoplay needs a pause/stop mechanism where applicable.
-9. Test scroll down/up, resize, browser history/route changes, delayed media, touch, keyboard, reduced-motion and cleanup of observers/listeners/timelines.
+9. Test scroll down/up, resize, browser history/route changes, delayed media, touch, keyboard and cleanup of observers/listeners/timelines.
 10. Map implemented behavior to stable catalog IDs and record evidence in QA.
 
 ## Do not
