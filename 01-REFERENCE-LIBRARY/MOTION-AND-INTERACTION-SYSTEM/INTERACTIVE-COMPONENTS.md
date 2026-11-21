@@ -63,7 +63,7 @@ Motion é movimento; interação é comportamento. Um componente pode ser intera
 - não usar movimento contínuo como único meio de comunicar informação;
 - oferecer controle explícito de pausa/retomar;
 - pausar em hover/focus quando apropriado, sem depender disso como único controle;
-- reduzir ou interromper em `prefers-reduced-motion`;
+- reduzir ou interromper;
 - duplicações visuais marcadas como decorativas (`aria-hidden`) para evitar leitura repetida;
 - garantir que foco de teclado não fique preso em conteúdo duplicado.
 
@@ -89,7 +89,7 @@ Motion é movimento; interação é comportamento. Um componente pode ser intera
 4. Garantir estado vazio, loading, erro, sucesso e desabilitado quando aplicável.
 5. O componente continua compreensível sem animação.
 6. Documentar props/configuração, eventos e requisitos de conteúdo.
-7. Incluir testes de teclado, toque, foco e reduced-motion.
+7. Incluir testes de teclado, toque, foco e.
 
 
 ## Mínimo de interação em landing pages
