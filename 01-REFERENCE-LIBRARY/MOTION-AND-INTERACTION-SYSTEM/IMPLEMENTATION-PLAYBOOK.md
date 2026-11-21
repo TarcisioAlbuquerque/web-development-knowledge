@@ -28,7 +28,6 @@ Separate motion tokens (duration/easing/distance), reusable primitives, orchestr
 - Preserve browser back/forward, focus and natural scroll behavior.
 
 ## 4. Accessibility and responsive behavior
-- prefers-reduced-motion removes nonessential movement without hiding content/function.
 - Keyboard focus must be visible, not covered or trapped.
 - Hover effects need focus-visible and touch-safe equivalents.
 - Pin/horizontal scenes require a clear escape path, mobile alternative and keyboard access.
@@ -39,8 +38,8 @@ Separate motion tokens (duration/easing/distance), reusable primitives, orchestr
 Before implementation, consult the selected M IDs in PATTERN-CATALOG.md and I IDs in INTERACTIVE-COMPONENTS.md. The Motion Starter Kit is vanilla starting code, not a framework or production guarantee. Adapt and test it.
 
 ## 6. Motion Brief fields
-For every significant effect: ID, purpose, element, trigger, initial/final state, timing/easing, sequence, desktop/mobile, reduced-motion, fallback, dependency, acceptance test.
+For every significant effect: ID, purpose, element, trigger, initial/final state, timing/easing, sequence, desktop/mobile, fallback, dependency, acceptance test.
 For every interaction: ID, user task, states, data, events, keyboard/touch, semantics, errors/feedback, CTA/destination and test.
 
 ## 7. QA
-Test at target viewport sizes; load, scroll both directions, resize, keyboard, touch, focus, reduced-motion, JS failure and route lifecycle as relevant. Record exact test/evidence. Never say a technique was observed if only its appearance was captured; do not infer the library from the effect.
+Test at target viewport sizes; load, scroll both directions, resize, keyboard, touch, focus, JS failure and route lifecycle as relevant. Record exact test/evidence. Never say a technique was observed if only its appearance was captured; do not infer the library from the effect.
