@@ -61,7 +61,7 @@ Apenas quando o projeto precisar de parallax, pinning, horizontal scroll ou sequ
 - `data-gsap-pin-section` com um filho `data-gsap-pin`: pin narrativo.
 - `data-gsap-horizontal` com `data-gsap-horizontal-track`: trilha horizontal controlada pelo scroll.
 
-Em telas abaixo de 900px ou com reduced-motion, receitas de pin/parallax/horizontal são desligadas; forneça layout vertical ou trilha com scroll-snap como fallback. Teste altura de viewport, touch, resize e saída da seção.
+Em telas abaixo de 900px, receitas de pin/parallax/horizontal são desligadas; forneça layout vertical ou trilha com scroll-snap como fallback. Teste altura de viewport, touch, resize e saída da seção.
 
 ## SVG stroke draw
 ```html
@@ -129,7 +129,7 @@ A trilha também aceita swipe/toque e scroll horizontal nativo. Botões e estado
   Seu navegador não suporta vídeo HTML.
 </video>
 ```
-O script força mute/playsinline, tenta reproduzir quando o vídeo entra no viewport, pausa quando sai e habilita controles se o autoplay falhar. Com `prefers-reduced-motion`, não inicia automaticamente e mantém controles. Use poster, proporção reservada e mídia otimizada.
+O script força mute/playsinline, tenta reproduzir quando o vídeo entra no viewport, pausa quando sai e habilita controles se o autoplay falhar. Use poster, proporção reservada e mídia otimizada.
 
 ## WhatsApp contextual
 ```html
@@ -178,7 +178,7 @@ Repita o bloco de pergunta para cada questão. Cada pergunta precisa ter respost
 
 ## Requisitos
 - Sem JS, conteúdo continua visível e controles essenciais não desaparecem.
-- Com reduced-motion, reveals são exibidos sem deslocamento/transição e marquee/SVG draw não animam.
+- Reveals, marquee e SVG draw usam os tratamentos de movimento definidos para cada experiência.
 - Marquee contínuo oferece pausa explícita.
 - Tabs são operáveis com teclado e ARIA.
 - Carrossel tem botões além de swipe.
