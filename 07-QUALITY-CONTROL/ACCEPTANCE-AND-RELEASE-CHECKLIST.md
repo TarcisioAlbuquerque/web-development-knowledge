@@ -23,7 +23,7 @@ Usar contra o escopo, os blueprints e os critérios aprovados do projeto. A prof
 - [ ] Motion e interações selecionados foram implementados; sem placeholders ou controles sem ação.
 - [ ] Timing, transições, sequências e comportamento de mídia testados.
 - [ ] Teclado, foco, toque e estados hover/focus/active testados quando aplicáveis.
-- [ ] `prefers-reduced-motion` oferece alternativa sem remover conteúdo ou função.
+- [ ] `` oferece alternativa sem remover conteúdo ou função.
 - [ ] Movimento contínuo/autoplay possui controle quando aplicável.
 - [ ] Sticky, pin, parallax ou scroll horizontal testados em diferentes alturas, touch e saída da seção.
 - [ ] Conteúdo continua acessível sem depender de JavaScript ou animação.
