@@ -60,5 +60,5 @@ Um site só pode ser considerado pronto quando:
 - cada interação executa a função prometida;
 - IDs estão mapeados para seções/componentes;
 - evidências de QA estão anexadas ao projeto;
-- mobile, teclado/toque e reduced-motion passaram;
+- mobile, teclado/toque passaram;
 - exceções estão documentadas e aceitas.
