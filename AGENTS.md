@@ -20,7 +20,7 @@ Se documentos especializados divergirem, sinalize o conflito; não invente uma r
 - Estratégia e objetivo do negócio precedem escolhas visuais ou técnicas.
 - Justifique seções, componentes, motion, interações e dependências pela necessidade do usuário, jornada ou conversão.
 - Escolha a solução mais simples que atenda aos requisitos; não adicione ferramentas, agentes, abstrações ou documentação sem ganho concreto.
-- Mantenha conteúdo e funções essenciais utilizáveis sem animação; respeite acessibilidade, teclado, foco visível, touch, reduced-motion, performance e segurança.
+- Mantenha conteúdo e funções essenciais utilizáveis sem animação; respeite acessibilidade, teclado, foco visível, touch, performance e segurança.
 - Não invente fatos, claims, credenciais, provas sociais, endpoints ou resultados.
 - Não declare inspeções, instalações, builds, testes ou métricas que não foram realmente verificados.
 - Preserve conteúdo e decisões aprovadas. Não publique, altere escopo, execute ação destrutiva ou instale/execute código de terceiros sem autorização adequada.
@@ -36,7 +36,7 @@ Consulte `01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/` quando o projeto 
 
 Selecione comportamentos por propósito: hierarquia, orientação, narrativa, feedback, exploração, compreensão ou conversão. **Não existe quota universal de efeitos, animações ou interações.** Não force padrões para atingir um número. Uma landing page não deve ser estática por omissão: use movimento e interação quando melhorarem a experiência, e prefira uma solução simples ou nenhuma animação quando isso servir melhor ao conteúdo, público, acessibilidade ou conversão.
 
-Implemente apenas o que foi selecionado e aprovado; teste o comportamento real nos dispositivos e estados relevantes. Registre fallback, reduced-motion e limitações. O sistema especializado detalha as práticas técnicas; este arquivo define a regra operacional.
+Implemente apenas o que foi selecionado e aprovado; teste o comportamento real nos dispositivos e estados relevantes. Registre fallback, e limitações. O sistema especializado detalha as práticas técnicas; este arquivo define a regra operacional.
 
 ## Handoffs e governança
 - Cada entrega indica resultado, arquivos/fontes consultados, decisões aprovadas versus propostas, critérios verificados, testes realizados, riscos, pendências e próximo passo.
