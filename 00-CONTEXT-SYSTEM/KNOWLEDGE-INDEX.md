@@ -28,7 +28,7 @@
 `01-REFERENCE-LIBRARY/README.md` is the index. Open only relevant cards. Each card states its evidence status; pending/unverified references must not be described as inspected. Transfer principles across niches only when the brief supports the transfer.
 
 ## Motion routing
-Motion is a capability, not a mandatory effect count. For projects where motion/interactions matter, read the Motion System overview and select only relevant catalog entries. Open the implementation playbook and starter-kit files only after choosing patterns. Always account for reduced motion, keyboard/touch, fallback and performance.
+Motion is a capability, not a mandatory effect count. For projects where motion/interactions matter, read the Motion System overview and select only relevant catalog entries. Open the implementation playbook and starter-kit files only after choosing patterns. Always, keyboard/touch, fallback and performance.
 
 ## Context budget protocol
 1. Identify task type and deliverable.
