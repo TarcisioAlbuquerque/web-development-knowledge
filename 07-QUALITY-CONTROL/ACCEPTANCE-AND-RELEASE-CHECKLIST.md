@@ -16,7 +16,7 @@
 ## Motion
 - [ ] Efeitos têm propósito e seguem motion brief.
 - [ ] Não bloqueiam conteúdo ou ações.
-- [ ] Fallback e reduced-motion.
+- [ ] Fallback e.
 - [ ] Mobile, toque e teclado verificados.
 
 ## Engenharia
