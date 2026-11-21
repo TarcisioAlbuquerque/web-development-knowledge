@@ -23,7 +23,6 @@ Estudar uma abertura para AURA Creativa Studio que apresente a marca de forma me
 ## Critérios técnicos para uma futura implementação
 - Curta e não bloqueante; oferecer acesso rápido ao conteúdo.
 - Funcionar também em mobile, sem depender de animação pesada.
-- Respeitar `prefers-reduced-motion`.
 - Evitar flashes, excesso de movimento, bloqueio de scroll desnecessário e impacto negativo em LCP/INP.
 - Verificar a transição real, o timing e o comportamento responsivo no navegador antes de fechar a implementação.
 
