@@ -28,7 +28,7 @@ Compare opção principal e alternativa. Não force frameworks por preferência.
 
 ## Acessibilidade
 
-HTML semântico, teclado, foco visível, labels, erros associados, contraste, alt text e reduced-motion. Componentes customizados precisam nome, função, estado e comportamento acessíveis. Ferramentas automatizadas ajudam, mas não substituem revisão manual.
+HTML semântico, teclado, foco visível, labels, erros associados, contraste, alt text. Componentes customizados precisam nome, função, estado e comportamento acessíveis. Ferramentas automatizadas ajudam, mas não substituem revisão manual.
 
 ## Performance
 
@@ -51,7 +51,7 @@ Fonte normativa: 01-REFERENCE-LIBRARY/MOTION-AND-INTERACTION-SYSTEM/. Starter Ki
 - Não oculte conteúdo por dependência de JS.
 - Evite animações que forçam layout; prefira transform/opacity quando apropriado.
 - Limpe observers, listeners e timelines ao desmontar componentes/SPAs.
-- Preserve fallback, teclado, toque, mobile e reduced-motion.
+- Preserve fallback, teclado, toque, mobile.
 - Não adicione dependências sem justificativa e revisão.
 
 ## Definition of Done
