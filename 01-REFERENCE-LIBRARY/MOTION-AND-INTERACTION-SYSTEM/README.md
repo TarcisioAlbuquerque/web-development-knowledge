@@ -23,7 +23,7 @@ A escolha deve ser guiada por:
 - coerência com identidade, conteúdo e direção de arte;
 - fluidez, timing, hierarquia e legibilidade;
 - responsividade, toque e diferentes alturas de viewport;
-- acessibilidade, teclado, foco e `prefers-reduced-motion`;
+- acessibilidade, teclado, foco e ``;
 - performance, compatibilidade, segurança, licença, custo e manutenção.
 
 Não limitar uma ideia útil por uma contagem arbitrária. Também não adicionar efeitos apenas para demonstrar capacidade. Uma experiência minimalista pode ser tão bem resolvida quanto uma experiência imersiva.
@@ -54,7 +54,7 @@ Não inferir GSAP, Framer Motion, Lenis ou outra biblioteca pela aparência isol
 
 ## Critérios inegociáveis
 - O conteúdo e a função permanecem disponíveis sem depender da animação.
-- Respeitar `prefers-reduced-motion`.
+-.
 - Navegação por teclado, foco visível e semântica correta.
 - Estados operáveis por toque; não depender exclusivamente de hover.
 - Marquee/autoplay contínuo com pausa/controle quando aplicável.
