@@ -30,7 +30,7 @@
 - [ ] Tabs/quiz/FAQ/galeria/carrossel/formulário (os que existirem) têm estados e feedback funcionais.
 - [ ] CTA, WhatsApp e links têm destinos reais confirmados; sem placeholders.
 - [ ] Marquee/autoplay oferecem pausa ou controle equivalente quando aplicável.
-- [ ] `prefers-reduced-motion` remove/reduz movimentos não essenciais sem remover conteúdo ou função.
+- [ ] `` remove/reduz movimentos não essenciais sem remover conteúdo ou função.
 - [ ] Fallback sem JavaScript mantém conteúdo legível e navegação essencial utilizável.
 - [ ] Desktop e mobile verificados; sticky, parallax e horizontal scroll testados em touch e diferentes alturas.
 - [ ] Console/build sem erros relacionados a animações, eventos ou observers.
