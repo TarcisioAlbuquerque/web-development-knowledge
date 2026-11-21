@@ -12,7 +12,7 @@ Animações cujo progresso acompanha diretamente a posição do scroll. Investig
 Ferramenta do GSAP para disparar, sincronizar, fixar (pin) e controlar timelines conforme posições/progresso do scroll. É uma ferramenta de orquestração, não uma técnica visual isolada. Avaliar custo, necessidade real e alternativas nativas antes de adicionar dependências.
 
 ### Parallax
-Movimento em velocidades ou direções diferentes entre camadas durante a rolagem, criando percepção de profundidade. Usar com moderação e considerar desempenho, dispositivos móveis e `prefers-reduced-motion`.
+Movimento em velocidades ou direções diferentes entre camadas durante a rolagem, criando percepção de profundidade. Usar com moderação e considerar desempenho, dispositivos móveis e ``.
 
 ### Sticky
 Uso de posicionamento persistente durante parte da rolagem, normalmente com CSS `position: sticky`, para manter um elemento visível enquanto o conteúdo adjacente avança. Explorar narrativas por etapas, imagens fixas e blocos de conteúdo sequenciais.
@@ -40,5 +40,5 @@ Quando os links ou capturas forem fornecidos, identificar a natureza de cada rec
 - Consultar estas referências transversalmente, independentemente do nicho do cliente.
 - Escolher técnicas conforme objetivo narrativo, conteúdo e identidade; não aplicar todas por padrão.
 - Priorizar desempenho, acessibilidade, responsividade e conteúdo disponível sem depender da animação.
-- Respeitar `prefers-reduced-motion`, oferecer alternativas funcionais e evitar bloquear a navegação com intros longas.
+-, oferecer alternativas funcionais e evitar bloquear a navegação com intros longas.
 - Registrar exemplos concretos, evidências observadas, limitações e possibilidades de adaptação após inspeção prática.
