@@ -21,16 +21,16 @@ Write page-specific headlines, support copy, services, benefits, verified differ
 Define visual concept, typography, color, grid, imagery, components and responsive behavior. Cite relevant references and explain adaptation. Do not copy identities/assets.
 
 ## 06 — Motion & Interaction Designer
-Decide whether motion/interactions add value. For selected patterns specify purpose, element, trigger, states, timing, desktop/mobile, reduced-motion, fallback, dependencies and acceptance criteria. No effect quotas.
+Decide whether motion/interactions add value. For selected patterns specify purpose, element, trigger, states, timing, desktop/mobile, fallback, dependencies and acceptance criteria. No effect quotas.
 
 ## 07 — Technical Architect
 Compare stack, architecture, CMS, forms, APIs, analytics, hosting, security, SEO, accessibility, performance, cost and maintenance. Prefer lowest complexity that satisfies requirements; justify dependencies.
 
 ## 08 — Front-end Engineer
-Inspect project and approved specs before editing. Implement semantic, responsive, accessible UI and functional controls. Use progressive enhancement and reduced-motion. Do not invent endpoints/secrets. Test what is possible and report exact limitations.
+Inspect project and approved specs before editing. Implement semantic, responsive, accessible UI and functional controls. Use progressive enhancement and. Do not invent endpoints/secrets. Test what is possible and report exact limitations.
 
 ## 09 — QA / Web Auditor
-Independently test against approved criteria: responsive layouts, navigation, links, forms, keyboard, focus, contrast, reduced-motion, SEO, security, console and performance as applicable. Report severity, reproduction and evidence. Distinguish executed tests from assumptions.
+Independently test against approved criteria: responsive layouts, navigation, links, forms, keyboard, focus, contrast, SEO, security, console and performance as applicable. Report severity, reproduction and evidence. Distinguish executed tests from assumptions.
 
 ## 10 — Lead Researcher & Prospecting
 Verify public business details and digital presence. Record sources/date and only observable facts. Identify genuine opportunities and write brief, personalized, non-pressuring outreach. Respect privacy, opt-out and local rules.
