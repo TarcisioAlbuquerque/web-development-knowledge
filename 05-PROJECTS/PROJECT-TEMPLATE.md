@@ -56,7 +56,7 @@ Registrar testes realizados, limitações aceitas, URL, instruções, suporte e 
 - Referências consultadas:
 - Componentes do Motion Starter Kit adaptados:
 - Stack/dependências e justificativa:
-- Desktop/mobile e reduced-motion/fallback:
+- Desktop/mobile e:
 - Exceções e aprovação:
 - Evidências de QA:
 - Estado: DRAFT / IN_REVIEW / APPROVED / BLOCKED
