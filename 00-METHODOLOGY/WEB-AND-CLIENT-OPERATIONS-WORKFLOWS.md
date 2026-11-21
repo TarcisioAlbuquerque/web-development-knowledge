@@ -8,7 +8,7 @@
 4. **Arquitetura/UX:** páginas, seções, hierarquia, navegação, formulários, estados e mobile; justificar cada seção.
 5. **Copy do website:** headline, subtítulo, serviços, benefícios, diferenciais, processo, FAQ, CTA e microcopy; não inventar claims.
 6. **Direção criativa:** conceito, personalidade, tipografia, cores, grid, imagens, componentes e referências aprovadas.
-7. **Motion:** propósito, gatilhos, sequência, duração, easing, fallback, mobile e reduced-motion.
+7. **Motion:** propósito, gatilhos, sequência, duração, easing, fallback, mobile e.
 8. **Arquitetura técnica:** stack, integrações, hospedagem, custo, segurança, manutenção e dependências justificadas.
 9. **Implementação:** construir incrementalmente conforme especificações aprovadas.
 10. **QA:** visual, responsividade, links, formulários, conteúdo, acessibilidade, SEO, segurança e performance.
