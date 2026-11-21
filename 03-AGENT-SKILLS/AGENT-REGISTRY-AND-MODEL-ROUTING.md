@@ -69,7 +69,7 @@ Teste a mesma tarefa com o mesmo pacote de contexto e critérios. Pontue de 1 a 
 - Uso correto do contexto/restrições (10%).
 - Facilidade de revisão/economia de quota (10%).
 
-Adaptar critérios: copy (voz, clareza, especificidade, claims); código (testes, legibilidade, acessibilidade, segurança, manutenção); motion (intenção, viabilidade, performance, reduced-motion).
+Adaptar critérios: copy (voz, clareza, especificidade, claims); código (testes, legibilidade, acessibilidade, segurança, manutenção); motion (intenção, viabilidade, performance, ).
 
 ## Fallback
 Ao atingir quota, usar alternativa ou reduzir escopo. Não pedir assinatura como requisito. Se o agente não acessar GitHub privado, fornecer pacote de contexto selecionado. Não enviar dados confidenciais a terceiros sem autorização. Distinguir modelo, aplicativo, agente, extensão, skill e runtime.
