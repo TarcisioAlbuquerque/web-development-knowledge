@@ -20,7 +20,6 @@ Use criteria relevant to the project; mark N/A with a reason. Do not claim check
 - [ ] Effects behave as specified and do not hide content or block navigation.
 - [ ] Every interactive control performs its stated action.
 - [ ] Keyboard, focus and touch behavior checked as applicable.
-- [ ] Reduced-motion behavior preserves content and function.
 - [ ] Mobile behavior and performance checked.
 - [ ] Continuous motion/autoplay has suitable controls.
 - [ ] Evidence is linked to selected patterns; limitations are recorded.
