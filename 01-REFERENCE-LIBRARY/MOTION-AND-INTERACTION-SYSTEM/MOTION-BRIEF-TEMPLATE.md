@@ -20,7 +20,7 @@ Duplicate into the client project only when motion/interactions are relevant. Ke
 |---|---|---|---|
 
 ## 4. Selected motion
-| Catalog ID | Element | UX purpose | Trigger | Desktop/mobile | Reduced-motion/fallback | Acceptance check |
+| Catalog ID | Element | UX purpose | Trigger | Desktop/mobile | Acceptance check |
 |---|---|---|---|---|---|---|
 
 ## 5. Selected interactions
@@ -39,7 +39,7 @@ Duplicate into the client project only when motion/interactions are relevant. Ke
 - [ ] Every control performs its stated action.
 - [ ] Keyboard, focus and touch checked where applicable.
 - [ ] Desktop and target mobile sizes checked.
-- [ ] Reduced-motion checked.
+- [ ] checked.
 - [ ] Content/function remains available without motion/JS where applicable.
 - [ ] Performance/layout shift/console checked where tooling permits.
 - [ ] Evidence and limitations recorded.
