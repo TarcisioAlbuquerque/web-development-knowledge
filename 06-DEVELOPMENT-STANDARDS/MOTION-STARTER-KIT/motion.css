@@ -146,21 +146,4 @@ html { scroll-behavior: smooth; }
   to { transform: translateX(-50%); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto !important; }
-  .motion-ready [data-motion],
-  .motion-ready .motion-mask__inner,
-  .motion-ready [data-motion-svg-draw] path,
-  .motion-ready [data-motion-svg-draw] line,
-  .motion-ready [data-motion-svg-draw] polyline,
-  .motion-image img,
-  [data-motion-hover="lift"],
-  [data-motion-arrow] svg,
-  [data-motion-arrow] .motion-arrow {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-    will-change: auto !important;
-  }
-  .motion-marquee__track { animation: none !important; transform: none !important; }
-}
+
