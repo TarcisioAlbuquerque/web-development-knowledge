@@ -20,7 +20,7 @@ Não adicionar GSAP, Lenis, Framer Motion, Motion ou Three.js por padrão.
 
 ## Engenharia
 
-Conteúdo permanece legível sem motion; respeitar reduced-motion; evitar scroll hijacking e atraso em CTA; evitar layout shift/main-thread excessiva; limpar observers/listeners/timelines na desmontagem; testar touch, resize, orientação e viewport; fornecer pausa para marquee/autoplay quando aplicável.
+Conteúdo permanece legível sem motion;; evitar scroll hijacking e atraso em CTA; evitar layout shift/main-thread excessiva; limpar observers/listeners/timelines na desmontagem; testar touch, resize, orientação e viewport; fornecer pausa para marquee/autoplay quando aplicável.
 
 ## GSAP
 
