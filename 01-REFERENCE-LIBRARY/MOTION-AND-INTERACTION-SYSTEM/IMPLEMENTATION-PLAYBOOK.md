@@ -23,7 +23,7 @@ Separar:
 - **primitives:** reveal, text mask, image reveal, hover/focus;
 - **orchestration:** timelines, scroll triggers, sequências;
 - **components:** tabs, quiz, gallery, FAQ, marquee, form;
-- **accessibility:** reduced-motion, keyboard, focus, pause;
+- **accessibility:** keyboard, focus and pause controls;
 - **QA:** evidência e estados testados.
 
 Evitar que cada seção invente sua própria curva, duração ou comportamento. Criar consistência de movimento em todo o site.
@@ -50,7 +50,7 @@ Não aplicar estes valores cegamente. Medir ritmo e evitar atrasar conteúdo pri
 3. Animar inner span de translateY(100%) para 0.
 4. Escalonar linhas com stagger curto.
 5. Respeitar reflow; não congelar line breaks em larguras não testadas.
-6. Em reduced-motion ou JS indisponível, exibir texto imediatamente.
+6. Sem JS, exibir texto imediatamente.
 
 ### Scroll reveal (M-08/M-09)
 1. Definir estado visível por padrão no HTML.
@@ -78,14 +78,14 @@ Não aplicar estes valores cegamente. Medir ritmo e evitar atrasar conteúdo pri
 3. Testar alturas de viewport, trackpad, wheel, touch e orientação.
 4. Preservar scroll natural, foco e saída previsível.
 5. No mobile, preferir scroll vertical ou carrossel tocável se pin/track horizontal prejudicar UX.
-6. Verificar reduced-motion e fallback sem JS.
+6. Verificar fallback sem JS.
 7. Não usar scroll hijacking.
 
 ### Marquee (M-35)
 1. Repetir trilha apenas para continuidade visual.
 2. Garantir loop sem salto.
 3. Adicionar controle de pausa/retomar.
-4. Pausar em reduced-motion por padrão.
+4. Manter um controle explícito de pausa e retomada.
 5. Tratar duplicatas como decorativas e impedir tab stops duplicados.
 
 ### CTA hover (M-31)
@@ -138,7 +138,6 @@ Antes de integrar, verificar a versão atual da biblioteca, instalação, compat
 - CSS mantém legibilidade sem JS.
 - JS adiciona motion/interatividade.
 - Falha de JS não pode ocultar conteúdo ou bloquear navegação.
-- Reduced-motion altera ou remove transformações não essenciais.
 - Estados operáveis por teclado e toque.
 
 Consulte os arquivos do Motion Starter Kit como ponto de partida vanilla. Em React/Astro/Vue, adapte os princípios ao ciclo de vida do framework; não misture inicialização global e efeitos de componente sem cleanup.
@@ -155,7 +154,6 @@ Para cada animação, o Motion Brief deve indicar:
 - duração/easing aproximados;
 - sequência/dependências;
 - desktop/mobile;
-- reduced-motion;
 - fallback;
 - critério de aceite.
 
@@ -187,4 +185,4 @@ Quando o projeto justificar GSAP/ScrollTrigger, consulte `06-DEVELOPMENT-STANDAR
 - pin storytelling;
 - horizontal scroll desktop.
 
-O módulo é opcional e requer a dependência GSAP instalada no projeto. Em mobile e reduced-motion, pin/parallax/horizontal ficam desativados; o desenvolvedor deve preservar alternativa vertical ou scroll-snap. Não carregar GSAP por padrão em sites simples.
+O módulo é opcional e requer a dependência GSAP instalada no projeto. Em mobile, pin/parallax/horizontal ficam desativados; preserve alternativa vertical ou scroll-snap. Não carregar GSAP por padrão em sites simples.
