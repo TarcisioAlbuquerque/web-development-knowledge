@@ -59,7 +59,7 @@
 - Estados de botões/controles:
 - Efeitos de mídia:
 - Técnicas/ferramentas candidatas:
-- Reduced-motion/fallback:
+
 - Requisitos de performance:
 - Motion Brief separado? Não / Sim — motivo:
 
