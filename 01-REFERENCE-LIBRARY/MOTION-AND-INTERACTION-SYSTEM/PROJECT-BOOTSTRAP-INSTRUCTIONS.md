@@ -11,11 +11,11 @@ Use only when a client project needs motion/interaction guidance. The central re
 
 ## Project rule
 ```md
-Use the project's Motion Brief and selected Motion & Interaction references. Motion is contextual, not a quota: include it when it improves communication, identity, navigation or task completion; a restrained/static approach is valid when intentional. Specify purpose, trigger, states, responsive behavior, reduced-motion/fallback and acceptance checks. Implement only approved patterns; every interactive control must work. Preserve content without animation, keyboard/touch access and performance. Test selected behavior in the real project and report checks actually performed. Do not load the full reference library by default.
+Use the project's Motion Brief and selected Motion & Interaction references. Motion is contextual, not a quota: include it when it improves communication, identity, navigation or task completion; a restrained/static approach is valid when intentional. Specify purpose, trigger, states, responsive behavior, fallback and acceptance checks. Implement only approved patterns; every interactive control must work. Preserve content without animation, keyboard/touch access and performance. Test selected behavior in the real project and report checks actually performed. Do not load the full reference library by default.
 ```
 
 ## Handoff
 Carry the brief, selected IDs, implementation status, evidence and unresolved issues between agents. GitHub is the canonical source, but model memories are not synchronized. Never assume an agent has read a document unless it was provided or verified.
 
 ## Definition of done
-The project meets its own approved acceptance criteria; selected interactions work; accessibility, responsive behavior and reduced-motion are checked; limitations are documented. No fixed effect count applies.
+The project meets its own approved acceptance criteria; selected interactions work; accessibility, responsive behavior are checked; limitations are documented. No fixed effect count applies.
