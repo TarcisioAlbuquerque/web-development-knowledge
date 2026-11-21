@@ -78,7 +78,6 @@ Não inferir GSAP, Framer Motion, React, IntersectionObserver ou qualquer biblio
 ## Critérios que nunca podem ser sacrificados
 
 - conteúdo utilizável sem depender da animação;
-- respeito a `prefers-reduced-motion`;
 - navegação por teclado e foco visível;
 - controles claros para mídia/marquee contínuo;
 - sem scroll hijacking ou pinning que aprisione o usuário;
